@@ -1,45 +1,43 @@
 # Project Status
 
-Last updated: 2026-09-02
+Last updated: 2026-09-03
 
 ## Goal
 
-Adapt the Open Pedalboard mainboard for a custom, integrated design that is practical to manufacture through JLCPCB.
+Adapt the Open Pedalboard mainboard into a practical, integrated guitar-effects and NAM player that can use Open Pedalboard and PiPedal software and is suitable for JLCPCB production.
 
 ## Current direction
 
 | Area | Status | Direction |
 |---|---|---|
-| Audio codec | Confirmed | Use the TAC5212 on the mainboard |
-| Audio input 1 | In progress | Instrument input with an external input buffer |
-| Audio input 2 | Confirmed | Keep as a line input |
+| Audio codec | Confirmed | Mount a TAC5212 directly on the mainboard |
+| Guitar input | Circuit complete | High-impedance OPA1656 buffer and differential ADC drive; final input-protection choice remains open |
+| Line input | Circuit complete | Balanced TRS, AC-coupled into TAC5212 input 2 |
+| Codec integration | In progress | Complete power, decoupling, control, digital-audio, and output connections |
+| Audio outputs | Direction confirmed | Dedicated 3.5 mm stereo headphones plus two unbalanced 6.35 mm line/amp outputs |
 | Controller | Planned | Replace the RP2040 subsystem with an STM32G0B1 |
 | External MIDI | Undecided | Preserve the option if it does not add unreasonable cost or complexity |
-| Manufacturing | Confirmed | Target JLCPCB assembly |
-| PCB layers | Confirmed | Keep the mainboard at two layers |
-| Controller firmware | Confirmed | Port required behavior to C/C++ |
+| Manufacturing | Confirmed | Target JLCPCB assembly and retain the two-layer board |
 
-## Work completed so far
+## Completed schematic work
 
-- Selected the TAC5212 audio codec.
-- Started a TAC5212-based audio schematic.
-- Added an OPA1656-based analog input section.
-- Added a 4 V analog bias supply.
-- Added C64 as a DNP 100 nF C0G/1206 alternative to the through-hole input capacitor.
+- Selected the TAC5212 stereo codec.
+- Added an OPA1656-based guitar input with a 4 V bias supply.
+- Set C56 to the 100 nF design value.
+- Added C64 as a DNP 100 nF C0G/1206 alternative footprint for C56.
+- Completed the balanced line input using C62/C63, R41/R42, and R43/R44.
+- Removed JP4 and the unused `audio_in_stereo` detection net; CM GPIO27 is intentionally unconnected.
 
-## Current design state
+## Current project state
 
-- The audio changes exist in the schematic only.
-- The PCB still matches the original mainboard and still contains the plug-in sound-card footprint.
+- The custom audio work exists in the schematic only.
+- The PCB still represents the original mainboard and plug-in sound card.
+- The TAC5212 analog inputs are connected, but its remaining support and output circuits are unfinished.
+- The output arrangement is decided, but its coupling, filtering, protection, and jack wiring have not been drawn.
+- D3 is DNP while the guitar-input protection choice is reviewed.
 - The MIDI/controller sheet still contains the original RP2040 subsystem.
-- The second TAC5212 input is not yet clearly documented in the schematic as the line input.
-- The intended C56 value is 220 nF, but the live schematic still shows 100 nF.
-- TAC5212 Linux/driver support and its final register configuration remain open software tasks.
+- TAC5212 Linux support and final register configuration remain open software tasks.
 
 ## Next topic
 
-Review and connect the second, line-level TAC5212 input:
-
-- Decide whether its main connection is balanced TRS or unbalanced TS.
-- Reuse the useful parts of the original differential line-input network.
-- Check input level, impedance, protection, coupling, and RF filtering against TAC5212.
+Complete the TAC5212 core connections, starting with its supplies, grounding, internal-regulator capacitor, reference capacitor, and local decoupling. Then review the I2C/I2S connections and output circuit.
