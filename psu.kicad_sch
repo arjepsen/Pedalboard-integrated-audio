@@ -581,183 +581,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1735,159 +1558,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "NCP1117-3.3_SOT223"
-				(at 0 3.175 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-				(at 2.54 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "NCP1117-3.3_SOT223_0_1"
-				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "NCP1117-3.3_SOT223_1_1"
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "VO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Regulator_Linear:TPS7A20xxxDBV"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2075,33 +1745,36 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "pedalboard:AP64351"
+		(symbol "TPS56637:TPS56637RPAR"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U6"
-				(at 0.635 9.2456 0)
+			(property "Reference" "U"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "AP64501SP-13"
-				(at 0.635 6.9342 0)
+			(property "Value" "TPS56637RPAR"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "Pedalboard Library:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
+			(property "Footprint" "RPA0010A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2109,17 +1782,19 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
-			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP64501.pdf"
-				(at 0 0 0)
+			(property "Datasheet" "https://www.ti.com/lit/gpn/tps56637"
+				(at 0.254 20.32 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
@@ -2134,7 +1809,17 @@
 					)
 				)
 			)
-			(property "Supplier" "https://www.digikey.ch/de/products/detail/diodes-incorporated/AP64501SP-13/10419715"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TPS56637RPAR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2145,60 +1830,70 @@
 					)
 				)
 			)
-			(symbol "AP64351_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 6.35 -7.62)
+			(property "ki_fp_filters" "RPA0010A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPS56637RPAR_0_1"
+				(polyline
+					(pts
+						(xy -12.7 17.78) (xy -12.7 -17.78)
+					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "AP64351_1_1"
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy -12.7 -17.78) (xy 12.7 -17.78)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 17.78) (xy -12.7 17.78)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 12.7 -17.78) (xy 12.7 17.78)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "EN"
+					(at 17.78 -15.24 180)
+					(length 5.08)
+					(name "AGND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2213,64 +1908,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "SS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 -5.08 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 -2.54 180)
-					(length 2.54)
-					(name "COMP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "GND"
+					(at 17.78 12.7 180)
+					(length 5.08)
+					(name "BOOT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2285,10 +1926,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 8.89 2.54 180)
-					(length 2.54)
-					(name "SW"
+				(pin power_in line
+					(at -17.78 12.7 0)
+					(length 5.08)
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2303,10 +1944,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "EP"
+				(pin power_in line
+					(at 17.78 -10.16 180)
+					(length 5.08)
+					(name "PGND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2314,6 +1955,116 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS56637RPAR_1_1"
+				(pin input line
+					(at -17.78 7.62 0)
+					(length 5.08)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 17.78 -5.08 180)
+					(length 5.08)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -17.78 -5.08 0)
+					(length 5.08)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 17.78 5.08 180)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -17.78 -15.24 0)
+					(length 5.08)
+					(name "MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3352,7 +3103,7 @@
 		)
 		(uuid "27d15d22-8ca1-4098-b791-dc61b4f9c528")
 	)
-	(text "5.5mm x 2.1mm, Center Negative."
+	(text "5.5mm × 2.1mm, Center Positive"
 		(exclude_from_sim no)
 		(at 16.51 26.67 0)
 		(effects
@@ -3362,28 +3113,6 @@
 			(justify left bottom)
 		)
 		(uuid "682e6e90-752d-4f42-9698-47df6b0b5abf")
-	)
-	(text "+5v @ 3A PSU ( 7.5v-28v Input )"
-		(exclude_from_sim no)
-		(at 160.02 102.108 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "90e643ab-8ff4-4aa8-b41e-fa7474a8329d")
-	)
-	(text "5v @ 3A PSU\n"
-		(exclude_from_sim no)
-		(at 215.265 113.538 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a46b297f-b8de-43dc-9034-77de4998a7dd")
 	)
 	(text "Revese \nPolarity \nProtection"
 		(exclude_from_sim no)
@@ -3399,7 +3128,7 @@
 	)
 	(text "5V analog bias"
 		(exclude_from_sim no)
-		(at 153.162 66.04 0)
+		(at 152.146 66.802 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3428,14 +3157,14 @@
 		)
 		(uuid "02585c26-8c1b-49ae-a5b5-38fd006185cc")
 	)
-	(text_box "RP2040 power"
+	(text_box "STM32G0B1RE power"
 		(exclude_from_sim no)
-		(at 209.55 16.51 0)
-		(size 64.77 38.1)
+		(at 218.44 16.51 0)
+		(size 45.72 38.1)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -3447,6 +3176,26 @@
 			(justify left top)
 		)
 		(uuid "12ec5597-b76f-4a36-ab4b-c690c9e0e019")
+	)
+	(text_box "+5.08V / 6A buck — regulated 12V input"
+		(exclude_from_sim no)
+		(at 50.8 104.14 0)
+		(size 157.48 58.42)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "660f0b96-1225-495f-8b86-b06a146d5bd0")
 	)
 	(text_box "+10V analog"
 		(exclude_from_sim no)
@@ -3469,52 +3218,22 @@
 		(uuid "8d0dab7a-45e8-40a3-bc38-0d066ff6623e")
 	)
 	(junction
-		(at 229.87 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02b80152-d9b1-4c01-99bb-5abe39c78187")
-	)
-	(junction
-		(at 152.4 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "036620f5-2cab-44bd-ba54-65f8ebb2eab0")
-	)
-	(junction
-		(at 68.58 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03dcb7e3-93c0-44a1-a4ff-735305a34dec")
-	)
-	(junction
 		(at 224.79 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0506131e-3e6a-4124-add7-99be2ca7c337")
 	)
 	(junction
-		(at 68.58 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a1238e4-b21f-4809-b96e-eb552721cc0b")
-	)
-	(junction
-		(at 243.84 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e891ef5-395e-4129-a574-f75d990290e5")
-	)
-	(junction
-		(at 210.82 116.84)
+		(at 179.07 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11a687b3-8732-416e-88f0-7172d9f6d22d")
 	)
 	(junction
-		(at 180.34 116.84)
+		(at 138.43 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "13389f57-c488-4334-a027-f5b1da9898f7")
+		(uuid "12fc3572-6c2f-4ced-afed-83c13b5a792a")
 	)
 	(junction
 		(at 156.21 80.01)
@@ -3541,13 +3260,7 @@
 		(uuid "231941a7-b4c9-48c4-9003-3f384eab3854")
 	)
 	(junction
-		(at 120.65 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "27a42f59-cfeb-4cd4-81be-c0e463602dd6")
-	)
-	(junction
-		(at 220.98 116.84)
+		(at 189.23 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e06b75b-3d06-4ffc-b847-41c957f70681")
@@ -3559,10 +3272,22 @@
 		(uuid "3304ea00-0ace-4936-9332-f71f106f611f")
 	)
 	(junction
+		(at 125.73 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "330aef11-e323-4364-9f98-8ba28c4a4900")
+	)
+	(junction
 		(at 220.98 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "348701d5-424d-4ac3-b3e3-54447b312b13")
+	)
+	(junction
+		(at 228.6 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bb49e82-5626-4462-88c1-16f4afc41a65")
 	)
 	(junction
 		(at 156.21 69.85)
@@ -3577,40 +3302,58 @@
 		(uuid "416ea70e-710e-4b92-a324-99430d6bd30f")
 	)
 	(junction
+		(at 232.41 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "427a921a-1810-4767-95ae-3d17ff0a6ae4")
+	)
+	(junction
+		(at 138.43 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b0ea374-aa73-4420-b02f-f2f4620b9a63")
+	)
+	(junction
 		(at 162.56 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50f1feb5-10b2-49df-916d-dd5b56e398f3")
 	)
 	(junction
-		(at 111.76 130.81)
+		(at 81.28 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "545edefb-3a48-48cb-83e2-88cd62b16a9d")
+		(uuid "634e1d51-31fe-4773-9074-c698ae16bdac")
 	)
 	(junction
-		(at 143.51 116.84)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "562d6ccb-161f-4b68-9335-a79ef3080e25")
-	)
-	(junction
-		(at 171.45 116.84)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "61403e46-525a-47f5-ae36-a17cb1d646f6")
-	)
-	(junction
-		(at 200.66 116.84)
+		(at 168.91 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65523dc8-ed14-44cf-8bf0-e99d22ca03b9")
 	)
 	(junction
-		(at 210.82 124.46)
+		(at 255.27 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69b96885-1ebf-4003-8cc7-1d88bd99dd57")
+	)
+	(junction
+		(at 99.06 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bec36a1-fa41-43da-b1a7-3a725e7376fd")
+	)
+	(junction
+		(at 179.07 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ccf43f8-863b-4848-83c4-1a4a7a6c9062")
+	)
+	(junction
+		(at 81.28 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d5d6833-4eb6-4c68-8cd5-64098b970eab")
 	)
 	(junction
 		(at 151.13 69.85)
@@ -3637,16 +3380,10 @@
 		(uuid "7d97676c-7dac-4154-af2f-d797d358dc75")
 	)
 	(junction
-		(at 88.9 130.81)
+		(at 199.39 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "83a84fbb-1ced-44c9-ace5-ff29b0ecbc36")
-	)
-	(junction
-		(at 171.45 123.19)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "849256bd-4331-4f32-b59a-d580c1c61404")
+		(uuid "84e79336-791e-4b41-a80f-b378b1b269c6")
 	)
 	(junction
 		(at 184.15 34.29)
@@ -3655,58 +3392,28 @@
 		(uuid "84eb7313-7f61-4242-a89d-213fc774e00b")
 	)
 	(junction
-		(at 220.98 124.46)
+		(at 189.23 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "862577c2-efd7-443f-bac8-c14a0d40489d")
 	)
 	(junction
-		(at 57.15 138.43)
+		(at 99.06 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86ca4219-2295-4dd0-8a2c-a9d262597d7b")
+	)
+	(junction
+		(at 73.66 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "891a1deb-37e0-49f9-a454-792d600c14cd")
 	)
 	(junction
-		(at 100.33 130.81)
+		(at 90.17 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8d75fd39-eaec-49ae-b1d8-472104b9677f")
-	)
-	(junction
-		(at 152.4 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94d80901-0904-44d4-8eb2-f453acde3b2d")
-	)
-	(junction
-		(at 171.45 133.35)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "95928f5c-231c-4dc2-9050-833d9c81cdc7")
-	)
-	(junction
-		(at 90.17 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "976fdd61-bf03-4838-93a6-f6e081222c2f")
-	)
-	(junction
-		(at 78.74 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0a80c1f-bdc4-421f-a383-32fd93d95327")
-	)
-	(junction
-		(at 80.01 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a100dedc-ee42-49d4-9d85-9e9d5cce1f00")
-	)
-	(junction
-		(at 88.9 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a10e5199-f2de-4616-8810-9252780a7211")
+		(uuid "8a6285b2-7c6c-4ae7-9c76-18ad2295a0be")
 	)
 	(junction
 		(at 165.1 69.85)
@@ -3715,22 +3422,16 @@
 		(uuid "a2b587cd-b393-4b29-a2de-f7ab710fa951")
 	)
 	(junction
-		(at 161.29 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5a3ddd5-bec4-4851-b4cc-931a66a5f92f")
-	)
-	(junction
 		(at 45.72 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b7bcfd5c-3fb3-4136-a56f-1d090f28f5b3")
 	)
 	(junction
-		(at 80.01 40.64)
+		(at 81.28 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bee2b1dd-4336-472d-a3e7-30ae6706f798")
+		(uuid "bc2a1181-e8b8-4482-9fa7-7803126f795a")
 	)
 	(junction
 		(at 184.15 39.37)
@@ -3739,34 +3440,34 @@
 		(uuid "c067648e-0532-438c-9f68-776f9786dc85")
 	)
 	(junction
+		(at 157.48 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7629390-4364-4697-85fd-e46ca1d895aa")
+	)
+	(junction
 		(at 184.15 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb54f265-9047-400f-b884-0fc5e7a9c786")
 	)
 	(junction
-		(at 78.74 130.81)
+		(at 157.48 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d349732f-4959-4c45-9488-c325864cab47")
+		(uuid "d06b0f74-dad3-41a1-a91e-9212c5add143")
 	)
 	(junction
-		(at 171.45 135.89)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "d5e7d681-93d1-442d-9f4b-0fe135279616")
-	)
-	(junction
-		(at 228.6 35.56)
+		(at 139.7 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d8ed07d3-57b6-43a2-aeab-154e85f70c4d")
+		(uuid "d95a6f8b-fadd-44da-a944-e08330d885ff")
 	)
 	(junction
-		(at 146.05 152.4)
-		(diameter 1.016)
+		(at 81.28 125.73)
+		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dc9663f6-63ab-4d9a-8414-245cb42d6abc")
+		(uuid "dd49124a-c3a5-4d82-b98f-8ce40da20be6")
 	)
 	(junction
 		(at 45.72 68.58)
@@ -3781,13 +3482,7 @@
 		(uuid "e2fe7073-8a0b-4f6c-9d8e-dc46644df00d")
 	)
 	(junction
-		(at 64.77 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e56f7ef5-3870-4965-b74e-2cb2d6e304dd")
-	)
-	(junction
-		(at 200.66 124.46)
+		(at 168.91 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e788ecd7-10dd-416a-837d-2f043d682a5b")
@@ -3799,34 +3494,16 @@
 		(uuid "ec7b6d62-4a2f-4601-b13b-db86b6d4c5ec")
 	)
 	(junction
-		(at 264.16 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee1a255b-17ae-4c7d-8908-96f18385a48d")
-	)
-	(junction
 		(at 232.41 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee24a12f-a5de-4754-8f83-12181f927097")
 	)
 	(junction
-		(at 134.62 152.4)
-		(diameter 1.016)
-		(color 0 0 0 0)
-		(uuid "efacb122-c1ea-4468-80b3-4409add1b5c3")
-	)
-	(junction
-		(at 57.15 130.81)
+		(at 73.66 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "efe9e1d3-d700-464c-b4f1-91524445a1a8")
-	)
-	(junction
-		(at 100.33 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f2abe408-1209-49fa-9dfc-b5785ffa97aa")
 	)
 	(junction
 		(at 73.66 40.64)
@@ -3842,15 +3519,13 @@
 		(at 172.72 39.37)
 		(uuid "8e61893a-4caf-4042-841c-700ea8f2c78c")
 	)
-	(wire
-		(pts
-			(xy 120.65 125.73) (xy 120.65 128.27)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "00bd41b0-5071-4650-9fda-199bbbd4be89")
+	(no_connect
+		(at 101.6 146.05)
+		(uuid "b510f275-790c-467b-b9b2-4036a43fb1ba")
+	)
+	(no_connect
+		(at 137.16 130.81)
+		(uuid "efbca934-34a3-4664-bf7a-b7c1691e06e9")
 	)
 	(wire
 		(pts
@@ -3894,16 +3569,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 130.81) (xy 111.76 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0515fd54-b95b-4331-b58b-4ba607d39c8d")
-	)
-	(wire
-		(pts
 			(xy 48.26 44.45) (xy 45.72 44.45)
 		)
 		(stroke
@@ -3914,7 +3579,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 138.43) (xy 46.99 142.24)
+			(xy 71.12 125.73) (xy 71.12 127)
 		)
 		(stroke
 			(width 0)
@@ -3924,53 +3589,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 130.81) (xy 127 130.81)
+			(xy 137.16 140.97) (xy 139.7 140.97)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "07516f34-8214-4378-bf54-99f206d116b9")
+		(uuid "077b4b61-2142-4ce1-84bb-0198c42b344c")
 	)
 	(wire
 		(pts
-			(xy 68.58 138.43) (xy 78.74 138.43)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "07eacd8a-7ea7-4381-afe0-980425e45170")
-	)
-	(polyline
-		(pts
-			(xy 31.75 98.298) (xy 31.75 161.798)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "085a34df-21c5-4039-a245-25def94bdd4d")
-	)
-	(wire
-		(pts
-			(xy 210.82 124.46) (xy 220.98 124.46)
+			(xy 179.07 133.35) (xy 189.23 133.35)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "09dc0e00-d1bc-4f37-be39-d0bad07df245")
-	)
-	(wire
-		(pts
-			(xy 96.52 40.64) (xy 96.52 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a7e7e1f-6a4f-40d1-99f2-b8ecf7fd729c")
 	)
 	(wire
 		(pts
@@ -3994,17 +3629,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 130.81) (xy 120.65 133.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0b829a58-8109-4135-bed6-bcfe49c4ef64")
-	)
-	(wire
-		(pts
-			(xy 80.01 40.64) (xy 80.01 53.34)
+			(xy 81.28 40.64) (xy 81.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4014,7 +3639,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 116.84) (xy 200.66 118.11)
+			(xy 168.91 125.73) (xy 168.91 127)
 		)
 		(stroke
 			(width 0)
@@ -4024,7 +3649,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 149.86) (xy 171.45 152.4)
+			(xy 157.48 148.59) (xy 157.48 152.4)
 		)
 		(stroke
 			(width 0)
@@ -4044,33 +3669,23 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 40.64) (xy 82.55 40.64)
+			(xy 81.28 73.66) (xy 90.17 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1535003e-9702-49ea-816c-55f8918bb2d5")
+		(uuid "146411ed-b749-4eab-9300-eba35992fef1")
 	)
 	(wire
 		(pts
-			(xy 96.52 58.42) (xy 96.52 73.66)
+			(xy 137.16 125.73) (xy 138.43 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "15640de4-dede-41d8-9188-a81d5adf6ba3")
-	)
-	(wire
-		(pts
-			(xy 88.9 137.16) (xy 88.9 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16108fa7-7be4-4175-9668-8d9d6c98b197")
+		(uuid "19f47b0f-f7c6-4eee-968c-0d623172908b")
 	)
 	(wire
 		(pts
@@ -4114,7 +3729,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 130.81) (xy 78.74 132.08)
+			(xy 90.17 118.11) (xy 90.17 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4124,7 +3739,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 115.57) (xy 180.34 116.84)
+			(xy 157.48 124.46) (xy 157.48 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4134,7 +3749,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 40.64) (xy 80.01 40.64)
+			(xy 73.66 40.64) (xy 81.28 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4144,33 +3759,13 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 130.81) (xy 57.15 132.08)
+			(xy 73.66 118.11) (xy 73.66 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2529bcfd-3baf-411c-a818-9f2a3ff62a87")
-	)
-	(wire
-		(pts
-			(xy 171.45 116.84) (xy 171.45 123.19)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "25b403b3-44b0-4d66-9f42-3359622fd173")
-	)
-	(wire
-		(pts
-			(xy 143.51 135.89) (xy 171.45 135.89)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "25ffa706-e878-4252-b7cb-9686a4052d78")
 	)
 	(wire
 		(pts
@@ -4194,6 +3789,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 152.4) (xy 157.48 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e8e3092-3184-47c2-a050-18d320a2131f")
+	)
+	(wire
+		(pts
 			(xy 92.71 40.64) (xy 96.52 40.64)
 		)
 		(stroke
@@ -4204,7 +3809,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 116.84) (xy 229.87 116.84)
+			(xy 189.23 125.73) (xy 199.39 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4234,7 +3839,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 138.43) (xy 57.15 138.43)
+			(xy 71.12 125.73) (xy 73.66 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4244,7 +3849,17 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 35.56) (xy 264.16 34.29)
+			(xy 157.48 125.73) (xy 168.91 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33cfd4d8-5616-4b21-b1bb-2efc5beb4891")
+	)
+	(wire
+		(pts
+			(xy 255.27 31.75) (xy 255.27 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4274,23 +3889,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 130.81) (xy 78.74 130.81)
+			(xy 125.73 152.4) (xy 138.43 152.4)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
-		(uuid "39798385-af3a-479e-81fe-351254880792")
-	)
-	(wire
-		(pts
-			(xy 100.33 130.81) (xy 100.33 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b03eb53-4f9b-450f-be87-734f2824de11")
+		(uuid "3adc9416-a81f-4b45-b0c0-9cc2e5441368")
 	)
 	(wire
 		(pts
@@ -4312,19 +3917,69 @@
 		)
 		(uuid "3db6f429-5f1c-4b47-9473-b0651cc87379")
 	)
-	(polyline
+	(wire
 		(pts
-			(xy 264.16 161.798) (xy 31.75 161.798)
+			(xy 233.68 35.56) (xy 232.41 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ece07ab-06fc-44f8-bab9-1d54150c122f")
+	)
+	(wire
+		(pts
+			(xy 248.92 33.02) (xy 255.27 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f941b37-8a24-43a2-84f7-a0701ac817e4")
+	)
+	(wire
+		(pts
+			(xy 99.06 152.4) (xy 125.73 152.4)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
-		(uuid "3dda4156-2f63-4cfa-b0bd-0fd76ffcbe29")
+		(uuid "40172de4-94e1-4795-ad7a-9974a17cbc58")
 	)
 	(wire
 		(pts
-			(xy 210.82 116.84) (xy 220.98 116.84)
+			(xy 138.43 118.11) (xy 137.16 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41826b5c-f121-4776-8497-1f0e20c2e1fd")
+	)
+	(wire
+		(pts
+			(xy 138.43 146.05) (xy 138.43 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4295331f-c531-4612-b224-5a95e809c3a1")
+	)
+	(wire
+		(pts
+			(xy 255.27 33.02) (xy 255.27 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "429eae37-9b36-4a02-b534-2ce0bc0ae6e8")
+	)
+	(wire
+		(pts
+			(xy 179.07 125.73) (xy 189.23 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4344,7 +3999,17 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 116.84) (xy 210.82 118.11)
+			(xy 139.7 140.97) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44db2559-0359-43ed-a5d1-ec7a2e76ab5f")
+	)
+	(wire
+		(pts
+			(xy 179.07 125.73) (xy 179.07 127)
 		)
 		(stroke
 			(width 0)
@@ -4364,27 +4029,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 130.81) (xy 146.05 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4713627a-fb36-4ac7-8847-c813c813bfb5")
-	)
-	(wire
-		(pts
-			(xy 124.46 147.32) (xy 124.46 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "48b882d1-dccd-477a-bac2-019bec93e6a7")
-	)
-	(wire
-		(pts
-			(xy 246.38 43.18) (xy 246.38 44.45)
+			(xy 241.3 43.18) (xy 241.3 46.99)
 		)
 		(stroke
 			(width 0)
@@ -4401,26 +4046,6 @@
 			(type default)
 		)
 		(uuid "4a9a4413-2570-4861-8a97-a3788e3d4967")
-	)
-	(wire
-		(pts
-			(xy 120.65 133.35) (xy 127 133.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4c68247c-ab33-4a28-a1b8-9c3e071c9e3f")
-	)
-	(wire
-		(pts
-			(xy 120.65 128.27) (xy 127 128.27)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "4d1da40c-4601-4368-ae40-d8fc5e4b53d9")
 	)
 	(wire
 		(pts
@@ -4444,7 +4069,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 127) (xy 64.77 130.81)
+			(xy 73.66 114.3) (xy 73.66 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4454,7 +4079,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 116.84) (xy 171.45 116.84)
+			(xy 154.94 125.73) (xy 157.48 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4462,19 +4087,9 @@
 		)
 		(uuid "50438483-c6f9-4a22-9e5a-6bdd48f004e7")
 	)
-	(polyline
-		(pts
-			(xy 264.16 98.298) (xy 264.16 161.798)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "504f9946-9564-47da-a5f1-ade6daec6d43")
-	)
 	(wire
 		(pts
-			(xy 229.87 123.19) (xy 229.87 124.46)
+			(xy 199.39 132.08) (xy 199.39 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4484,23 +4099,33 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 124.46) (xy 200.66 127)
+			(xy 232.41 33.02) (xy 233.68 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5205a973-b5ef-4cad-b4e1-3cd81b6a9fe5")
+	)
+	(wire
+		(pts
+			(xy 81.28 40.64) (xy 82.55 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52bd3f5b-6af3-4f80-870a-77ca8553f3cc")
+	)
+	(wire
+		(pts
+			(xy 168.91 133.35) (xy 168.91 135.89)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "52facd83-7f73-4690-ab81-3d33ae7606a7")
-	)
-	(wire
-		(pts
-			(xy 171.45 133.35) (xy 181.61 133.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "5319c90c-adf7-4a53-a6fc-ad70cf026fec")
 	)
 	(wire
 		(pts
@@ -4524,16 +4149,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 133.35) (xy 171.45 135.89)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "551cbe04-cdb7-4c15-b2b5-55424f0e040f")
-	)
-	(wire
-		(pts
 			(xy 39.37 44.45) (xy 45.72 44.45)
 		)
 		(stroke
@@ -4541,16 +4156,6 @@
 			(type default)
 		)
 		(uuid "555c7274-a86b-4732-8285-4ef2c477aa69")
-	)
-	(polyline
-		(pts
-			(xy 31.75 98.298) (xy 264.16 98.298)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "56feda36-59a2-45f6-bd8f-0ccf9a31f01f")
 	)
 	(wire
 		(pts
@@ -4574,17 +4179,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 130.81) (xy 146.05 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "5b26a139-b0cf-4f6c-a9fa-7072e06a67b3")
-	)
-	(wire
-		(pts
-			(xy 111.76 130.81) (xy 111.76 132.08)
+			(xy 81.28 118.11) (xy 81.28 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4594,13 +4189,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 147.32) (xy 152.4 152.4)
+			(xy 99.06 118.11) (xy 101.6 118.11)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "5ca3eacd-c5a2-4132-a8ac-fef77b68275f")
+		(uuid "5d230782-56b4-4329-a791-64c65597b7fb")
 	)
 	(wire
 		(pts
@@ -4614,17 +4209,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 125.73) (xy 243.84 127)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "5eacf1bc-13ed-4f47-9365-705ea8b21f27")
-	)
-	(wire
-		(pts
-			(xy 218.44 30.48) (xy 218.44 35.56)
+			(xy 228.6 30.48) (xy 228.6 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4644,17 +4229,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 73.66) (xy 90.17 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "608f9f3e-ac1c-4e41-bb35-361d4cd5b112")
-	)
-	(wire
-		(pts
-			(xy 73.66 73.66) (xy 80.01 73.66)
+			(xy 73.66 73.66) (xy 81.28 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4664,13 +4239,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 116.84) (xy 143.51 128.27)
+			(xy 157.48 125.73) (xy 157.48 128.27)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
-		(uuid "63e11ed5-1d79-4a3b-be5b-801ac67943ef")
+		(uuid "64f4a252-4b70-442c-a41c-237ff42408e7")
 	)
 	(wire
 		(pts
@@ -4684,6 +4259,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 123.19) (xy 99.06 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66de3b75-df1f-42fa-8606-c40c9a62efad")
+	)
+	(wire
+		(pts
 			(xy 147.32 31.75) (xy 147.32 33.02)
 		)
 		(stroke
@@ -4694,7 +4279,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 137.16) (xy 78.74 138.43)
+			(xy 90.17 124.46) (xy 90.17 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4704,7 +4289,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 135.89) (xy 171.45 144.78)
+			(xy 157.48 135.89) (xy 157.48 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4714,17 +4299,27 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 138.43) (xy 100.33 138.43)
+			(xy 138.43 125.73) (xy 147.32 125.73)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "6d6534b0-3652-4da2-87d6-a46fc8461078")
+		(uuid "6b9692c6-2b75-4522-ae6d-db8ea4bfd701")
 	)
 	(wire
 		(pts
-			(xy 210.82 123.19) (xy 210.82 124.46)
+			(xy 81.28 118.11) (xy 90.17 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c9cac96-19d2-4fb4-b6b8-1297795d8b0e")
+	)
+	(wire
+		(pts
+			(xy 179.07 132.08) (xy 179.07 133.35)
 		)
 		(stroke
 			(width 0)
@@ -4744,43 +4339,13 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 123.19) (xy 220.98 124.46)
+			(xy 189.23 132.08) (xy 189.23 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "74033d7c-5a8c-48cd-8da6-de5a6f4114ce")
-	)
-	(wire
-		(pts
-			(xy 127 135.89) (xy 124.46 135.89)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "7591b5a7-7e59-4307-b6d8-edba73c39994")
-	)
-	(wire
-		(pts
-			(xy 171.45 123.19) (xy 181.61 123.19)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "76b06d96-529f-43ff-bc4d-265ab3bfce58")
-	)
-	(wire
-		(pts
-			(xy 100.33 137.16) (xy 100.33 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "786aaa06-dfbf-44f7-bd6b-6529e1462721")
 	)
 	(wire
 		(pts
@@ -4794,7 +4359,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 130.81) (xy 64.77 130.81)
+			(xy 73.66 118.11) (xy 81.28 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4804,13 +4369,13 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 35.56) (xy 228.6 35.56)
+			(xy 137.16 146.05) (xy 138.43 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7bd83f1a-8f28-4aa0-bdd7-fa599e8111c6")
+		(uuid "7da00e95-771f-4d08-a8fd-8279a5443568")
 	)
 	(wire
 		(pts
@@ -4834,13 +4399,13 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 138.43) (xy 88.9 138.43)
+			(xy 90.17 118.11) (xy 99.06 118.11)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "81240a92-4da1-4474-8ada-e2ce789c33a3")
+		(uuid "808e4186-467f-49bc-96cc-a3bd28c20780")
 	)
 	(wire
 		(pts
@@ -4851,26 +4416,6 @@
 			(type default)
 		)
 		(uuid "839bfa7e-e277-4b4d-abb5-f2c604912655")
-	)
-	(wire
-		(pts
-			(xy 146.05 152.4) (xy 152.4 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "8521716c-52bb-4f5a-b77d-339fb38499d4")
-	)
-	(wire
-		(pts
-			(xy 243.84 118.11) (xy 243.84 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "85e37e8b-d207-4c3d-b48e-6378ef263f31")
 	)
 	(wire
 		(pts
@@ -4914,6 +4459,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 152.4) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac96961-7018-455f-8ce5-8de0c20990e9")
+	)
+	(wire
+		(pts
 			(xy 45.72 44.45) (xy 45.72 40.64)
 		)
 		(stroke
@@ -4931,26 +4486,6 @@
 			(type default)
 		)
 		(uuid "8b71bc1d-1158-43a3-916b-d8d46ccb904e")
-	)
-	(wire
-		(pts
-			(xy 100.33 138.43) (xy 111.76 138.43)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "8be6b994-2e10-4df3-a9c0-510c3600b149")
-	)
-	(wire
-		(pts
-			(xy 264.16 35.56) (xy 264.16 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c44a82d-de4b-4d7b-8f80-87ac22cea266")
 	)
 	(wire
 		(pts
@@ -4984,26 +4519,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 152.4) (xy 171.45 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "94a83b1b-a3ab-4f79-9e01-caa9e5fc7d47")
-	)
-	(wire
-		(pts
-			(xy 143.51 133.35) (xy 152.4 133.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "94b3aeed-5a38-48d2-8b70-ab7181af1dde")
-	)
-	(wire
-		(pts
 			(xy 242.57 81.28) (xy 242.57 86.36)
 		)
 		(stroke
@@ -5014,27 +4529,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 116.84) (xy 180.34 116.84)
+			(xy 138.43 125.73) (xy 138.43 124.46)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "980eacf6-12c9-4794-897d-20c3fe23551c")
+		(uuid "9a172661-0576-45b3-b8b4-03782a1880be")
 	)
 	(wire
 		(pts
-			(xy 120.65 116.84) (xy 125.73 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9b449315-342b-4299-a66e-35c922b7323f")
-	)
-	(wire
-		(pts
-			(xy 171.45 130.81) (xy 171.45 133.35)
+			(xy 157.48 133.35) (xy 157.48 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5054,7 +4559,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 137.16) (xy 57.15 138.43)
+			(xy 73.66 124.46) (xy 73.66 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5064,43 +4569,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 130.81) (xy 68.58 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9d488e86-f60e-4417-af41-03b1d1fef97b")
-	)
-	(wire
-		(pts
-			(xy 124.46 135.89) (xy 124.46 142.24)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9e07ac3f-847a-4b5f-b20f-cef530eff8e9")
-	)
-	(wire
-		(pts
-			(xy 228.6 35.56) (xy 228.6 38.1)
+			(xy 228.6 33.02) (xy 228.6 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9e173a05-3d9a-46f8-92ea-c97e4fa19ca1")
-	)
-	(wire
-		(pts
-			(xy 181.61 130.81) (xy 181.61 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eeab2d0-4a50-461d-8f80-ee2581831a9b")
 	)
 	(wire
 		(pts
@@ -5134,7 +4609,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 153.67) (xy 134.62 152.4)
+			(xy 125.73 153.67) (xy 125.73 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5144,23 +4619,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 73.66) (xy 96.52 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a2360ade-7315-4b93-b4d0-eb33de23d19b")
-	)
-	(wire
-		(pts
-			(xy 130.81 116.84) (xy 143.51 116.84)
+			(xy 137.16 135.89) (xy 157.48 135.89)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
-		(uuid "a255fffc-0674-4665-8a1b-a928f5ce3211")
+		(uuid "a30de072-6782-463f-9069-0132a51a0b06")
 	)
 	(wire
 		(pts
@@ -5184,7 +4649,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 138.43) (xy 68.58 138.43)
+			(xy 73.66 125.73) (xy 81.28 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5194,33 +4659,33 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 123.19) (xy 171.45 125.73)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "a932d934-d72d-4f5d-957c-09dbc7473214")
-	)
-	(wire
-		(pts
-			(xy 229.87 116.84) (xy 243.84 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "a954b595-0561-478a-8701-d13aa220fd4a")
-	)
-	(wire
-		(pts
-			(xy 200.66 123.19) (xy 200.66 124.46)
+			(xy 168.91 132.08) (xy 168.91 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a9c74d59-d2b0-4f77-b1b5-4a1f507f0d25")
+	)
+	(wire
+		(pts
+			(xy 232.41 35.56) (xy 232.41 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa0d8c61-4ac8-43f2-8c3a-fde8954142d2")
+	)
+	(wire
+		(pts
+			(xy 81.28 125.73) (xy 90.17 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afacb173-2608-4bd7-a1d0-8d9c306d4613")
 	)
 	(wire
 		(pts
@@ -5234,7 +4699,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 116.84) (xy 229.87 118.11)
+			(xy 199.39 125.73) (xy 199.39 127)
 		)
 		(stroke
 			(width 0)
@@ -5254,43 +4719,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 152.4) (xy 146.05 152.4)
+			(xy 228.6 33.02) (xy 232.41 33.02)
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "b6b4ce41-a397-41e2-80ed-ecc6643af280")
+		(uuid "b7e510ec-8940-4892-85d7-ae1b6f4da8ad")
 	)
 	(wire
 		(pts
-			(xy 200.66 124.46) (xy 210.82 124.46)
+			(xy 168.91 133.35) (xy 179.07 133.35)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "ba2558bc-c1be-45fd-b9cd-7d62e98ca1b6")
-	)
-	(wire
-		(pts
-			(xy 161.29 143.51) (xy 161.29 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd219bea-fa7e-4b41-8d95-ced903b3915c")
-	)
-	(wire
-		(pts
-			(xy 111.76 130.81) (xy 120.65 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "bdf54a39-c2d2-4b13-9f8d-faaee3d2f314")
 	)
 	(wire
 		(pts
@@ -5304,16 +4749,6 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 137.16) (xy 68.58 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bec660b8-47ee-44ec-b2e6-c43e7951e08c")
-	)
-	(wire
-		(pts
 			(xy 151.13 77.47) (xy 151.13 80.01)
 		)
 		(stroke
@@ -5324,7 +4759,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 116.84) (xy 220.98 118.11)
+			(xy 189.23 125.73) (xy 189.23 127)
 		)
 		(stroke
 			(width 0)
@@ -5354,7 +4789,17 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 58.42) (xy 80.01 73.66)
+			(xy 99.06 123.19) (xy 101.6 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5ebede5-28d4-420a-a760-dec3810757be")
+	)
+	(wire
+		(pts
+			(xy 81.28 58.42) (xy 81.28 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5364,57 +4809,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 130.81) (xy 100.33 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c65fcd56-c452-4b1b-9133-785cfa5379d7")
-	)
-	(wire
-		(pts
-			(xy 120.65 116.84) (xy 120.65 120.65)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c875528d-4413-4870-aac0-78e7b5f1c279")
-	)
-	(wire
-		(pts
-			(xy 124.46 152.4) (xy 134.62 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c9e368cf-950d-42e1-b214-90704ae2de74")
-	)
-	(wire
-		(pts
-			(xy 181.61 123.19) (xy 181.61 125.73)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "cc0ec3b6-3434-404e-b4d5-7e109f8b0199")
-	)
-	(wire
-		(pts
-			(xy 143.51 116.84) (xy 158.75 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "cc9b23c7-af51-4e02-beee-25d10614dc49")
-	)
-	(wire
-		(pts
-			(xy 264.16 43.18) (xy 264.16 45.72)
+			(xy 255.27 40.64) (xy 255.27 43.18)
 		)
 		(stroke
 			(width 0)
@@ -5444,7 +4839,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 124.46) (xy 229.87 124.46)
+			(xy 189.23 133.35) (xy 199.39 133.35)
 		)
 		(stroke
 			(width 0)
@@ -5454,7 +4849,17 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 137.16) (xy 111.76 138.43)
+			(xy 99.06 130.81) (xy 99.06 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4371a79-8eb2-4752-a9d9-ffe87f6597e7")
+	)
+	(wire
+		(pts
+			(xy 81.28 124.46) (xy 81.28 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5474,7 +4879,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 113.03) (xy 243.84 116.84)
+			(xy 199.39 123.19) (xy 199.39 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5504,16 +4909,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 133.35) (xy 152.4 142.24)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "dd8025ef-951c-49b7-8394-95ee2adb745b")
-	)
-	(wire
-		(pts
 			(xy 152.4 50.8) (xy 162.56 50.8)
 		)
 		(stroke
@@ -5521,46 +4916,6 @@
 			(type default)
 		)
 		(uuid "de0aae07-8c16-46c2-8afd-0409dcc20ec5")
-	)
-	(wire
-		(pts
-			(xy 152.4 152.4) (xy 161.29 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "df802c02-8f2e-498c-a594-574bdaef641a")
-	)
-	(wire
-		(pts
-			(xy 218.44 35.56) (xy 228.6 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e00300dc-e129-496a-867f-5ce1aa1bb99b")
-	)
-	(wire
-		(pts
-			(xy 161.29 133.35) (xy 161.29 138.43)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "e236cd4d-e5e0-4369-98c9-b5dfe76152a4")
-	)
-	(wire
-		(pts
-			(xy 68.58 130.81) (xy 68.58 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e36058a6-5544-4198-95c5-3e0995a10571")
 	)
 	(wire
 		(pts
@@ -5574,17 +4929,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 140.97) (xy 134.62 152.4)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "e4e873aa-4e21-4ecc-8116-a4da384de248")
-	)
-	(wire
-		(pts
-			(xy 36.83 130.81) (xy 57.15 130.81)
+			(xy 53.34 118.11) (xy 73.66 118.11)
 		)
 		(stroke
 			(width 0)
@@ -5604,33 +4949,13 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 116.84) (xy 210.82 116.84)
+			(xy 168.91 125.73) (xy 179.07 125.73)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "e6ae1228-5b80-463b-9323-f7e06db9e78f")
-	)
-	(wire
-		(pts
-			(xy 88.9 130.81) (xy 88.9 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6e437ec-382b-47e2-a533-f0ca6dbe1725")
-	)
-	(wire
-		(pts
-			(xy 254 35.56) (xy 264.16 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8631e43-1375-4a4c-a92a-8a7b28e3be27")
 	)
 	(wire
 		(pts
@@ -5644,16 +4969,6 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 151.13) (xy 161.29 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eed08664-0a2c-4737-8fef-2a2bb1d13888")
-	)
-	(wire
-		(pts
 			(xy 151.13 69.85) (xy 151.13 72.39)
 		)
 		(stroke
@@ -5661,16 +4976,6 @@
 			(type default)
 		)
 		(uuid "ef4ee0bd-633b-402c-9481-0314240d69e2")
-	)
-	(wire
-		(pts
-			(xy 180.34 116.84) (xy 200.66 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "f1ce7bb8-068e-451c-9365-3ac18d95b358")
 	)
 	(wire
 		(pts
@@ -5684,16 +4989,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 130.81) (xy 88.9 130.81)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "f40d42cc-dac1-498b-88b4-0e004b1a8b39")
-	)
-	(wire
-		(pts
 			(xy 96.52 40.64) (xy 115.57 40.64)
 		)
 		(stroke
@@ -5704,16 +4999,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 133.35) (xy 161.29 133.35)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "faad39e5-72aa-45cd-aba0-a366e1639580")
-	)
-	(wire
-		(pts
 			(xy 177.8 45.72) (xy 177.8 39.37)
 		)
 		(stroke
@@ -5721,6 +5006,16 @@
 			(type default)
 		)
 		(uuid "fcb11bd0-d7f7-4af0-be69-e44c26428cdc")
+	)
+	(wire
+		(pts
+			(xy 138.43 119.38) (xy 138.43 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5647c0-5a72-4fd8-8e0d-12b36b5fceb8")
 	)
 	(wire
 		(pts
@@ -5743,7 +5038,7 @@
 		(uuid "174d3ff4-211e-487a-9ff0-1d447058a54d")
 	)
 	(label "polarity_checked"
-		(at 36.83 130.81 0)
+		(at 53.34 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5753,7 +5048,7 @@
 		(uuid "2aec6084-ba5f-408b-ba0c-51e980ef2c2d")
 	)
 	(label "switch"
-		(at 146.05 116.84 0)
+		(at 140.97 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5842,7 +5137,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 210.82 120.65 0)
+		(at 179.07 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5850,9 +5145,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "03da276b-6fcf-4c12-b2a1-2a41f0cc2240")
+		(uuid "0400efcd-b0c1-4993-93f5-de38a7e8958e")
 		(property "Reference" "C37"
-			(at 213.741 119.4816 0)
+			(at 180.594 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5862,8 +5157,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 213.741 121.793 0)
+		(property "Value" "10uF"
+			(at 180.848 131.318 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5874,7 +5169,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 211.7852 124.46 0)
+			(at 180.0352 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5884,8 +5179,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 210.82 120.65 0)
+		(property "Datasheet" ""
+			(at 179.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5896,7 +5191,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 210.82 120.65 0)
+			(at 179.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5906,8 +5201,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 210.82 120.65 0)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 179.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5917,8 +5212,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 210.82 120.65 0)
+		(property "JLCPCB part" "C15850"
+			(at 179.07 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5929,10 +5224,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c8445ed0-dbb7-4cd5-885e-943d80cdec20")
+			(uuid "71dcc630-d1f9-4a15-818c-3a96712768ad")
 		)
 		(pin "2"
-			(uuid "155ca286-602f-4209-a2f4-9d8df8505570")
+			(uuid "b5cc9efb-cad3-41da-8d6c-8b8dd07835e8")
 		)
 		(instances
 			(project "pedalboard-hw"
@@ -5944,17 +5239,11 @@
 					)
 				)
 			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C49")
-					(unit 1)
-				)
-			)
 		)
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 212.09 139.7 0)
+		(at 180.34 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5964,7 +5253,7 @@
 		(dnp no)
 		(uuid "04f0f5a6-602f-466a-b592-68bf9bc77137")
 		(property "Reference" "TP2"
-			(at 213.5632 136.7028 0)
+			(at 181.8132 145.5928 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5975,7 +5264,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 213.5632 139.0142 0)
+			(at 181.8132 147.9042 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5986,7 +5275,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 217.17 139.7 0)
+			(at 185.42 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5997,7 +5286,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 139.7 0)
+			(at 185.42 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6008,7 +5297,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 212.09 139.7 0)
+			(at 180.34 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6313,7 +5602,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 128.27 116.84 270)
+		(at 99.06 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6323,7 +5612,7 @@
 		(dnp no)
 		(uuid "1a8434ed-822d-4d56-9c5c-5c90831dc839")
 		(property "Reference" "R13"
-			(at 127 113.665 90)
+			(at 93.726 119.888 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6333,8 +5622,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
-			(at 127 111.76 90)
+		(property "Value" "68k"
+			(at 93.98 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6345,7 +5634,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 128.27 115.062 90)
+			(at 97.282 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6356,7 +5645,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 116.84 0)
+			(at 99.06 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6367,7 +5656,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 128.27 116.84 0)
+			(at 99.06 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6377,8 +5666,8 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 10R 1% 63mW"
-			(at 128.27 116.84 0)
+		(property "Notes" "Resistor 68k 1% 63mW"
+			(at 99.06 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6388,8 +5677,19 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RNCP0805FTD10R0/2240197"
-			(at 128.27 116.84 0)
+		(property "Manufacturer part" "0805W8F6802T5E"
+			(at 99.06 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C17801"
+			(at 99.06 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6435,7 +5735,7 @@
 		(dnp no)
 		(uuid "1d13fe68-d86d-4e1f-9032-4f240db008ad")
 		(property "Reference" "U13"
-			(at 162.306 21.082 0)
+			(at 162.814 24.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6444,8 +5744,8 @@
 				)
 			)
 		)
-		(property "Value" "LT3045xMSE"
-			(at 162.306 23.114 0)
+		(property "Value" "LT3045EMSE#PBF"
+			(at 162.814 26.416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6465,7 +5765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/LT3045.pdf"
 			(at 162.56 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -6476,7 +5776,29 @@
 				)
 			)
 		)
-		(property "Description" "500mA, Adjustable, Ultralow Noise, Ultrahigh PSRR Linear Regulator, MSOP-12"
+		(property "Description" "20V 500mA ultralow-noise adjustable LDO, MSOP-12-EP"
+			(at 162.56 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "LT3045EMSE#PBF"
+			(at 162.56 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C580012"
 			(at 162.56 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -6536,8 +5858,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 171.45 147.32 0)
+		(lib_id "Device:C_Small")
+		(at 73.66 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6545,9 +5867,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "26a7875e-7b64-43e5-8dfd-16975c804993")
-		(property "Reference" "R15"
-			(at 173.228 146.1516 0)
+		(uuid "1e5b2cd6-db0c-4c7f-b670-3c4f1c6bf6fb")
+		(property "Reference" "C4"
+			(at 70.358 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6557,8 +5879,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2K2"
-			(at 173.228 148.463 0)
+		(property "Value" "10uF"
+			(at 68.58 57.912 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6568,8 +5890,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 169.672 147.32 90)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 74.6252 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6580,7 +5902,113 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 147.32 0)
+			(at 73.66 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "GRM21BR61H106KE43L"
+			(at 73.66 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C440198"
+			(at 73.66 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "790a7397-30b3-4b45-adc9-0d92ad7a8169")
+		)
+		(pin "2"
+			(uuid "1de87076-07ac-4b29-97fa-2a8473d90aba")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C4")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 157.48 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26a7875e-7b64-43e5-8dfd-16975c804993")
+		(property "Reference" "R15"
+			(at 159.258 144.8816 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "9.1k"
+			(at 159.258 147.193 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 155.702 146.05 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6591,7 +6019,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 171.45 147.32 0)
+			(at 157.48 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6601,8 +6029,8 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 2.2K 1% 63mW"
-			(at 171.45 147.32 0)
+		(property "Notes" "Resistor 9.1k 1% 63mW"
+			(at 157.48 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6612,8 +6040,19 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RMCF0805FT2K20/1760345"
-			(at 171.45 147.32 0)
+		(property "Manufacturer part" "0805W8F9101T5E"
+			(at 157.48 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C17855"
+			(at 157.48 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6649,7 +6088,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 162.56 116.84 90)
+		(at 151.13 125.73 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6659,7 +6098,7 @@
 		(dnp no)
 		(uuid "2798db92-52a2-404f-8d27-5633b52c17c8")
 		(property "Reference" "L5"
-			(at 159.766 118.872 90)
+			(at 150.876 120.904 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6668,8 +6107,8 @@
 				)
 			)
 		)
-		(property "Value" "SRN6045TA-3R3Y"
-			(at 162.56 114.046 90)
+		(property "Value" "3.3uH"
+			(at 151.13 122.936 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6678,8 +6117,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
-			(at 162.56 116.84 0)
+		(property "Footprint" "Inductor_SMD:L_Sunlord_MWSA0804S"
+			(at 151.13 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6689,8 +6128,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/SRN6045TA.pdf"
-			(at 162.56 116.84 0)
+		(property "Datasheet" ""
+			(at 151.13 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6701,7 +6140,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 116.84 0)
+			(at 151.13 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6711,8 +6150,8 @@
 				)
 			)
 		)
-		(property "Notes" "3.3µH Semi-Shielded Wirewound Inductor 7.8A 21mOhm Nonstandard"
-			(at 162.56 116.84 0)
+		(property "Manufacturer part" "MWSA0804S-3R3MT"
+			(at 151.13 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6722,8 +6161,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/bourns-inc/SRN6045TA-3R3Y/6155103"
-			(at 162.56 116.84 0)
+		(property "JLCPCB part" "C17700166"
+			(at 151.13 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6752,6 +6191,133 @@
 			(project "CM4IOv5"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
 					(reference "L5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TPS56637:TPS56637RPAR")
+		(at 119.38 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29b752f0-4490-43b0-8853-add297cb0cba")
+		(property "Reference" "U6"
+			(at 119.634 129.032 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TPS56637RPAR"
+			(at 119.38 133.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Pedalboard Library:RPA0010A"
+			(at 119.38 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tps56637"
+			(at 119.38 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "TPS56637RPAR"
+			(at 119.38 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C841386"
+			(at 119.38 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "9d0138fd-7db3-41c9-9856-b860b1416147")
+		)
+		(pin "8"
+			(uuid "7e2ff312-1807-4e5a-a261-7dfefeba9948")
+		)
+		(pin "4"
+			(uuid "cdebec47-5b02-4f2e-b2aa-190862927b31")
+		)
+		(pin "5"
+			(uuid "e2fcf9a8-a500-4127-ad75-8601f084a44c")
+		)
+		(pin "1"
+			(uuid "c586cd40-d877-4a28-9c4f-f81a81d72ab8")
+		)
+		(pin "3"
+			(uuid "3cab7b50-8779-440e-b53f-010276027c20")
+		)
+		(pin "7"
+			(uuid "d53bb167-99d8-49c6-b12a-723cefbf00c9")
+		)
+		(pin "2"
+			(uuid "7244cb15-3dd6-48c1-a31f-e580e3309f78")
+		)
+		(pin "9"
+			(uuid "247af273-9850-40fb-b607-98a6f6fae64f")
+		)
+		(pin "10"
+			(uuid "b2d281e1-2074-4dfa-8197-3dfcd2870afd")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -6855,120 +6421,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 243.84 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "323f9b91-049f-428a-9613-08ac85f724ae")
-		(property "Reference" "C33"
-			(at 246.8372 120.777 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 246.8372 123.063 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
-			(at 244.8052 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C49.pdf"
-			(at 243.84 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 243.84 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "Capacitor, SP-Cap, 100u, 6.3V, 15mR ESR"
-			(at 243.84 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/panasonic-electronic-components/EEF-CX0J101R/816418"
-			(at 243.84 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "61ebebec-b475-4c21-b774-04be0c95f041")
-		)
-		(pin "2"
-			(uuid "d3f64582-0b21-4ade-96c5-c5f3d9a91950")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C33")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
-		(at 57.15 134.62 0)
+		(at 73.66 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6978,7 +6432,7 @@
 		(dnp no)
 		(uuid "35dc1018-a294-49b5-a3eb-26baf43d4747")
 		(property "Reference" "C3"
-			(at 60.071 133.4516 0)
+			(at 70.358 120.142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6988,8 +6442,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 53.594 140.208 0)
+		(property "Value" "10uF"
+			(at 68.58 123.952 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7000,7 +6454,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 58.1152 138.43 0)
+			(at 74.6252 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7010,8 +6464,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 57.15 134.62 0)
+		(property "Datasheet" ""
+			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7022,7 +6476,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 57.15 134.62 0)
+			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7032,8 +6486,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 57.15 134.62 0)
+		(property "Manufacturer part" "GRM21BR61H106KE43L"
+			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7043,8 +6497,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 57.15 134.62 0)
+		(property "JLCPCB part" "C440198"
+			(at 73.66 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7111,7 +6565,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 152.908 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -7186,7 +6640,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 134.62 153.67 0)
+		(at 125.73 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7196,7 +6650,7 @@
 		(dnp no)
 		(uuid "3b78f5cc-3798-4f82-b21f-07c578ed4cb5")
 		(property "Reference" "#PWR060"
-			(at 134.62 160.02 0)
+			(at 125.73 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7207,7 +6661,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.747 158.0642 0)
+			(at 125.857 158.0642 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7217,7 +6671,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 153.67 0)
+			(at 125.73 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7228,7 +6682,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 153.67 0)
+			(at 125.73 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7239,7 +6693,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 153.67 0)
+			(at 125.73 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7366,232 +6820,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 111.76 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3e0feac9-b188-4be1-8724-c8f4ee3568e2")
-		(property "Reference" "C5"
-			(at 114.681 133.4516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 108.966 140.208 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 112.7252 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 111.76 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 111.76 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 111.76 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48cc49e3-fead-4af9-81d7-af7068967cea")
-		)
-		(pin "2"
-			(uuid "f11e03f6-13ca-4b08-bdf8-5401ecfabd7b")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C5")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 220.98 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4218c0b5-4eae-463c-9787-3273cf1cf530")
-		(property "Reference" "C32"
-			(at 223.901 119.4816 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 223.901 121.793 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 221.9452 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 220.98 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 220.98 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 220.98 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 220.98 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e68bd758-32c9-4ed1-bbd3-88e3b9151f06")
-		)
-		(pin "2"
-			(uuid "9b8e0e75-8423-4b8c-9965-317106c88c10")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C32")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C51")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 246.38 44.45 0)
+		(at 241.3 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7601,7 +6831,7 @@
 		(dnp no)
 		(uuid "4bec0ffb-75a3-4017-8956-30340cf9e297")
 		(property "Reference" "#PWR045"
-			(at 246.38 50.8 0)
+			(at 241.3 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7612,7 +6842,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 242.57 45.72 0)
+			(at 237.49 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7622,7 +6852,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 246.38 44.45 0)
+			(at 241.3 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7633,7 +6863,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 44.45 0)
+			(at 241.3 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7644,7 +6874,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 246.38 44.45 0)
+			(at 241.3 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7846,7 +7076,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 45.72 0)
+		(at 255.27 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7856,7 +7086,7 @@
 		(dnp no)
 		(uuid "4e9fcc17-bfd3-4b02-b0fc-36b06c6d1078")
 		(property "Reference" "#PWR048"
-			(at 264.16 52.07 0)
+			(at 255.27 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7867,7 +7097,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 260.35 46.99 0)
+			(at 251.46 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7877,7 +7107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 45.72 0)
+			(at 255.27 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7888,7 +7118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 45.72 0)
+			(at 255.27 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7899,7 +7129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 45.72 0)
+			(at 255.27 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8006,350 +7236,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 181.61 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "501f1b28-6380-4ef7-8335-ae33f290565d")
-		(property "Reference" "C29"
-			(at 184.15 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1n"
-			(at 184.15 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 182.5752 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 181.61 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "1000 pF, 50 V"
-			(at 181.61 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B102KBANNNC/3886678"
-			(at 181.61 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "414a6c52-fe8f-407f-a3f7-d87a26683893")
-		)
-		(pin "2"
-			(uuid "96d73274-bd85-472a-850f-aa11cc63d557")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C29")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "pedalboard:AP64351")
-		(at 134.62 130.81 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "57addab2-451a-417d-a755-cf379a9e03c3")
-		(property "Reference" "U6"
-			(at 135.255 121.5644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AP64501SP-13"
-			(at 135.255 123.8758 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Pedalboard Library:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm_ThermalVias"
-			(at 134.62 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP64501.pdf"
-			(at 134.62 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 134.62 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/diodes-incorporated/AP64501SP-13/10419715"
-			(at 134.62 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "78d0bf8d-9cc3-4805-aa0c-a5e7d3942acb")
-		)
-		(pin "2"
-			(uuid "1a6da122-84ec-4882-8a87-a6dd76453af0")
-		)
-		(pin "3"
-			(uuid "e5957598-129b-4282-a994-c4526d38aa43")
-		)
-		(pin "4"
-			(uuid "2f050c25-5ecd-4ec8-a0af-fa0fc048826b")
-		)
-		(pin "5"
-			(uuid "f2efa25f-d48a-47b9-8b03-0cb0671412fa")
-		)
-		(pin "6"
-			(uuid "ad189722-7b74-46e9-93d3-5e1aaf04dabe")
-		)
-		(pin "7"
-			(uuid "9765ee11-c599-4a2c-9ba4-7bdd821e7703")
-		)
-		(pin "8"
-			(uuid "2c492cee-b15d-4a5c-925e-17556690b46e")
-		)
-		(pin "9"
-			(uuid "62ed8faa-d099-4b6c-aed5-be0b6c23a1ee")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "U6")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "U16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 80.01 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5ff9f5d0-a94c-421f-9252-ba83d5caa8ab")
-		(property "Reference" "C2"
-			(at 81.28 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 81.28 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 80.9752 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 80.01 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 80.01 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 80.01 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "915424fd-612c-459d-95d7-fbb94c78e1a9")
-		)
-		(pin "2"
-			(uuid "c18cee93-78e8-4d7a-8a5a-1161c73b68a2")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C2")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 228.6 45.72 0)
 		(unit 1)
@@ -8434,7 +7320,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 171.45 128.27 0)
+		(at 157.48 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8444,7 +7330,7 @@
 		(dnp no)
 		(uuid "6433db8d-44a4-4dcb-b698-dd85bb11ce46")
 		(property "Reference" "R12"
-			(at 166.37 126.873 0)
+			(at 152.4 129.413 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8454,8 +7340,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12K"
-			(at 162.56 129.413 0)
+		(property "Value" "68k"
+			(at 152.4 131.826 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8466,7 +7352,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 169.672 128.27 90)
+			(at 155.702 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8477,7 +7363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 128.27 0)
+			(at 157.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8488,7 +7374,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 171.45 128.27 0)
+			(at 157.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8498,8 +7384,8 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 12K 1% 63mW"
-			(at 171.45 128.27 0)
+		(property "Notes" "Resistor 68k 1% 63mW"
+			(at 157.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8509,8 +7395,19 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229"
-			(at 171.45 128.27 0)
+		(property "JLCPCB part" "C17801"
+			(at 157.48 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "0805W8F6802T5E"
+			(at 157.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8546,118 +7443,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 96.52 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "702e5f8a-2a96-466a-9ffc-c20888b5987b")
-		(property "Reference" "C8"
-			(at 99.441 54.7116 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 99.06 58.166 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 97.4852 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 96.52 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 96.52 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 96.52 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 96.52 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "15b15643-f74f-4b13-99cd-ecf4cdca869b")
-		)
-		(pin "2"
-			(uuid "52b7fe86-5f38-4b73-96f6-55f204875f5c")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C8")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 147.32 35.56 0)
 		(unit 1)
 		(body_style 1)
@@ -8666,9 +7451,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "787dda25-bc05-457a-ab9b-940df0302d2d")
+		(uuid "7c08c928-6f2f-4da1-b642-2e0adb614570")
 		(property "Reference" "C55"
-			(at 142.748 34.036 0)
+			(at 143.002 33.782 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8678,8 +7463,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
-			(at 142.24 37.338 0)
+		(property "Value" "10uF"
+			(at 142.494 37.338 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8722,7 +7507,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Manufacturer part" "GRM21BR61H106KE43L"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8733,7 +7518,7 @@
 				)
 			)
 		)
-		(property "Notes" "JLCPCB C1779"
+		(property "JLCPCB part" "C440198"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8745,10 +7530,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bee375bf-a7e4-4680-8892-add671ebfa71")
+			(uuid "d82e58e2-fbe5-4501-bb5a-23f956b1a147")
 		)
 		(pin "2"
-			(uuid "9eec32bf-2939-4473-ab75-ec059ffd914a")
+			(uuid "5bab9483-ea5a-471c-b89a-17be6702ffc7")
 		)
 		(instances
 			(project "pedalboard-hw"
@@ -8784,7 +7569,7 @@
 				)
 			)
 		)
-		(property "Value" "Polyfuse 1.8A"
+		(property "Value" "PTC 4A 15V"
 			(at 66.04 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8794,7 +7579,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuse_1812_4532Metric"
+		(property "Footprint" "Fuse:Fuse_2920_7451Metric"
 			(at 71.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8806,7 +7591,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/resettable_ptcs/littelfuse_ptc_1812l_datasheet.pdf.pdf"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/2920l_datasheet_update.pdf"
 			(at 66.04 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8828,7 +7613,18 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/littelfuse-inc/1812L150-24MR/2023969"
+		(property "Manufacturer part" "2920L400/15MR"
+			(at 66.04 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C720182"
 			(at 66.04 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -8858,91 +7654,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 243.84 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8081c7e7-0d35-478a-ab17-d886e2a48555")
-		(property "Reference" "#PWR063"
-			(at 243.84 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 243.967 131.3942 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 243.84 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ea62dd9a-e7a3-4909-8619-186dd0bca373")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
-		(at 229.87 120.65 0)
+		(at 189.23 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8950,9 +7663,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "83524c1c-03a5-4256-852b-bb0eea84dfcc")
-		(property "Reference" "C28"
-			(at 232.791 119.4816 0)
+		(uuid "7ff4e8b2-2b74-437f-9225-75d90ffc142d")
+		(property "Reference" "C32"
+			(at 191.008 127.762 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8962,8 +7675,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 232.791 121.793 0)
+		(property "Value" "10uF"
+			(at 191.008 131.064 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8974,118 +7687,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 230.8352 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 229.87 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 229.87 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 229.87 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 229.87 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "47df3a0a-d5e9-45ab-ba82-db412cefec5a")
-		)
-		(pin "2"
-			(uuid "eb3bd9a9-d382-4ca9-93a8-efc6ffda95af")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C28")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C52")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 212.09 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8512bc37-d034-4b0e-9477-b83294349307")
-		(property "Reference" "#PWR061"
-			(at 212.09 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 212.217 144.0942 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 139.7 0)
+			(at 190.1952 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9096,7 +7698,112 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 212.09 139.7 0)
+			(at 189.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 189.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 189.23 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86dfac23-1c47-421d-88e8-6f214631bcff")
+		)
+		(pin "2"
+			(uuid "da8fd0ac-69f2-4b75-b4ca-f64f630468e4")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C32")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 148.59 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8512bc37-d034-4b0e-9477-b83294349307")
+		(property "Reference" "#PWR061"
+			(at 180.34 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.467 152.9842 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9107,7 +7814,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 212.09 139.7 0)
+			(at 180.34 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9137,7 +7844,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 161.29 140.97 0)
+		(at 99.06 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9147,7 +7854,7 @@
 		(dnp no)
 		(uuid "8766ab91-2fbb-4d6e-bc16-d2b11d5556bf")
 		(property "Reference" "R14"
-			(at 163.068 139.8016 0)
+			(at 100.838 127.1016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9157,8 +7864,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20K"
-			(at 163.068 142.113 0)
+		(property "Value" "10k"
+			(at 100.838 129.413 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9169,7 +7876,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 159.512 140.97 90)
+			(at 97.282 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9180,7 +7887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 140.97 0)
+			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9191,7 +7898,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 161.29 140.97 0)
+			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9201,8 +7908,8 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 20K 1% 63mW"
-			(at 161.29 140.97 0)
+		(property "Notes" "Resistor 10k 1% 63mW"
+			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9212,8 +7919,19 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RMCF0805FT20K0/1760314"
-			(at 161.29 140.97 0)
+		(property "Manufacturer part" "0805W8F1002T5E"
+			(at 99.06 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C17414"
+			(at 99.06 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9249,7 +7967,7 @@
 	)
 	(symbol
 		(lib_id "power:+5VP")
-		(at 243.84 113.03 0)
+		(at 199.39 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9260,7 +7978,7 @@
 		(fields_autoplaced yes)
 		(uuid "900a6fde-7396-468d-8496-ea900f21c7e7")
 		(property "Reference" "#PWR033"
-			(at 243.84 116.84 0)
+			(at 199.39 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9271,7 +7989,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 243.84 107.95 0)
+			(at 199.39 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9281,7 +7999,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 113.03 0)
+			(at 199.39 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9292,7 +8010,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 113.03 0)
+			(at 199.39 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9303,7 +8021,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 243.84 113.03 0)
+			(at 199.39 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9358,7 +8076,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0201_0603Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 146.05 71.628 90)
 			(hide yes)
 			(show_name no)
@@ -9433,7 +8151,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 200.66 120.65 0)
+		(at 168.91 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9443,7 +8161,7 @@
 		(dnp no)
 		(uuid "9c1b775a-7f69-45b6-9346-c8654e4fb739")
 		(property "Reference" "C36"
-			(at 203.581 119.4816 0)
+			(at 170.434 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9453,8 +8171,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 203.581 121.793 0)
+		(property "Value" "10uF"
+			(at 170.18 131.064 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9465,7 +8183,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 201.6252 124.46 0)
+			(at 169.8752 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9475,8 +8193,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 200.66 120.65 0)
+		(property "Datasheet" ""
+			(at 168.91 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9487,7 +8205,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 120.65 0)
+			(at 168.91 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9497,8 +8215,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 200.66 120.65 0)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 168.91 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9508,8 +8226,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 200.66 120.65 0)
+		(property "JLCPCB part" "C15850"
+			(at 168.91 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9566,7 +8284,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 172.466 47.498 90)
+			(at 172.212 48.514 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9609,7 +8327,7 @@
 				)
 			)
 		)
-		(property "Notes" "JLCPCB C25803"
+		(property "Manufacturer part" "0603WAF1003T5E"
 			(at 170.18 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9620,7 +8338,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "JLCPCB part" "C25803"
 			(at 170.18 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9748,7 +8466,7 @@
 				)
 			)
 		)
-		(property "Value" "TPS7A20xxxDBV"
+		(property "Value" "TPS7A2033PDBVR"
 			(at 232.41 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9791,6 +8509,28 @@
 				)
 			)
 		)
+		(property "Supplier" "Texas Instruments TPS7A2033PDBVR"
+			(at 232.41 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C2862740"
+			(at 232.41 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "8b6653c6-b466-4650-a18e-8c254066dc77")
 		)
@@ -9817,7 +8557,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 200.66 116.84 0)
+		(at 168.91 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9825,10 +8565,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a4601f06-0943-45b7-9b6e-76c9f6f81308")
 		(property "Reference" "#FLG01"
-			(at 200.66 114.935 0)
+			(at 168.91 123.825 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9839,7 +8578,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 200.66 111.76 0)
+			(at 168.91 121.666 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9849,7 +8588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 116.84 0)
+			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9860,7 +8599,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 116.84 0)
+			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9871,7 +8610,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 200.66 116.84 0)
+			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9915,7 +8654,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "22uF"
 			(at 187.071 37.973 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9926,7 +8665,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 185.1152 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9937,7 +8676,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+		(property "Datasheet" ""
 			(at 184.15 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -9959,7 +8698,7 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
+		(property "Manufacturer part" "CL31A226KAHNNNE"
 			(at 184.15 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -9970,7 +8709,7 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
+		(property "JLCPCB part" "C12891"
 			(at 184.15 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -9995,118 +8734,6 @@
 					(variant
 						(name "JLCPCB")
 					)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 161.29 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "acb4429c-b314-4a66-b8cb-a571e73dcf64")
-		(property "Reference" "C31"
-			(at 163.83 146.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.2n"
-			(at 163.83 151.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 162.2552 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM2165C2A122JA01-01.pdf"
-			(at 161.29 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 161.29 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/murata-electronics/GRM2165C2A122JA01D/2544699"
-			(at 161.29 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% 10V Ceramic Capacitor X5R"
-			(at 161.29 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7aecb574-59ea-40c0-a11c-9dfcbc43910e")
-		)
-		(pin "2"
-			(uuid "dbff6e72-9849-419c-bbe8-89be475bc6df")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C31")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C60")
-					(unit 1)
 				)
 			)
 		)
@@ -10229,8 +8856,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
-		(at 246.38 35.56 0)
+		(lib_id "Device:C_Small")
+		(at 199.39 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10238,132 +8865,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "afdbebe4-b617-4501-a5ed-dc69dbb16dc9")
-		(property "Reference" "U5"
-			(at 246.38 29.4132 0)
+		(uuid "ae2d41ee-3056-49cd-930a-232ba210e595")
+		(property "Reference" "C28"
+			(at 201.168 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "NCP1117-3.3_SOT223"
-			(at 246.38 31.7246 0)
+		(property "Value" "10uF"
+			(at 200.914 131.318 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 246.38 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AZ1117I.pdf"
-			(at 248.92 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 246.38 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/diodes-incorporated/AZ1117IH-3-3TRG1/5699672"
-			(at 246.38 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c4fe8adc-79fa-4fb4-b013-8104dfc767db")
-		)
-		(pin "2"
-			(uuid "4b94dd0f-524c-4632-9275-414249116775")
-		)
-		(pin "3"
-			(uuid "614137b2-3223-4c23-b63c-7270653313b1")
-		)
-		(instances
-			(project "RP2040_minimal"
-				(path "/aa156aab-bead-4c71-9076-01087371a0f1"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "U5")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 46.99 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b52bc2dd-d3ad-4d07-baa0-b176209ab057")
-		(property "Reference" "#PWR059"
-			(at 46.99 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 47.117 146.6342 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 142.24 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 200.3552 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10374,7 +8900,218 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 142.24 0)
+			(at 199.39 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 199.39 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 199.39 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c8c4c4e4-724e-40b8-8a0e-3b594d40632e")
+		)
+		(pin "2"
+			(uuid "dd5a6160-7808-43d3-9a4a-2814065f9999")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C28")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 228.6 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b26759dc-5140-4bf2-a9de-9362c7c060f1")
+		(property "Reference" "C27"
+			(at 223.012 39.624 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 222.758 42.418 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 229.5652 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 228.6 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 228.6 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe2a66c0-e5e9-4e5c-bdef-b10b12a0ea05")
+		)
+		(pin "2"
+			(uuid "e196c04a-a6d8-4d97-b5e4-48aba1b40b3e")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C27")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b52bc2dd-d3ad-4d07-baa0-b176209ab057")
+		(property "Reference" "#PWR059"
+			(at 71.12 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.247 131.3942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10385,7 +9122,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 142.24 0)
+			(at 71.12 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10408,118 +9145,6 @@
 			(project "CM4IOv5"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
 					(reference "#PWR0120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 68.58 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bb59ae2c-f3ea-4a8f-9675-1edd0743e060")
-		(property "Reference" "C10"
-			(at 71.501 133.4516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 65.532 140.208 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 69.5452 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 68.58 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 68.58 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 68.58 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 68.58 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "236dee8f-a8ae-4573-ac64-7fd2d11fe13d")
-		)
-		(pin "2"
-			(uuid "04285b3e-53f4-40e4-b379-3f307fbf270d")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C10")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -10643,355 +9268,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 124.46 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "be05abba-107a-4af5-816a-ba5dd9d0b96f")
-		(property "Reference" "C35"
-			(at 127 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 127 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 125.4252 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 124.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 124.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 124.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 124.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "1276-1180-1-ND"
-			(at 124.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7eb27fb-edc6-433b-bafe-8818ef585dde")
-		)
-		(pin "2"
-			(uuid "5255036a-3728-4d85-948a-bc594992c800")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C35")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 152.4 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c285ff59-4073-4485-840d-db1aec3ba715")
-		(property "Reference" "C34"
-			(at 154.94 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1n"
-			(at 154.94 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 153.3652 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 152.4 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 152.4 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "1000 pF, 50 V"
-			(at 152.4 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B102KBANNNC/3886678"
-			(at 152.4 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "047a6718-5d4b-4e47-be3d-923974cb6f85")
-		)
-		(pin "2"
-			(uuid "4aff1257-6644-46df-8f4a-18805c2a7ac0")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C34")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 100.33 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c2bf1357-2f5d-45af-85ff-08a7962e35be")
-		(property "Reference" "C7"
-			(at 103.251 133.4516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 97.282 140.208 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 101.2952 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 100.33 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 100.33 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 100.33 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 100.33 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4a879734-2264-4853-a0d4-c0980ab4279b")
-		)
-		(pin "2"
-			(uuid "aab7061a-890a-401e-a7a3-26cf5a9bf887")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C7")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 200.66 127 0)
+		(at 168.91 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11001,7 +9279,7 @@
 		(dnp no)
 		(uuid "c3843dbc-ad5b-4689-92bf-9d6a0fd1b627")
 		(property "Reference" "#PWR062"
-			(at 200.66 133.35 0)
+			(at 168.91 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11012,7 +9290,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 200.787 131.3942 0)
+			(at 169.037 140.2842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11022,7 +9300,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 127 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11033,7 +9311,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 127 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11044,7 +9322,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 200.66 127 0)
+			(at 168.91 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11074,7 +9352,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 264.16 40.64 0)
+		(at 81.28 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11082,9 +9360,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cc8ebe1b-90a4-4985-af9b-ab92e0155e04")
-		(property "Reference" "C24"
-			(at 267.081 39.4716 0)
+		(uuid "d0b3ba21-e806-4efd-afa9-78f9e590feae")
+		(property "Reference" "C2"
+			(at 77.978 54.102 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11094,8 +9372,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 267.081 41.783 0)
+		(property "Value" "10uF"
+			(at 76.2 57.912 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11106,7 +9384,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 265.1252 44.45 0)
+			(at 82.2452 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11116,8 +9394,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 264.16 40.64 0)
+		(property "Datasheet" ""
+			(at 81.28 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11128,7 +9406,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 264.16 40.64 0)
+			(at 81.28 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11138,8 +9416,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 264.16 40.64 0)
+		(property "Manufacturer part" "GRM21BR61H106KE43L"
+			(at 81.28 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11149,8 +9427,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 264.16 40.64 0)
+		(property "JLCPCB part" "C440198"
+			(at 81.28 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11161,21 +9439,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e4dedb32-146b-4432-9e7c-6ba6aba66a62")
+			(uuid "e463d55b-332f-4e73-a0ce-26b9eaceccb0")
 		)
 		(pin "2"
-			(uuid "6512f18b-693f-4797-9562-d7d151966818")
+			(uuid "f5e8f2b7-155f-4b80-91aa-7d5050ffe4ed")
 		)
 		(instances
-			(project "RP2040_minimal"
-				(path "/aa156aab-bead-4c71-9076-01087371a0f1"
-					(reference "C4")
-					(unit 1)
-				)
-			)
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C24")
+					(reference "C2")
 					(unit 1)
 					(variant
 						(name "JLCPCB")
@@ -11264,7 +9536,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 78.74 134.62 0)
+		(at 90.17 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11274,7 +9546,7 @@
 		(dnp no)
 		(uuid "d8aa24da-d51c-4709-90ae-baa67ba224a8")
 		(property "Reference" "C6"
-			(at 81.661 133.4516 0)
+			(at 86.868 120.142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11284,8 +9556,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 74.93 140.208 0)
+		(property "Value" "100nF"
+			(at 83.566 123.698 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11296,7 +9568,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 79.7052 138.43 0)
+			(at 91.1352 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11306,8 +9578,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 78.74 134.62 0)
+		(property "Datasheet" ""
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11318,7 +9590,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 134.62 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11328,8 +9600,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 78.74 134.62 0)
+		(property "Manufacturer part" "CC0805KRX7R9BB104"
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11339,8 +9611,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 78.74 134.62 0)
+		(property "JLCPCB part" "C49678"
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11370,6 +9642,223 @@
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
 					(reference "C37")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:TPS7A20xxxDBV")
+		(at 241.3 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc987e2c-ea2a-4b66-b60e-0195f36d711c")
+		(property "Reference" "U5"
+			(at 241.3 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A2033PDBVR"
+			(at 241.3 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 241.3 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf"
+			(at 241.3 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 241.3 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "TPS7A2033PDBVR"
+			(at 241.3 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C2862740"
+			(at 241.3 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "23fd2660-ef11-4d37-be44-836d06271567")
+		)
+		(pin "1"
+			(uuid "b3152db5-f469-4d08-aecd-f41bc3a12f95")
+		)
+		(pin "3"
+			(uuid "7205d9e4-709c-44d8-8286-102ca8c5b20e")
+		)
+		(pin "4"
+			(uuid "6f2dd0a1-0f78-428f-bd94-eece243c3df7")
+		)
+		(pin "5"
+			(uuid "95a28996-6347-4adf-a662-89779c1829ad")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 81.28 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dd95fe2e-4769-4805-8948-d41ccd8f05a1")
+		(property "Reference" "C5"
+			(at 77.978 120.142 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 76.2 123.952 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 82.2452 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "GRM21BR61H106KE43L"
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C440198"
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ef5fe939-4381-4d3a-ace9-8cca682e6b81")
+		)
+		(pin "2"
+			(uuid "6f5f0078-3e53-4768-b4e6-ad56d5d07251")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C5")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
 				)
 			)
 		)
@@ -11453,7 +9942,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 264.16 34.29 0)
+		(at 255.27 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11463,7 +9952,7 @@
 		(dnp no)
 		(uuid "e00ecfce-e3fb-4f56-a6f6-c1254da3920a")
 		(property "Reference" "#PWR046"
-			(at 264.16 38.1 0)
+			(at 255.27 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11474,7 +9963,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 264.541 29.8958 0)
+			(at 255.651 27.3558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11484,7 +9973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 34.29 0)
+			(at 255.27 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11495,7 +9984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 34.29 0)
+			(at 255.27 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11506,7 +9995,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 264.16 34.29 0)
+			(at 255.27 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11536,7 +10025,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 180.34 115.57 0)
+		(at 157.48 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11546,7 +10035,7 @@
 		(dnp no)
 		(uuid "e1d39d82-83e8-4966-a743-aca6d3099670")
 		(property "Reference" "TP3"
-			(at 182.245 111.633 0)
+			(at 156.464 116.586 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11557,7 +10046,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 182.245 114.173 0)
+			(at 153.924 118.872 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11568,7 +10057,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 185.42 115.57 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11579,7 +10068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 115.57 0)
+			(at 162.56 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11590,7 +10079,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 115.57 0)
+			(at 157.48 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11623,118 +10112,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 88.9 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e3336546-d60c-4cff-95cb-e7691d6fb62c")
-		(property "Reference" "C9"
-			(at 91.821 133.4516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 85.09 140.208 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 89.8652 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 88.9 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 88.9 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 88.9 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d8f674fb-221e-49af-8cdf-94ac6d022911")
-		)
-		(pin "2"
-			(uuid "1283d6ff-6f9b-4943-8577-6ebf96482ed3")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C9")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 152.4 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -11755,7 +10132,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u"
+		(property "Value" "4.7uF"
 			(at 153.67 48.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11799,7 +10176,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Manufacturer part" "CL21A475KAQNNNE"
 			(at 152.4 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -11810,7 +10187,7 @@
 				)
 			)
 		)
-		(property "Notes" "JLCPCB C1779"
+		(property "JLCPCB part" "C1779"
 			(at 152.4 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -11849,7 +10226,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e3d6118f-444a-49b5-92d7-de5bc45dc772")
 		(property "Reference" "#FLG02"
 			(at 96.52 38.735 0)
@@ -11863,7 +10239,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 96.52 35.56 0)
+			(at 99.06 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11996,7 +10372,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 120.65 123.19 0)
+		(at 138.43 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12006,7 +10382,7 @@
 		(dnp no)
 		(uuid "e997081e-3802-4af0-8ee9-1b39b0bab5f9")
 		(property "Reference" "C30"
-			(at 111.76 121.285 0)
+			(at 140.462 119.634 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12016,8 +10392,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 111.76 124.079 0)
+		(property "Value" "100nF"
+			(at 140.462 121.666 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12028,7 +10404,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 121.6152 127 0)
+			(at 139.3952 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12038,8 +10414,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 120.65 123.19 0)
+		(property "Datasheet" ""
+			(at 138.43 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12050,7 +10426,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 123.19 0)
+			(at 138.43 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12060,8 +10436,8 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 120.65 123.19 0)
+		(property "Manufacturer part" "CC0805KRX7R9BB104"
+			(at 138.43 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12071,19 +10447,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 120.65 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "1276-1180-1-ND"
-			(at 120.65 123.19 0)
+		(property "JLCPCB part" "C49678"
+			(at 138.43 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12118,8 +10483,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 64.77 127 0)
+		(lib_id "Device:C_Small")
+		(at 255.27 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12127,9 +10492,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f2326096-7cea-4850-9d0a-c2faf91960db")
-		(property "Reference" "TP1"
-			(at 66.2432 124.0028 0)
+		(uuid "edb6087e-91c5-4828-9b35-0dfa671c77dc")
+		(property "Reference" "C24"
+			(at 249.682 37.084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12139,8 +10504,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 65.405 125.73 0)
+		(property "Value" "10uF"
+			(at 249.428 39.878 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12150,8 +10515,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
-			(at 69.85 127 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 256.2352 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12162,7 +10527,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 127 0)
+			(at 255.27 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12173,7 +10538,113 @@
 			)
 		)
 		(property "Description" ""
-			(at 64.77 127 0)
+			(at 255.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 255.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 255.27 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "58e3888d-51ba-4e77-846e-12f394b86e17")
+		)
+		(pin "2"
+			(uuid "5c00f84b-f4b3-4f3d-bd96-c1d054ce93c6")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C24")
+					(unit 1)
+					(variant
+						(name "JLCPCB")
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 73.66 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f2326096-7cea-4850-9d0a-c2faf91960db")
+		(property "Reference" "TP1"
+			(at 75.1332 111.3028 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.295 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
+			(at 78.74 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12200,118 +10671,6 @@
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
 					(reference "TP6")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 228.6 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f59ac3d5-4f8e-4c72-a32b-8b48391ee34b")
-		(property "Reference" "C27"
-			(at 231.521 39.4716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 231.521 41.783 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 229.5652 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 228.6 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 228.6 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 228.6 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5ef222fe-bf78-49e6-b15e-8a36d9c94cc1")
-		)
-		(pin "2"
-			(uuid "32b4dd1a-ae5d-4384-9679-577120624cd7")
-		)
-		(instances
-			(project "RP2040_minimal"
-				(path "/aa156aab-bead-4c71-9076-01087371a0f1"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C27")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12423,120 +10782,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 73.66 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f9986029-a6e8-4747-98c0-273dd07a9eeb")
-		(property "Reference" "C4"
-			(at 69.85 53.34 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 64.77 59.69 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 74.6252 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 73.66 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 73.66 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 73.66 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ad4a2f8-d112-478c-b28d-999eab29994a")
-		)
-		(pin "2"
-			(uuid "51b6e84e-c7b6-4eb9-a19a-0cf85a5083e7")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C4")
-					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
-				)
-			)
-			(project "CM4IOv5"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005d31f999"
-					(reference "C34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5VP")
-		(at 218.44 30.48 0)
+		(at 228.6 30.48 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12547,7 +10794,7 @@
 		(dnp no)
 		(uuid "fca25649-2964-429d-97fd-f41c19b2bee3")
 		(property "Reference" "#PWR034"
-			(at 218.44 34.29 0)
+			(at 228.6 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12558,7 +10805,7 @@
 			)
 		)
 		(property "Value" "+5VP"
-			(at 218.44 25.4 0)
+			(at 228.6 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12568,7 +10815,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 30.48 0)
+			(at 228.6 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12579,7 +10826,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 30.48 0)
+			(at 228.6 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12590,7 +10837,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 218.44 30.48 0)
+			(at 228.6 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

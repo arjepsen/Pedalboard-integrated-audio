@@ -12364,7 +12364,7 @@
 				)
 			)
 		)
-		(property "Value" "AP2553W6"
+		(property "Value" "AP22653W6-7"
 			(at 237.236 68.834 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12385,7 +12385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP255x.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/AP22652_AP22653_AP22652A_AP22653A.pdf"
 			(at 241.3 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -12407,29 +12407,7 @@
 				)
 			)
 		)
-		(property "Field4" "Digikey"
-			(at 237.49 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" "AP2553W6-7DICT-ND"
-			(at 237.49 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/en/products/detail/AP2553W6-7/AP2553W6-7DICT-ND/3882112"
+		(property "JLCPCB part" "C2158037"
 			(at 237.49 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -13986,7 +13964,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "36K"
+		(property "Value" "15k"
 			(at 249.936 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14030,7 +14008,29 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229"
+		(property "Supplier" ""
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "0805W8F1502T5E"
+			(at 254 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C17475"
 			(at 254 78.74 0)
 			(hide yes)
 			(show_name no)

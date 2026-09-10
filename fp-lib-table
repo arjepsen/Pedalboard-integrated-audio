@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "Pedalboard Library") (type "KiCad") (uri "${KIPRJMOD}/Library.pretty") (options "") (descr ""))
 	(lib (name "SamacSys_Parts") (type "KiCad") (uri "C:/Users/Anders/Documents/KiCad/10.0/SamacsysLibrary/SamacSys_Parts.pretty") (options "") (descr ""))
+	(lib (name "CM5IO") (type "KiCad") (uri "${KIPRJMOD}/CM5IO.pretty") (options "") (descr ""))
 )

@@ -1,5 +1,32 @@
 # Work Log
 
+## 2026-09-09 - USB software and MIDI direction reviewed
+
+- Reviewed the maintained Open Pedalboard software and current PiPedal USB behaviour.
+- Confirmed that Open Pedalboard should retain bidirectional class-compliant USB-MIDI and its useful controller configuration behaviour when moving to STM32.
+- Identified the RP2040-specific USB identity and UF2 updater as software that must change for STM32 USB DFU.
+- Confirmed that PiPedal can use the STM32 for incoming MIDI control without modification; dynamic display feedback would require a future companion service.
+- Confirmed that optional DIN MIDI input/output will remain in the design but the connectors and avoidable interface parts will initially be DNP.
+- Confirmed that the CM4 symbol, footprint, and CM4-specific net names must be replaced with a verified CM5 representation before USB rewiring.
+- Selected CM5 representation and direct native USB routing as the next schematic work, before the STM32 replacement.
+
+## 2026-09-09 - CM5-only scope confirmed
+
+- Confirmed that the redesigned mainboard will support CM5 only.
+- Selected separate native CM5 USB 2.0 connections for service/flashing, the internal STM32, and external USB-A.
+- CM4 compatibility is no longer a design requirement.
+- The saved schematic still contains the old hub and mux until the replacement circuit is fully verified.
+
+## 2026-09-09 - Power and controller direction updated
+
+- Reworked the power tree for a regulated 12 V input.
+- Selected TPS56637RPAR for approximately 5.08 V / 6 A, with margin for CM5 and external USB loads.
+- Retained AP22653W6-7 for current-limited external USB power.
+- Selected separate TPS7A2033 regulators for digital 3.3 V and codec analog 3.3 V.
+- Retained LT3045 for the quiet 10 V guitar-front-end rail.
+- Confirmed STM32G0B1CET6 in LQFP-48 and two HS20S010B/ST7789V2 TFTs as the controller baseline.
+- Traced the existing USB hub and mux functions and identified the CM5 native-USB simplification; no connectivity circuit was changed during that audit.
+
 ## 2026-09-03 - Output direction selected
 
 - Confirmed that the TAC5212 provides configurable headphone drivers rather than only line-level outputs.
