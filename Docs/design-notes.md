@@ -10,6 +10,9 @@ Last updated: 2026-09-11
 - Input 2 is an optional balanced line input.
 - Both codec inputs are differential and AC-coupled.
 - The CM connection uses I2S/PCM audio signals plus I2C control.
+- Main audio operating point: 48 kHz sample rate, stereo I2S with 32-bit slots.
+- CM5 is the I2S clock producer; TAC5212 follows BCLK and FSYNC and derives its internal clocks from that interface. No separate MCLK oscillator is required.
+- Use the TAC5212 ultra-low-latency ADC and DAC filters for the main guitar path.
 
 The TAC5212 combines the required stereo ADC and DAC. Its differential AC-coupled mode offers its best input performance, while programmable input impedance and full-scale settings allow the two analog paths to be adapted in software.
 
@@ -41,18 +44,31 @@ J22 is a balanced TRS line input. A TS plug remains usable because the ring is g
 | C62/C63: 4.7 µF Rubycon MF | AC-couple both balanced legs with a corner safely below the audio band |
 | R43/R44: 7.5 kΩ | Provide equal series impedance, fault-current limiting, and line-level attenuation before the codec |
 
-With the TAC5212 set to 5 kΩ input impedance, each 7.5 kΩ resistor gives approximately 0.4x voltage transfer. This corresponds to about 5 V RMS differential at J22 for the codec's 2 V RMS differential full scale. The 4.7 µF capacitors also require the TAC5212 input-capacitor quick-charge timing to be configured for more than the 1 µF default.
+With the TAC5212 set to 5 kΩ input impedance, each 7.5 kΩ resistor gives approximately 0.4x voltage transfer. This corresponds to about 5 V RMS differential at J22 for the codec's 2 V RMS differential full scale. The final input-impedance/full-scale settings are still being checked against the TAC5212 datasheet before this estimate is frozen.
 
 The former JP4 connection from the jack switch to CM GPIO27 has been removed. The software does not use this automatic stereo-detection signal, and GPIO27 is intentionally unconnected.
 
 ## TAC5212 configuration assumptions
 
 - Differential, AC-coupled input mode for both ADC channels.
-- Approximately 5 kΩ per input pin unless later testing supports another setting.
-- Default 2 V RMS differential full scale for present headroom estimates.
+- Main operating rate: 48 kHz.
+- Stereo I2S with 32-bit slots; BCLK is 3.072 MHz at 48 kHz.
+- CM5 produces BCLK and FSYNC; TAC5212 is the clock consumer.
+- No dedicated audio master-clock oscillator is required.
+- Use ultra-low-latency ADC and DAC filters for the main low-latency path.
+- Set input-capacitor quick-charge timing to 25 ms for the 4.7 µF coupling capacitors.
+- Approximately 5 kΩ per input pin and 2 V RMS differential full scale remain provisional until the analog input-setting review is complete.
 - Use the low-common-mode-variation setting for best noise performance when the finished circuit permits it.
-- Configure longer input-capacitor quick-charge timing for the 4.7 µF coupling capacitors.
-- Final clocks, startup sequence, register values, and Linux support still require verification.
+- Final Linux register configuration and practical bring-up still require verification.
+
+### TAC5212 local decoupling
+
+- AVDD: C66 100 nF + C67 10 µF.
+- IOVDD: C70 100 nF + C68 10 µF.
+- DREG: C65 100 nF + C79 10 µF.
+- VREF: C69 1 µF.
+- C79 uses Samsung CL21A106KAYNNNE, 10 µF, 25 V, X5R, 0805, LCSC C15850.
+- Place the DREG capacitors physically close to TAC5212 pin 1 during layout.
 
 ## Audio outputs
 
@@ -74,8 +90,9 @@ This arrangement matches the primary desk-practice use without adding a separate
 - Generate the general digital 3.3 V and `3V3_CODEC` analog rail with separate TPS7A2033PDBVR regulators.
 - Keep C24 at 10 µF on the general 3.3 V regulator output.
 - Generate the quiet 10 V guitar-front-end rail with LT3045EMSE#PBF. Use 4.7 µF on SET, 100 kΩ for 10 V, 10 µF at its input, and 22 µF at its output.
+- Continue tracking total capacitance rail-by-rail together with regulator stability, soft-start, source impedance, and startup/inrush. Do not add local bulk capacitance without checking its effect on the whole rail.
 
-The 10 V rail is retained because it gives the OPA1656 and TAC5212 input path comfortable signal headroom. The 5.08 V / 6 A supply provides useful CM5 and USB-current margin.
+The 10 V rail is retained because it gives the OPA1656 input path comfortable signal headroom. The 5.08 V / 6 A supply provides useful CM5 and USB-current margin.
 
 The general 3.3 V rail has been rechecked with the selected Waveshare displays. Each display is specified at about 46 mA maximum at 3.3 V, so the pair contributes about 92 mA. With the STM32 and the remaining small digital loads, the expected total is around 120 mA. The TPS7A2033 is rated for 300 mA, leaving comfortable current and thermal margin from the approximately 5.08 V input. C24 remains 10 µF because it is within the regulator's supported output-capacitance range and provides useful transient margin.
 
@@ -165,6 +182,7 @@ The DNP state has been confirmed in the raw KiCad schematic and by exporting a B
 
 - `audio.kicad_sch` and `psu.kicad_sch` contain the current custom work.
 - The guitar input, line input, TAC5212 support, digital-audio connections, and selected output circuits are present in the schematic.
+- TAC5212 DREG now has C65 100 nF plus C79 10 µF local decoupling.
 - The updated power architecture is present in the schematic.
 - The STM32 controller, both Waveshare display connectors, optional DIN MIDI circuit, and direct CM5 USB arrangement are present in the schematic.
 - The general 3.3 V rail has been checked with the selected displays and the TPS7A2033 is retained.
