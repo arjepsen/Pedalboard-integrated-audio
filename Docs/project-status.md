@@ -15,8 +15,8 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 | Line input | Circuit complete | Balanced TRS, AC-coupled into TAC5212 input 2 |
 | Codec integration | Schematic substantially complete | Verify final settings, ERC details, PCB layout, and Linux configuration |
 | Audio outputs | Circuit drawn | Dedicated 3.5 mm stereo headphones plus two unbalanced 6.35 mm line/amp outputs |
-| Power supply | Circuit updated; one audit open | 12 V input, 5.08 V / 6 A buck, separate 3.3 V rails, and quiet 10 V analog rail; increase general 3.3 V capacity for the two TFTs |
-| Controller | Schematic replaced | STM32G0B1CET6, two HS20S010B/ST7789V2 TFTs, direct CM5 USB, SWD, controls, and optional MIDI are drawn |
+| Power supply | Circuit updated | 12 V input, 5.08 V / 6 A buck, separate 3.3 V rails, and quiet 10 V analog rail; TPS7A2033 retained for the general 3.3 V rail |
+| Controller | Schematic replaced | STM32G0B1CET6 with two Waveshare 2inch LCD Modules, direct CM5 USB, SWD, controls, and optional MIDI |
 | Compute module | Confirmed | The redesigned board supports CM5 only |
 | Connectivity | Schematic replaced | CM5 native USB pairs directly serve service USB-C, internal STM32, and external USB-A; the former hub and mux are removed |
 | External MIDI | Schematic drawn, initially DNP | DIN MIDI footprints, interface circuit, STM32 pins, and software direction are retained for future fitting |
@@ -32,13 +32,15 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - Removed JP4 and the unused `audio_in_stereo` detection net; CM GPIO27 is intentionally unconnected.
 - Added TAC5212 power, local decoupling, I2C/I2S connections, headphone outputs, and line/amp outputs.
 - Reworked the main power tree around TPS56637RPAR, AP22653W6-7, TPS7A2033, and LT3045.
-- Selected STM32G0B1CET6 in LQFP-48 and two HS20S010B/ST7789V2 TFTs for the controller redesign.
+- Selected STM32G0B1CET6 in LQFP-48 for the controller redesign.
+- Replaced the original display choice with two Waveshare 2inch LCD Modules, SKU 17344, using ST7789VW over shared SPI.
+- Replaced the display connections with JST PH 8-pin mainboard headers, J15 left and J17 right, with separate chip selects.
+- Removed redundant display-connector capacitors; the Waveshare modules provide local 1 µF decoupling and C24 remains 10 µF at the digital 3.3 V regulator output.
+- Rechecked the general 3.3 V rail: the two selected displays contribute about 92 mA maximum combined, and the TPS7A2033 has comfortable current and thermal margin for the expected total load.
 - Confirmed that the redesigned mainboard is CM5-only and will use native CM5 USB ports rather than preserving the CM4 hub/mux architecture.
 - Confirmed that the STM32 controller will preserve the original bidirectional USB-MIDI behaviour and optional DIN MIDI routing.
 - Replaced the RP2040, external QSPI flash, crystal, and RP2040 support circuit with STM32G0B1CET6.
 - Selected crystal-less STM32 operation: HSI48 with USB SOF clock recovery for USB and the internal clock for the remaining controller functions.
-- Added two HS20S010B connectors with shared SPI, reset, data/command, and backlight PWM plus separate chip selects.
-- Confirmed from the display datasheet that each module contains its own backlight current control and transistor; the MCU drives only the `BLK` control inputs.
 - Added filtered expression inputs, a five-pin SWD header, debug-UART test points, reset/boot buttons, and a status LED.
 - Confirmed that all optional external-MIDI connectors and avoidable interface parts are marked DNP for the initial build.
 - Retained the AT24CS01 EEPROM because the controller software uses it for frequently updated runtime state.
@@ -50,17 +52,17 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - The integrated audio circuitry is substantially drawn but still needs final review, ERC cleanup, and PCB implementation.
 - D3 is DNP while the guitar-input protection choice is reviewed.
 - The controller sheet now contains the STM32 subsystem and no longer contains the RP2040 or external QSPI flash.
+- J15 and J17 are the left/right Waveshare display connectors using JST PH 8-pin headers.
 - The CM5 symbol and footprint are present as CM2, and the former USB hub and mux have been removed.
 - CM5 native USB pairs now serve service USB-C, the internal STM32, and external USB-A directly.
 - The hierarchical `RGB_DATA` connection now links STM32 PA8 to the LEDs sheet.
-- The general 3.3 V regulator is rated for 300 mA. Two displays can use about 260 mA at their stated maximum before the STM32 and other loads, so the 3.3 V supply must be upgraded or reorganized during the power audit.
+- The general 3.3 V rail has been checked and the existing TPS7A2033 plus C24 = 10 µF are retained.
 - A project-wide value and sourcing-field audit remains open. Use consistent passive values and populate manufacturer, manufacturer part, and JLCPCB part fields where they are useful.
 - TAC5212 Linux support and final register configuration remain open software tasks.
 - STM32 migration will also require a new USB identity, updated Pedalboard OS matching, and USB-DFU firmware-update support instead of RP2040 UF2 flashing.
 
 ## Next sequence
 
-1. Audit the complete 3.3 V load and replace or reorganize the general 3.3 V regulator with suitable current and thermal margin.
-2. Perform a project-wide component-value and metadata audit before generating the manufacturing BOM.
-3. Complete final codec, USB protection, service-port, and ERC review.
-4. Rework the PCB for the integrated audio, CM5, STM32, TFT connectors, and updated power circuits.
+1. Perform a project-wide component-value and metadata audit before generating the manufacturing BOM.
+2. Complete final codec, USB protection, service-port, and ERC review.
+3. Rework the PCB for the integrated audio, CM5, STM32, Waveshare display connectors, and updated power circuits.
