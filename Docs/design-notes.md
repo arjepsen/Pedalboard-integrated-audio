@@ -72,20 +72,25 @@ This arrangement matches the primary desk-practice use without adding a separate
 - Generate approximately 5.08 V with TPS56637RPAR, a 3.3 µH inductor, and 68 kΩ / 9.1 kΩ feedback resistors. This rail supplies the CM and downstream regulators.
 - Use AP22653W6-7 to switch and current-limit the external USB-A VBUS to approximately 1.5 A. Retain its local bulk capacitance for USB load steps.
 - Generate the general digital 3.3 V and `3V3_CODEC` analog rail with separate TPS7A2033PDBVR regulators.
+- Keep C24 at 10 µF on the general 3.3 V regulator output.
 - Generate the quiet 10 V guitar-front-end rail with LT3045EMSE#PBF. Use 4.7 µF on SET, 100 kΩ for 10 V, 10 µF at its input, and 22 µF at its output.
 
 The 10 V rail is retained because it gives the OPA1656 and TAC5212 input path comfortable signal headroom. The 5.08 V / 6 A supply provides useful CM5 and USB-current margin.
 
-The general 3.3 V rail now needs a capacity audit. The present TPS7A2033 is rated for 300 mA. The two TFT modules alone can approach about 260 mA combined at their stated maximum logic and backlight currents, before adding the STM32 and other 3.3 V loads. The audit should compare a larger shared 3.3 V regulator with a separate display rail and prefer the simpler solution when noise, heat, and transient margin are adequate.
+The general 3.3 V rail has been rechecked with the selected Waveshare displays. Each display is specified at about 46 mA maximum at 3.3 V, so the pair contributes about 92 mA. With the STM32 and the remaining small digital loads, the expected total is around 120 mA. The TPS7A2033 is rated for 300 mA, leaving comfortable current and thermal margin from the approximately 5.08 V input. C24 remains 10 µF because it is within the regulator's supported output-capacitance range and provides useful transient margin.
 
 ## Controller and displays
 
 - U3 is an STM32G0B1CET6 in LQFP-48. It replaces the RP2040, its external QSPI flash, crystal, and associated support parts.
 - Use the STM32's internal flash. No separate firmware flash is required.
 - Use the internal HSI48 oscillator with USB clock recovery from the CM5 USB SOF signal. Firmware must enable CRS correctly; no external crystal is fitted.
-- J15 and J17 are 2.0-inch HS20S010B TFT modules with ST7789V2 controllers. They share SPI, D/C, reset, and backlight control, with a separate chip select for each display.
+- J15 and J17 connect to two Waveshare 2inch LCD Modules, SKU 17344. These are 2.0-inch 240×320 IPS displays using ST7789VW and 4-wire SPI.
+- The modules are intended for straightforward screw/standoff mounting and use an 8-pin PH2.0 connector.
+- J15 is the left display and J17 is the right display. Both use JST B8B-PH-K-S(LF)(SN) 8-pin, 2.0 mm vertical headers on the mainboard.
+- The display connector pin order is BL, RESET, D/C, CS, SCK, MOSI, GND, 3V3. The shared signals are BL, RESET, D/C, SCK, and MOSI; each display has its own chip select.
+- The Waveshare module includes its own 1 µF supply capacitor, so no extra local capacitor is fitted at J15/J17. The shared 3.3 V regulator retains C24 at 10 µF.
+- The module contains the backlight switching transistor, so PA6 can drive both BL control inputs directly with PWM; an external backlight transistor is not required.
 - Use DMA and small line/tile buffers rather than full framebuffers.
-- The TFT `BLK` pin is a logic-level backlight control input because the module contains its own backlight driver. PA6 can therefore drive both `BLK` pins directly; an external power transistor is not required.
 - Keep the display connectors on this controller/UI sheet. Their signals and power belong to the controller function, whereas the Connectivity sheet is for CM5 and external/service connections.
 - Port the required controller behavior from the original Rust code to C/C++ while preserving its useful external USB-MIDI behavior and protocol.
 
@@ -93,7 +98,7 @@ The general 3.3 V rail now needs a capacity audit. The present TPS7A2033 is rate
 
 | Function | Pins |
 |---|---|
-| TFT shared SPI/control | PA5 SCK, PA7 MOSI, PA4 D/C, PB12 RESET, PA6 BLK PWM |
+| TFT shared SPI/control | PA5 SCK, PA7 MOSI, PA4 D/C, PB12 RESET, PA6 BL PWM |
 | TFT chip selects | PB10 left, PB11 right |
 | Addressable RGB LEDs | PA8 |
 | Expression ADC inputs | PB0, PB1 |
@@ -161,7 +166,7 @@ The DNP state has been confirmed in the raw KiCad schematic and by exporting a B
 - `audio.kicad_sch` and `psu.kicad_sch` contain the current custom work.
 - The guitar input, line input, TAC5212 support, digital-audio connections, and selected output circuits are present in the schematic.
 - The updated power architecture is present in the schematic.
-- The STM32 controller, both TFT connectors, optional DIN MIDI circuit, and direct CM5 USB arrangement are present in the schematic.
-- The general 3.3 V rail needs a load/capacity audit for the two displays and remaining digital loads.
+- The STM32 controller, both Waveshare display connectors, optional DIN MIDI circuit, and direct CM5 USB arrangement are present in the schematic.
+- The general 3.3 V rail has been checked with the selected displays and the TPS7A2033 is retained.
 - A whole-project component-value and sourcing-field audit remains to be done after the schematic topology is stable.
 - The PCB has not yet been updated for the integrated audio circuit.
