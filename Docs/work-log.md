@@ -1,5 +1,16 @@
 # Work Log
 
+## 2026-09-11 - TAC5212 clocking, latency, and DREG decoupling confirmed
+
+- Added C79, 10 µF, on TAC5212 DREG in parallel with C65 100 nF.
+- Selected 48 kHz as the main system sample rate.
+- Selected stereo I2S with 32-bit slots, giving 3.072 MHz BCLK at 48 kHz.
+- Selected CM5 as I2S clock producer and TAC5212 as clock consumer; no separate MCLK oscillator is required.
+- Selected TAC5212 ultra-low-latency ADC and DAC filters for the primary low-latency guitar path.
+- Selected 25 ms input-capacitor quick charge for the 4.7 µF codec input coupling capacitors.
+- Began tracking total capacitance rail-by-rail together with regulator stability, soft-start, source impedance, and startup/inrush rather than treating local decoupling independently.
+- Left exact TAC5212 ADC input impedance/full-scale/gain settings as the next analog review item.
+
 ## 2026-09-11 - Waveshare displays and 3.3 V rail confirmed
 
 - Replaced the HS20S010B display choice with two Waveshare 2inch LCD Modules, SKU 17344, using ST7789VW over the existing shared SPI architecture.
