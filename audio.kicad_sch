@@ -17048,7 +17048,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "H5VUD5BB"
+		(property "Value" "ESD451"
 			(at 83.312 167.386 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17059,7 +17059,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-523"
+		(property "Footprint" "Package_SON:Texas_DPY0002A_0.6x1mm_P0.65mm"
 			(at 81.28 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -17083,6 +17083,28 @@
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 81.28 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 81.28 166.37 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "ESD451DPYR"
+			(at 81.28 166.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
