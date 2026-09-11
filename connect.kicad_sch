@@ -10678,7 +10678,7 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RMCF0805FT2K20/1760345"
+		(property "Supplier" ""
 			(at 157.48 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -10967,7 +10967,7 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RMCF0805FT2K20/1760345"
+		(property "Supplier" ""
 			(at 152.4 27.94 0)
 			(hide yes)
 			(show_name no)
