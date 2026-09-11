@@ -6851,7 +6851,7 @@
 		)
 		(uuid "8d9edfe0-5979-4c2d-8cca-49fde0b4e8c1")
 	)
-	(text "MIDI Bites allow to remove some of the \nboard material that is used to hold the\nDIN5 or 3.5mm Jack connectors and instead\nmount the connectors to the case and wire \nthem up with J15 "
+	(text "MIDI Bites allow to remove some of the \nboard material that is used to hold the\nDIN5 or 3.5mm Jack connectors and instead\nmount the connectors to the case"
 		(exclude_from_sim no)
 		(at 28.956 195.326 0)
 		(effects
@@ -10242,7 +10242,7 @@
 		)
 		(uuid "ed531d0e-1abc-4bc5-a4b7-82464016677c")
 	)
-	(label "TFT_LEFT_CS_N"
+	(label "TFT_RIGHT_CS_N"
 		(at 276.86 100.33 180)
 		(effects
 			(font
@@ -15678,7 +15678,7 @@
 				)
 			)
 		)
-		(property "Value" "LCD left"
+		(property "Value" "LCD right"
 			(at 260.096 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
