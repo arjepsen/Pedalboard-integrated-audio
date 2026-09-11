@@ -1,5 +1,16 @@
 # Work Log
 
+## 2026-09-11 - Waveshare displays and 3.3 V rail confirmed
+
+- Replaced the HS20S010B display choice with two Waveshare 2inch LCD Modules, SKU 17344, using ST7789VW over the existing shared SPI architecture.
+- Selected JST PH 8-pin vertical mainboard connectors, J15 for the left display and J17 for the right display.
+- Confirmed separate left/right chip-select signals while sharing BL, reset, D/C, SCK, MOSI, power, and ground.
+- Removed the redundant display-connector decoupling capacitors because each Waveshare module already includes local 1 µF supply decoupling.
+- Rechecked the general 3.3 V rail with the actual display load: about 46 mA maximum per display, about 92 mA combined.
+- Retained TPS7A2033PDBVR for the general 3.3 V rail; expected total load remains comfortably below its 300 mA rating with acceptable thermal margin.
+- Retained C24 at 10 µF on the digital 3.3 V regulator output for transient margin.
+- Added the Waveshare display, module schematic, and ST7789VW datasheets to the repository.
+
 ## 2026-09-11 - STM32 controller, TFT, and CM5 USB migration drawn
 
 - Replaced the RP2040, external firmware flash, and crystal with U3, an STM32G0B1CET6.
