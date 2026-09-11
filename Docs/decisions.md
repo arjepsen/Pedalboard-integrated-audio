@@ -23,10 +23,14 @@ Last updated: 2026-09-11
 | Add a dedicated 3.5 mm stereo headphone output | Headphone practice is a primary use case; the TAC5212 provides a genuine headphone-driver mode |
 | Keep two unbalanced 6.35 mm line/amp outputs | Preserves the original practical output use with ordinary TS cables while keeping the circuit simple |
 | Replace RP2040 with STM32G0B1CET6, LQFP-48 | The two TFTs make the extra I/O and routing margin preferable to the 32-pin option |
-| Use two 2.0-inch ST7789V2 TFTs | Shared SPI with DMA gives ample display performance without full framebuffers |
+| Use two Waveshare 2inch LCD Modules, SKU 17344 | 2.0-inch 240×320 IPS ST7789VW modules provide good image quality, screw mounting, a simple 8-pin PH2.0 connection, and keep the selected SPI display architecture |
+| Use JST PH 8-pin mainboard connectors for both displays | Gives each removable display a simple matching cable connection; J15 is left and J17 is right |
+| Omit extra display-connector decoupling capacitors | Each Waveshare module already has local 1 µF supply decoupling; the regulator output retains C24 at 10 µF |
+| Keep TPS7A2033PDBVR for the general 3.3 V rail | Two Waveshare displays are specified at about 46 mA maximum each; with the STM32 and remaining small loads the rail has comfortable current and thermal margin below the regulator's 300 mA rating |
+| Keep C24 at 10 µF on the digital TPS7A2033 output | The value is within the regulator's allowed output-capacitance range and provides useful transient margin |
 | Omit the STM32 external crystal | STM32G0B1 provides HSI48 with USB SOF clock recovery; the remaining controls, displays, LEDs, and MIDI do not justify the extra crystal parts |
-| Drive HS20S010B `BLK` directly from STM32 PA6 | The display module already contains the backlight current control and switching transistor; PA6 carries only the PWM control signal |
-| Keep the display connectors on the controller/MIDI sheet | Schematic pages are grouped by function, and the TFT bus, controls, and decoupling belong with the STM32 rather than CM5 external connectivity |
+| Drive display `BL` directly from STM32 PA6 | The Waveshare module contains the backlight switching transistor; PA6 carries only the PWM control signal |
+| Keep the display connectors on the controller/MIDI sheet | Schematic pages are grouped by function, and the TFT bus and controls belong with the STM32 rather than CM5 external connectivity |
 | Keep the AT24CS01 EEPROM | Existing controller software stores frequently changing preset, toggle, cycle, and encoder state in its 128 bytes at I2C address 0x50 to avoid internal-flash wear |
 | Target C/C++ controller firmware | Port the required behavior rather than continuing the original Rust firmware |
 | Specify a regulated 12 V input, ±10% | Provides suitable margin for the 10 V analog regulator without unnecessary converter stress |
@@ -57,7 +61,6 @@ Last updated: 2026-09-11
 | Question | Current position |
 |---|---|
 | Guitar-input protection | D3 is currently DNP; choose protection that does not significantly load or distort the high-impedance input |
-| General 3.3 V supply update | The present 300 mA TPS7A20 lacks worst-case margin for two TFTs plus STM32 and other digital loads; decide whether to use a larger shared regulator or a separate display rail |
 | Project-wide component metadata | Audit values, manufacturer names, manufacturer part numbers, JLCPCB part numbers, footprints, DNP state, and datasheet links before the production BOM |
 | Which parts should be hand-fitted? | Decide from JLCPCB availability, assembly cost, and soldering difficulty |
 | Final TAC5212 configuration | Confirm input impedance, clocking, startup, and Linux support |
@@ -77,9 +80,11 @@ Last updated: 2026-09-11
 | 5 V buck | U6: TPS56637RPAR | Extended; compact 6 A synchronous buck |
 | External USB switch | AP22653W6-7, 15 kΩ current-setting resistor | Reuse selected circuit; status must be rechecked |
 | 3.3 V regulators | TPS7A2033PDBVR | Status must be rechecked |
+| Digital 3.3 V output capacitor | C24: 10 µF, Samsung CL21A106KAYNNNE, C15850 | Basic when last checked |
 | 10 V analog regulator | LT3045EMSE#PBF | Intended for manual assembly |
 | Controller MCU | STM32G0B1CET6, C5270267 | Extended; exact stock and sourcing must be rechecked |
-| TFT bulk capacitors | C12/C21: CL21A106KAYNNNE, C15850 | Basic when last checked |
+| Display modules | 2 × Waveshare 2inch LCD Module, SKU 17344 | External module; not JLCPCB assembled |
+| Display connectors | J15/J17: JST B8B-PH-K-S(LF)(SN), C157974 | Extended when last checked |
 | STM32 bulk capacitor | C17: CL21A475KAQNNNE, C1779 | Basic when last checked |
 | MIDI protection diode | D1: 1N4148W, C81598 | Basic when last checked; MIDI option is initially DNP |
 
