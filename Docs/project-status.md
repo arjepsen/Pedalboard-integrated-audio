@@ -13,7 +13,7 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 | Audio codec | Confirmed | Mount a TAC5212 directly on the mainboard |
 | Guitar input | Circuit complete | High-impedance OPA1656 buffer and differential ADC drive; final input-protection choice remains open |
 | Line input | Circuit complete | Balanced TRS, AC-coupled into TAC5212 input 2 |
-| Codec integration | Schematic substantially complete | Verify final settings, ERC details, PCB layout, and Linux configuration |
+| Codec integration | Schematic substantially complete | 48 kHz stereo I2S, CM5 clock producer, TAC5212 clock consumer, ultra-low-latency filters, 25 ms input-cap quick charge; final analog input settings and Linux configuration remain |
 | Audio outputs | Circuit drawn | Dedicated 3.5 mm stereo headphones plus two unbalanced 6.35 mm line/amp outputs |
 | Power supply | Circuit updated | 12 V input, 5.08 V / 6 A buck, separate 3.3 V rails, and quiet 10 V analog rail; TPS7A2033 retained for the general 3.3 V rail |
 | Controller | Schematic replaced | STM32G0B1CET6 with two Waveshare 2inch LCD Modules, direct CM5 USB, SWD, controls, and optional MIDI |
@@ -31,6 +31,10 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - Completed the balanced line input using C62/C63, R41/R42, and R43/R44.
 - Removed JP4 and the unused `audio_in_stereo` detection net; CM GPIO27 is intentionally unconnected.
 - Added TAC5212 power, local decoupling, I2C/I2S connections, headphone outputs, and line/amp outputs.
+- Added C79 10 µF on TAC5212 DREG in parallel with C65 100 nF, matching the local DREG decoupling requirement.
+- Selected 48 kHz stereo I2S with 32-bit slots, CM5 as clock producer, TAC5212 as clock consumer, and no separate MCLK oscillator.
+- Selected TAC5212 ultra-low-latency ADC/DAC filters for the primary guitar path.
+- Selected 25 ms input-capacitor quick charge for the 4.7 µF codec input coupling capacitors.
 - Reworked the main power tree around TPS56637RPAR, AP22653W6-7, TPS7A2033, and LT3045.
 - Selected STM32G0B1CET6 in LQFP-48 for the controller redesign.
 - Replaced the original display choice with two Waveshare 2inch LCD Modules, SKU 17344, using ST7789VW over shared SPI.
@@ -51,18 +55,20 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - The PCB still represents the original mainboard and plug-in sound card.
 - The integrated audio circuitry is substantially drawn but still needs final review, ERC cleanup, and PCB implementation.
 - D3 is DNP while the guitar-input protection choice is reviewed.
-- The controller sheet now contains the STM32 subsystem and no longer contains the RP2040 or external QSPI flash.
+- The controller sheet now contains the STM32 subsystem and no longer contains the RP2040 or external QSPI flash as active circuitry.
 - J15 and J17 are the left/right Waveshare display connectors using JST PH 8-pin headers.
 - The CM5 symbol and footprint are present as CM2, and the former USB hub and mux have been removed.
 - CM5 native USB pairs now serve service USB-C, the internal STM32, and external USB-A directly.
 - The hierarchical `RGB_DATA` connection now links STM32 PA8 to the LEDs sheet.
 - The general 3.3 V rail has been checked and the existing TPS7A2033 plus C24 = 10 µF are retained.
+- Rail capacitance and startup/inrush must continue to be checked as local bulk capacitors are added or changed.
 - A project-wide value and sourcing-field audit remains open. Use consistent passive values and populate manufacturer, manufacturer part, and JLCPCB part fields where they are useful.
-- TAC5212 Linux support and final register configuration remain open software tasks.
+- TAC5212 clocking/startup direction is now substantially settled; exact ADC input impedance/full-scale/gain settings and final Linux register configuration remain open.
 - STM32 migration will also require a new USB identity, updated Pedalboard OS matching, and USB-DFU firmware-update support instead of RP2040 UF2 flashing.
 
 ## Next sequence
 
-1. Perform a project-wide component-value and metadata audit before generating the manufacturing BOM.
-2. Complete final codec, USB protection, service-port, and ERC review.
-3. Rework the PCB for the integrated audio, CM5, STM32, Waveshare display connectors, and updated power circuits.
+1. Finalize TAC5212 ADC input impedance/full-scale/gain settings against the guitar and line-input resistor networks.
+2. Perform a project-wide component-value and metadata audit before generating the manufacturing BOM.
+3. Complete final USB protection, service-port, ERC, and power-startup/inrush review.
+4. Rework the PCB for the integrated audio, CM5, STM32, Waveshare display connectors, and updated power circuits.
