@@ -364,36 +364,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 15.24) (xy 234.95 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02e5b162-bf52-4bae-ae2c-1089a24cf6e6")
-	)
-	(wire
-		(pts
-			(xy 186.69 41.91) (xy 203.2 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "345bddf1-8041-4599-a06c-6045f667be59")
-	)
-	(wire
-		(pts
-			(xy 99.06 34.29) (xy 99.06 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fc57d14-de6d-494e-a232-29078bd8e0b6")
-	)
-	(wire
-		(pts
 			(xy 60.96 78.74) (xy 60.96 88.9)
 		)
 		(stroke
@@ -401,96 +371,6 @@
 			(type default)
 		)
 		(uuid "44692e73-b58e-46c5-8a56-edf6f039cc3c")
-	)
-	(wire
-		(pts
-			(xy 81.28 55.88) (xy 120.65 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ff9592d-dbb4-4d3f-ae7a-328b37944c20")
-	)
-	(wire
-		(pts
-			(xy 186.69 52.07) (xy 203.2 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a2473fa-3598-4680-aeee-170d5357cb1a")
-	)
-	(wire
-		(pts
-			(xy 101.6 19.05) (xy 227.33 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6263498b-6a80-4da7-8c77-3f84bf93bbb3")
-	)
-	(wire
-		(pts
-			(xy 81.28 59.69) (xy 120.65 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "637992d7-c86e-4869-bb3b-430ffd76d0b1")
-	)
-	(wire
-		(pts
-			(xy 234.95 15.24) (xy 234.95 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77c8f243-2e13-4fad-b93b-47e3e3247198")
-	)
-	(wire
-		(pts
-			(xy 227.33 25.4) (xy 227.33 19.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "841d6321-8553-4db6-9d1a-42cca99181dd")
-	)
-	(wire
-		(pts
-			(xy 101.6 19.05) (xy 101.6 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e23bcb4-31bd-4161-96e9-6dff5fa2ba19")
-	)
-	(wire
-		(pts
-			(xy 81.28 34.29) (xy 99.06 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93b04a97-9c35-47fb-a2b9-2a9a69cf50de")
-	)
-	(wire
-		(pts
-			(xy 101.6 38.1) (xy 81.28 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3b99ec2-470e-4c62-ae7b-2b9e90852963")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -1422,46 +1302,6 @@
 				(justify left top)
 			)
 		)
-		(pin "INT_MIDI_TX" input
-			(at 120.65 59.69 180)
-			(uuid "05fa2416-d95c-4ca5-bcf9-1b46e4d54ca7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "INT_MIDI_RX" input
-			(at 120.65 55.88 180)
-			(uuid "b1e22aa8-b497-4bb5-914a-4a1066caede4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CM4_3V" input
-			(at 186.69 41.91 0)
-			(uuid "dfe6eaaa-7150-4541-a21e-894576e8f691")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "nEXTRST" input
-			(at 186.69 52.07 0)
-			(uuid "8a7800d2-e962-43d6-a809-ebec35c38ac0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
@@ -1506,46 +1346,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "USB_RP_N" input
-			(at 81.28 38.1 0)
-			(uuid "92ffa346-745e-41b5-a47e-c83c473abc38")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "USB_RP_P" input
-			(at 81.28 34.29 0)
-			(uuid "ffd02ad0-e5c6-4ff1-a73b-3293e8acbc34")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "INT_MIDI_TX" input
-			(at 81.28 55.88 0)
-			(uuid "52a59fa9-06dd-488b-a380-13fe23f76759")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "INT_MIDI_RX" input
-			(at 81.28 59.69 0)
-			(uuid "d9c9e6ef-d068-4b5b-9e0e-5ac6900aa485")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "RGB_DATA" input
@@ -1602,46 +1402,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "USB_RP_N" input
-			(at 227.33 25.4 90)
-			(uuid "f16e509b-b59a-4cc3-bf28-eb7e28e7b38a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "USB_RP_P" input
-			(at 234.95 25.4 90)
-			(uuid "b2758e71-1dcd-4ec9-a34d-f69495060d28")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "CM4_3V" input
-			(at 203.2 41.91 180)
-			(uuid "e765ba1d-b7d1-458e-94ef-6c8de59abbc5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "nEXTRST" input
-			(at 203.2 52.07 180)
-			(uuid "8f7a711d-deac-4cec-9e02-c270542a3cb8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances

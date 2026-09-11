@@ -5,7 +5,7 @@ Last updated: 2026-09-09
 ## Audio architecture
 
 - Selected codec: TAC5212IRGER, mounted directly on the mainboard.
-- Primary use: guitar effects and NAM playback using Open Pedalboard or PiPedal software.
+- Primary use: guitar effects and NAM playback using Open Pedalboard or PiPedal software. Must be compatible with both.
 - Input 1 is a high-impedance guitar input.
 - Input 2 is an optional balanced line input.
 - Both codec inputs are differential and AC-coupled.
