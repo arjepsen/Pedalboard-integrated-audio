@@ -8,6 +8,12 @@ Last updated: 2026-09-11
 |---|---|
 | Integrate the sound card on the mainboard | Remove the separate sound-card header and reduce the number of boards |
 | Use the TAC5212 | Combines a high-performance stereo ADC and DAC, supports differential inputs and outputs, and provides programmable analog settings in one codec |
+| Run the main audio path at 48 kHz | Matches the intended Open Pedalboard/PiPedal/NAM operating point without doubling DSP load for a negligible codec-latency improvement |
+| Use CM5 as I2S clock producer and TAC5212 as clock consumer | CM5 supplies BCLK and FSYNC; TAC5212 can derive its internal clocks from BCLK, so no separate MCLK oscillator is required |
+| Use stereo I2S with 32-bit slots | At 48 kHz this gives a 3.072 MHz BCLK and a conventional Linux audio interface |
+| Use TAC5212 ultra-low-latency ADC/DAC filters | Minimizes codec conversion delay while retaining suitable audio-band performance |
+| Set TAC5212 input-capacitor quick charge to 25 ms | The 4.7 µF input coupling capacitors need substantially longer settling than the default intended for smaller capacitors |
+| Fit C65 100 nF plus C79 10 µF on TAC5212 DREG | Matches TI's local DREG decoupling requirement; C79 uses the same proven 10 µF part as other codec bulk decoupling |
 | Use input 1 for guitar | A normal passive guitar needs a much higher input impedance than the codec provides directly |
 | Use input 2 as a balanced line input | Adds a useful optional input without another active buffer stage |
 | Use differential, AC-coupled codec inputs | This is the TAC5212 configuration intended for best dynamic-range performance |
@@ -28,6 +34,7 @@ Last updated: 2026-09-11
 | Omit extra display-connector decoupling capacitors | Each Waveshare module already has local 1 µF supply decoupling; the regulator output retains C24 at 10 µF |
 | Keep TPS7A2033PDBVR for the general 3.3 V rail | Two Waveshare displays are specified at about 46 mA maximum each; with the STM32 and remaining small loads the rail has comfortable current and thermal margin below the regulator's 300 mA rating |
 | Keep C24 at 10 µF on the digital TPS7A2033 output | The value is within the regulator's allowed output-capacitance range and provides useful transient margin |
+| Track total rail capacitance and startup/inrush as the design changes | Local decoupling must be considered together with regulator stability, soft-start, source impedance, and whole-rail startup current rather than in isolation |
 | Omit the STM32 external crystal | STM32G0B1 provides HSI48 with USB SOF clock recovery; the remaining controls, displays, LEDs, and MIDI do not justify the extra crystal parts |
 | Drive display `BL` directly from STM32 PA6 | The Waveshare module contains the backlight switching transistor; PA6 carries only the PWM control signal |
 | Keep the display connectors on the controller/MIDI sheet | Schematic pages are grouped by function, and the TFT bus and controls belong with the STM32 rather than CM5 external connectivity |
@@ -63,7 +70,7 @@ Last updated: 2026-09-11
 | Guitar-input protection | D3 is currently DNP; choose protection that does not significantly load or distort the high-impedance input |
 | Project-wide component metadata | Audit values, manufacturer names, manufacturer part numbers, JLCPCB part numbers, footprints, DNP state, and datasheet links before the production BOM |
 | Which parts should be hand-fitted? | Decide from JLCPCB availability, assembly cost, and soldering difficulty |
-| Final TAC5212 configuration | Confirm input impedance, clocking, startup, and Linux support |
+| Final TAC5212 analog configuration | Confirm exact ADC input impedance/full-scale/gain settings against the guitar and line-input networks, then freeze the Linux register configuration |
 | USB protection and service-port details | Finalize ESD parts, role handling, and the external-port power-control connection |
 | STM32 USB identity and updating | Select a legitimate VID/PID and replace the RP2040 UF2 update path with STM32 USB DFU |
 | USB-C networking after boot | USB Ethernet gadget mode would provide convenient web-interface and SSH access, but is a future software choice rather than a present hardware requirement |
@@ -77,6 +84,7 @@ Last updated: 2026-09-11
 | Guitar driver | R34/R37/R40: 1 kΩ, 0603WAF1001T5E, C21190 | Basic |
 | Guitar driver | R38/R39: 470 Ω, 0603WAF4700T5E, C23179 | Basic |
 | Codec coupling | C57/C58/C62/C63: Rubycon 16MF475KB23225, C50394238 | Extended; stock must be rechecked |
+| Codec DREG bulk decoupling | C79: 10 µF, Samsung CL21A106KAYNNNE, C15850 | Basic when last checked |
 | 5 V buck | U6: TPS56637RPAR | Extended; compact 6 A synchronous buck |
 | External USB switch | AP22653W6-7, 15 kΩ current-setting resistor | Reuse selected circuit; status must be rechecked |
 | 3.3 V regulators | TPS7A2033PDBVR | Status must be rechecked |
