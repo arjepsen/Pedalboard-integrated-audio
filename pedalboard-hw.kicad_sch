@@ -444,9 +444,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "H3")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -523,9 +520,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "SYM1")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -602,9 +596,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "H1")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -681,9 +672,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "H14")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -760,9 +748,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "FID4")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -839,9 +824,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "FID1")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -918,9 +900,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "H15")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -997,9 +976,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "FID2")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -1076,9 +1052,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "H16")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -1155,9 +1128,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(reference "FID3")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)

@@ -1,6 +1,6 @@
 # Project Status
 
-Last updated: 2026-09-09
+Last updated: 2026-09-11
 
 ## Goal
 
@@ -15,11 +15,11 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 | Line input | Circuit complete | Balanced TRS, AC-coupled into TAC5212 input 2 |
 | Codec integration | Schematic substantially complete | Verify final settings, ERC details, PCB layout, and Linux configuration |
 | Audio outputs | Circuit drawn | Dedicated 3.5 mm stereo headphones plus two unbalanced 6.35 mm line/amp outputs |
-| Power supply | Circuit updated | 12 V input, 5.08 V / 6 A buck, separate 3.3 V rails, and quiet 10 V analog rail |
-| Controller | Decision confirmed | Replace RP2040 with STM32G0B1CET6 and replace the OLEDs with two ST7789V2 TFTs |
+| Power supply | Circuit updated; one audit open | 12 V input, 5.08 V / 6 A buck, separate 3.3 V rails, and quiet 10 V analog rail; increase general 3.3 V capacity for the two TFTs |
+| Controller | Schematic replaced | STM32G0B1CET6, two HS20S010B/ST7789V2 TFTs, direct CM5 USB, SWD, controls, and optional MIDI are drawn |
 | Compute module | Confirmed | The redesigned board supports CM5 only |
-| Connectivity | Direction confirmed | Replace the hub/mux arrangement with separate CM5 native USB 2.0 connections |
-| External MIDI | Direction confirmed | Retain DIN MIDI footprints and STM32/software support, but initially mark the connector and avoidable interface parts DNP |
+| Connectivity | Schematic replaced | CM5 native USB pairs directly serve service USB-C, internal STM32, and external USB-A; the former hub and mux are removed |
+| External MIDI | Schematic drawn, initially DNP | DIN MIDI footprints, interface circuit, STM32 pins, and software direction are retained for future fitting |
 | Manufacturing | Confirmed | Target JLCPCB assembly and retain the two-layer board |
 
 ## Completed schematic work
@@ -35,7 +35,13 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - Selected STM32G0B1CET6 in LQFP-48 and two HS20S010B/ST7789V2 TFTs for the controller redesign.
 - Confirmed that the redesigned mainboard is CM5-only and will use native CM5 USB ports rather than preserving the CM4 hub/mux architecture.
 - Confirmed that the STM32 controller will preserve the original bidirectional USB-MIDI behaviour and optional DIN MIDI routing.
-- Confirmed that DIN MIDI hardware will be present as an initially unpopulated option.
+- Replaced the RP2040, external QSPI flash, crystal, and RP2040 support circuit with STM32G0B1CET6.
+- Selected crystal-less STM32 operation: HSI48 with USB SOF clock recovery for USB and the internal clock for the remaining controller functions.
+- Added two HS20S010B connectors with shared SPI, reset, data/command, and backlight PWM plus separate chip selects.
+- Confirmed from the display datasheet that each module contains its own backlight current control and transistor; the MCU drives only the `BLK` control inputs.
+- Added filtered expression inputs, a five-pin SWD header, debug-UART test points, reset/boot buttons, and a status LED.
+- Confirmed that all optional external-MIDI connectors and avoidable interface parts are marked DNP for the initial build.
+- Retained the AT24CS01 EEPROM because the controller software uses it for frequently updated runtime state.
 
 ## Current project state
 
@@ -43,15 +49,18 @@ Adapt the Open Pedalboard mainboard into a practical, CM5-only integrated guitar
 - The PCB still represents the original mainboard and plug-in sound card.
 - The integrated audio circuitry is substantially drawn but still needs final review, ERC cleanup, and PCB implementation.
 - D3 is DNP while the guitar-input protection choice is reviewed.
-- The MIDI/controller sheet still contains the original RP2040 subsystem.
-- The connectivity sheet still contains the USB2514B hub and FSUSB42 mux from the CM4-compatible design.
-- CM1 still uses the original CM4 symbol, footprint, and CM4-specific net names; these must be replaced and verified for CM5 before the USB circuit is rewired.
+- The controller sheet now contains the STM32 subsystem and no longer contains the RP2040 or external QSPI flash.
+- The CM5 symbol and footprint are present as CM2, and the former USB hub and mux have been removed.
+- CM5 native USB pairs now serve service USB-C, the internal STM32, and external USB-A directly.
+- The hierarchical `RGB_DATA` connection now links STM32 PA8 to the LEDs sheet.
+- The general 3.3 V regulator is rated for 300 mA. Two displays can use about 260 mA at their stated maximum before the STM32 and other loads, so the 3.3 V supply must be upgraded or reorganized during the power audit.
+- A project-wide value and sourcing-field audit remains open. Use consistent passive values and populate manufacturer, manufacturer part, and JLCPCB part fields where they are useful.
 - TAC5212 Linux support and final register configuration remain open software tasks.
 - STM32 migration will also require a new USB identity, updated Pedalboard OS matching, and USB-DFU firmware-update support instead of RP2040 UF2 flashing.
 
 ## Next sequence
 
-1. Replace the CM4 symbol/footprint and CM4-specific names with a verified CM5 representation.
-2. Rebuild USB connectivity around three direct CM5 connections: service USB-C, internal STM32, and external USB-A.
-3. Verify USB power switching, role handling, ESD protection, and recovery access.
-4. Replace the RP2040 and display subsystem with STM32G0B1CET6 and the two TFTs.
+1. Audit the complete 3.3 V load and replace or reorganize the general 3.3 V regulator with suitable current and thermal margin.
+2. Perform a project-wide component-value and metadata audit before generating the manufacturing BOM.
+3. Complete final codec, USB protection, service-port, and ERC review.
+4. Rework the PCB for the integrated audio, CM5, STM32, TFT connectors, and updated power circuits.

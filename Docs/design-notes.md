@@ -1,6 +1,6 @@
 # Design Notes
 
-Last updated: 2026-09-09
+Last updated: 2026-09-11
 
 ## Audio architecture
 
@@ -76,26 +76,45 @@ This arrangement matches the primary desk-practice use without adding a separate
 
 The 10 V rail is retained because it gives the OPA1656 and TAC5212 input path comfortable signal headroom. The 5.08 V / 6 A supply provides useful CM5 and USB-current margin.
 
-## Controller
+The general 3.3 V rail now needs a capacity audit. The present TPS7A2033 is rated for 300 mA. The two TFT modules alone can approach about 260 mA combined at their stated maximum logic and backlight currents, before adding the STM32 and other 3.3 V loads. The audit should compare a larger shared 3.3 V regulator with a separate display rail and prefer the simpler solution when noise, heat, and transient margin are adequate.
 
-- The original design uses an RP2040, external QSPI flash, crystal, and supporting parts.
-- The selected replacement is STM32G0B1CET6 in LQFP-48.
-- Two 2.0-inch HS20S010B displays use ST7789V2 controllers and share an SPI bus with separate chip selects.
+## Controller and displays
+
+- U3 is an STM32G0B1CET6 in LQFP-48. It replaces the RP2040, its external QSPI flash, crystal, and associated support parts.
+- Use the STM32's internal flash. No separate firmware flash is required.
+- Use the internal HSI48 oscillator with USB clock recovery from the CM5 USB SOF signal. Firmware must enable CRS correctly; no external crystal is fitted.
+- J15 and J17 are 2.0-inch HS20S010B TFT modules with ST7789V2 controllers. They share SPI, D/C, reset, and backlight control, with a separate chip select for each display.
 - Use DMA and small line/tile buffers rather than full framebuffers.
-- Fixed functions cover TFT SPI/control, RGB LED data, expression ADCs, I2C, USB, SWD, reset, and crystal pins. Footswitch and encoder GPIOs remain flexible for routing.
-- Drive the TFT backlights through an external power stage, not directly from an MCU pin.
-- Port the required controller behavior from the original Rust code to C/C++.
+- The TFT `BLK` pin is a logic-level backlight control input because the module contains its own backlight driver. PA6 can therefore drive both `BLK` pins directly; an external power transistor is not required.
+- Keep the display connectors on this controller/UI sheet. Their signals and power belong to the controller function, whereas the Connectivity sheet is for CM5 and external/service connections.
+- Port the required controller behavior from the original Rust code to C/C++ while preserving its useful external USB-MIDI behavior and protocol.
 
-## CM5-only connectivity direction
+### STM32 pin allocation
 
-The saved connectivity sheet still contains the original CM4-compatible USB arrangement:
+| Function | Pins |
+|---|---|
+| TFT shared SPI/control | PA5 SCK, PA7 MOSI, PA4 D/C, PB12 RESET, PA6 BLK PWM |
+| TFT chip selects | PB10 left, PB11 right |
+| Addressable RGB LEDs | PA8 |
+| Expression ADC inputs | PB0, PB1 |
+| I2C | PB8 SCL, PB9 SDA |
+| USB device | PA11 D−, PA12 D+ |
+| SWD and reset | PA13 SWDIO, PA14 SWCLK, PF2 NRST |
+| Optional DIN MIDI UART | PB6 TX, PB7 RX |
+| Debug UART | PA9 TX, PA10 RX |
+| Encoders | PA0–PA3, PB2, PB3 |
+| Footswitches | PD0–PD3, PB4, PB5 |
+| Boot/status | PC13 BOOT control, PB15 status LED |
 
-- The CM's single legacy USB 2.0 pair enters U8, an FSUSB42 USB switch.
-- U8 selects either the USB-C service/boot connector or U9, a USB2514B four-port hub.
-- One U9 downstream port serves the controller as USB-MIDI and another serves the external USB-A connector.
-- The AP22653 load switch controls external USB-A power.
+Each expression input uses a 1 kΩ series resistor and 100 nF capacitor at the MCU. Retain the SWD/debug header and useful test points. The hierarchical `RGB_DATA` connection links U3 PA8 to the LED sheet.
 
-The hub and switch are required by CM4 because one native USB connection has to cover three roles. CM5 exposes one USB 2.0 OTG connection and two native USB 3 host ports with USB 2.0 companion pairs. Use them directly:
+### Controller EEPROM
+
+Keep U12, the AT24CS01 EEPROM at I2C address `0x50`. The existing Open Pedalboard firmware stores active-preset state, per-preset switch state, and encoder values there. This avoids turning frequent runtime-state updates into STM32 internal-flash erase cycles. Its factory serial-number area is also useful for a stable board identity, even though the existing RP2040 firmware obtains its USB serial from the MCU flash ID instead.
+
+## CM5-only connectivity
+
+CM2 is now a Compute Module 5 using the `CM5IO:Raspberry-Pi-5-Compute-Module` footprint. The former FSUSB42 switch and USB2514B hub have been removed. CM5 exposes one USB 2.0 OTG connection and two native USB 3 host ports with USB 2.0 companion pairs, so the required USB 2.0 functions connect directly:
 
 | CM5 connection | Board function |
 |---|---|
@@ -103,11 +122,7 @@ The hub and switch are required by CM4 because one native USB connection has to 
 | USB port 0 USB 2.0 pair | Internal STM32 USB-MIDI and firmware update |
 | USB port 1 USB 2.0 pair | External USB-A host connector |
 
-Leave the SuperSpeed pairs unused. U8 and U9 are not functions that have been integrated as identical chips; they become unnecessary because CM5 provides enough independent native USB connections.
-
-This direction removes the need for U8, U9, their crystal, and most hub support parts. Retain a switched, current-limited 5 V supply for external USB-A and add appropriate ESD protection at both external USB connectors. Exact role control, `VBUS_EN`, ESD parts, and schematic edits still require final verification.
-
-The current schematic still uses a CM4 symbol, CM4 footprint, and names such as `CM4_3V` and `CM4_GPIO...`. Replace these with a verified CM5 symbol/footprint and CM5-specific names before rewiring USB. Do not merely rename the existing symbol: first verify every used power, USB, I2S, I2C, GPIO, reset, boot, and LED pin against the CM5 documentation.
+Leave the SuperSpeed pairs unused. The USB port 0 companion pair connects directly to U3; USB port 1 connects to the external USB-A connector; and the legacy USB 2.0 pair connects to the service USB-C connector. U11 provides external-connector ESD protection, and AP22653 provides switched, current-limited USB-A VBUS. Final checks still include USB role/recovery behavior, protection details, and a complete ERC review.
 
 ## USB software compatibility
 
@@ -123,9 +138,11 @@ The current schematic still uses a CM4 symbol, CM4 footprint, and names such as 
 ## MIDI
 
 - Preserve the original DIN MIDI input and output capability in the schematic, PCB, and STM32 pin allocation.
-- Initially mark the DIN connectors and avoidable surrounding interface parts DNP.
+- The optional DIN MIDI group is marked DNP: J1–J4, J25, J26, L1–L4, R3–R5, D1, U2, C1, and C22.
 - Keep the software routing options for DIN-to-USB and USB-to-DIN operation.
 - Initial units can use `din_enabled: false`; the optional parts can be fitted later without revising the PCB.
+
+The DNP state has been confirmed in the raw KiCad schematic and by exporting a BOM with DNP parts excluded.
 
 ## Manufacturing
 
@@ -135,12 +152,16 @@ The current schematic still uses a CM4 symbol, CM4 footprint, and names such as 
 - Manual fitting is acceptable for a limited number of practical components.
 - Use 0603 passives where practical.
 - Fine-pitch and exposed-pad packages require suitable footprints, stencil design, and inspection.
+- Write passive values without redundant unit letters: for example `100n`, `1u`, `4.7u`, `27R`, `1k5`, and `100k`.
+- Standard sourcing fields are `Manufacturer`, `Manufacturer part`, and `JLCPCB part`. Use KiCad's native footprint, datasheet, description, and DNP properties instead of duplicating them as custom fields.
+- Perform a complete field and sourcing audit after the circuit topology is stable and before PCB/BOM release. Exact production part numbers are most useful for ICs, connectors, special capacitors, and any passive whose dielectric, voltage rating, or tolerance matters.
 
 ## Important project state
 
 - `audio.kicad_sch` and `psu.kicad_sch` contain the current custom work.
 - The guitar input, line input, TAC5212 support, digital-audio connections, and selected output circuits are present in the schematic.
 - The updated power architecture is present in the schematic.
+- The STM32 controller, both TFT connectors, optional DIN MIDI circuit, and direct CM5 USB arrangement are present in the schematic.
+- The general 3.3 V rail needs a load/capacity audit for the two displays and remaining digital loads.
+- A whole-project component-value and sourcing-field audit remains to be done after the schematic topology is stable.
 - The PCB has not yet been updated for the integrated audio circuit.
-- The controller and connectivity sheets still contain the original RP2040 and CM4-compatible USB subsystems; both are awaiting the confirmed CM5-only redesign.
-- CM1 is still represented by the original CM4 symbol/footprint and CM4-specific net names. Verifying and replacing this representation is the first connectivity change.

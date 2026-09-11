@@ -10520,9 +10520,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C77")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -10725,9 +10722,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R38")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -10804,9 +10798,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "H5")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -11090,9 +11081,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C69")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -11205,9 +11193,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R41")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -11517,9 +11502,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C75")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -11799,9 +11781,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R47")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12439,9 +12418,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R40")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12556,9 +12532,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C61")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12750,9 +12723,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C66")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12865,9 +12835,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R43")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -12982,9 +12949,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C68")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -13061,9 +13025,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "H4")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -13277,9 +13238,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R46")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14188,9 +14146,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "H6")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14382,9 +14337,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R39")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14499,9 +14451,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C70")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14616,9 +14565,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C76")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14810,9 +14756,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C67")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -14914,9 +14857,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "D6")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15029,9 +14969,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R48")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15108,9 +15045,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "H7")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15223,9 +15157,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R49")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15338,9 +15269,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R42")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15693,9 +15621,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C78")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -15966,9 +15891,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R37")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -16060,9 +15982,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R16")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -16186,9 +16105,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R45")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -16301,9 +16217,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R50")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -16506,9 +16419,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R44")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -16621,9 +16531,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R52")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -17121,9 +17028,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R51")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -17225,9 +17129,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R33")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -17419,9 +17320,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C65")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)
@@ -17534,9 +17432,6 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R34")
 					(unit 1)
-					(variant
-						(name "JLCPCB")
-					)
 				)
 			)
 		)

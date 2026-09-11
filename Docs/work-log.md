@@ -1,5 +1,20 @@
 # Work Log
 
+## 2026-09-11 - STM32 controller, TFT, and CM5 USB migration drawn
+
+- Replaced the RP2040, external firmware flash, and crystal with U3, an STM32G0B1CET6.
+- Selected crystal-less USB operation using HSI48 and CRS synchronized from the CM5 USB SOF signal.
+- Added the controller pin allocation, expression-input filters, SWD/debug connections, and status/boot functions.
+- Added two HS20S010B TFT connectors with shared SPI/control and separate chip selects.
+- Confirmed from the module information that `BLK` is a logic input; both displays can be driven directly from PA6.
+- Replaced the CM4-era USB hub and mux with direct CM5 USB connections for service USB-C, internal STM32, and external USB-A.
+- Verified that the optional DIN MIDI group is marked DNP in both the KiCad source and an exported BOM.
+- Retained the AT24CS01 EEPROM because the existing controller software writes changing preset, switch, and encoder state to it.
+- Standardized the documented passive-value convention on `100n`, `1u`, `4.7u`, `1k5`, and similar forms without redundant unit letters.
+- Verified that the hierarchical `RGB_DATA` connection links U3 PA8 to the LED sheet.
+- Left the general 3.3 V capacity audit as the next power task.
+- Added a later whole-project audit of component values and sourcing fields before PCB/BOM release.
+
 ## 2026-09-09 - USB software and MIDI direction reviewed
 
 - Reviewed the maintained Open Pedalboard software and current PiPedal USB behaviour.
