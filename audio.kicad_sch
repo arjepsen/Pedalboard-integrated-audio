@@ -11292,7 +11292,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 210.312 75.438 0)
+			(at 209.296 75.692 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12820,120 +12820,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 25.4 176.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "498cc900-b27d-42a4-807c-98102e05e06c")
-		(property "Reference" "C61"
-			(at 21.082 174.752 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 20.066 178.054 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 26.3652 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 25.4 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 25.4 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21B104KBCNNNC/3886661"
-			(at 25.4 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% 16V Ceramic Capacitor X7R"
-			(at 25.4 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey" "1276-1180-1-ND"
-			(at 25.4 176.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cedf39c2-89eb-48dc-b781-dd58c0da7e9f")
-		)
-		(pin "2"
-			(uuid "4867ab9d-4b3d-437c-981c-35c7b78634bf")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
-					(reference "C61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
 		(at 240.03 116.84 90)
 		(unit 1)
@@ -13134,7 +13020,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 201.93 74.168 0)
+			(at 200.914 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14862,7 +14748,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 276.606 68.072 0)
+			(at 275.59 68.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15167,7 +15053,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 196.596 74.168 0)
+			(at 195.326 74.422 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15268,7 +15154,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a18a4738-d9f4-4a17-b9cd-ab479bed626f")
 		(property "Reference" "D6"
 			(at 251.1425 20.32 0)
@@ -15335,7 +15220,8 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 252.73 26.67 0)
+			(at 252.222 30.226 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15682,7 +15568,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 261.366 44.45 90)
+			(at 263.144 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16517,10 +16403,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d9207788-0949-4cfb-b9a1-3cc22176409c")
 		(property "Reference" "R16"
-			(at 260.35 20.32 90)
+			(at 260.35 22.606 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16530,7 +16415,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 260.35 22.86 90)
+			(at 260.35 24.638 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16572,8 +16457,30 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229"
+		(property "Manufacturer" ""
 			(at 260.35 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "0805W8F1001T5E"
+			(at 260.35 26.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C17513"
+			(at 260.35 26.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17626,7 +17533,7 @@
 				)
 			)
 		)
-		(property "Supplier" ""
+		(property "Manufacturer" ""
 			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -17637,8 +17544,19 @@
 				)
 			)
 		)
-		(property "Notes" "C22935"
+		(property "JLCPCB part" "C22935"
 			(at 93.98 157.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "0603WAF1004T5E"
+			(at 93.98 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17658,6 +17576,120 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 25.4 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec64b598-1837-4df4-825c-c64dc6598eeb")
+		(property "Reference" "C61"
+			(at 19.558 175.006 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 19.05 178.308 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 26.3652 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 25.4 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Yageo"
+			(at 25.4 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CC0805KRX7R9BB104"
+			(at 25.4 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C49678"
+			(at 25.4 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a0cf346-8123-4a5a-a177-d75ca7bb364a")
+		)
+		(pin "2"
+			(uuid "d2d22b26-6f2b-4f87-ae6a-e7902b5b18ea")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -17763,7 +17795,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 262.636 48.006 90)
+			(at 263.906 48.006 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
