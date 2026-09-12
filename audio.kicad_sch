@@ -11291,7 +11291,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 210.312 75.438 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12629,7 +12629,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1k"
 			(at 141.986 167.386 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12742,7 +12742,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 152.146 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13034,7 +13034,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 201.93 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13147,7 +13147,7 @@
 				)
 			)
 		)
-		(property "Value" "7.5k"
+		(property "Value" "7k5"
 			(at 109.22 178.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13260,7 +13260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 265.176 67.564 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14762,7 +14762,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 276.606 68.072 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15067,7 +15067,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 196.596 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15582,7 +15582,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 261.366 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16317,7 +16317,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1k"
 			(at 127.254 171.45 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16430,7 +16430,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1k"
 			(at 260.35 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16755,7 +16755,7 @@
 				)
 			)
 		)
-		(property "Value" "7.5k"
+		(property "Value" "7k5"
 			(at 114.3 183.642 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16867,7 +16867,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4k7"
 			(at 22.352 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17386,7 +17386,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4k7"
 			(at 31.496 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17677,7 +17677,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 262.636 48.006 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17790,7 +17790,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "1k"
 			(at 115.824 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1774,7 +1774,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RPA0010A"
+			(property "Footprint" "Pedalboard Library:RPA0010A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1803,16 +1803,6 @@
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5422,7 +5412,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 217.932 79.248 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,7 +5960,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "9.1k"
+		(property "Value" "9k1"
 			(at 159.258 147.193 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6527,7 +6517,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "10k"
 			(at 149.352 75.946 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8014,7 +8004,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15K"
+		(property "Value" "15k"
 			(at 147.828 67.818 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8697,7 +8687,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "1uF"
 			(at 246.126 79.756 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9100,7 +9090,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 167.64 76.454 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10598,7 +10588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10uF"
 			(at 158.242 75.692 0)
 			(show_name no)
 			(do_not_autoplace no)
