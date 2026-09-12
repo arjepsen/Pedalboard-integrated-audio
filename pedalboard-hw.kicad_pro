@@ -972,7 +972,7 @@
         "uuid": "df521c2a-9827-4355-b809-366f4b88d5d7"
       }
     ],
-    "used_designators": "R9,R30-52,J11,J13,J15-17,J21,IC1,#PWR5,#PWR24-26,#PWR29,#PWR31-32,#PWR36-38,#PWR42,#PWR63-64,#PWR74-101,D3-5,D8-9,U5,U7,U13-16,C56a1,C4-5,C7,C21-22,C25,C29,C37,C53-79,C56b1,JP4,Module1,TP5",
+    "used_designators": "R9,R30-52,J11,J13,J15-17,J21,IC1,#PWR5,#PWR24-26,#PWR29,#PWR31-32,#PWR36-38,#PWR42,#PWR63-64,#PWR74-101,D3-5,D8-9,U5,U7,U13-16,C56a1,C4-5,C7,C21-22,C25,C29,C37,C53-80,C56b1,JP4,Module1,TP5",
     "variants": [
       {
         "description": "cost optimized JLCPCB assembly",
