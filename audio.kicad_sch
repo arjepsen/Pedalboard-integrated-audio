@@ -16754,7 +16754,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SamacSys_Parts:TAC5212IRGER"
+		(property "Footprint" "Pedalboard Library:TAC5212IRGER"
 			(at 220.98 145.72 0)
 			(hide yes)
 			(show_name no)
