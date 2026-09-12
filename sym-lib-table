@@ -3,4 +3,5 @@
 	(lib (name "pedalboard") (type "KiCad") (uri "${KIPRJMOD}/pedalboard.kicad_sym") (options "") (descr ""))
 	(lib (name "TPS56637") (type "KiCad") (uri "${KIPRJMOD}/TPS56637.kicad_sym") (options "") (descr ""))
 	(lib (name "CM5IO") (type "KiCad") (uri "${KIPRJMOD}/CM5IO.kicad_sym") (options "") (descr ""))
+	(lib (name "TLVM13660") (type "KiCad") (uri "${KIPRJMOD}/TLVM13660.kicad_sym") (options "") (descr ""))
 )
