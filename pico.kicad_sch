@@ -17628,7 +17628,7 @@
 				)
 			)
 		)
-		(property "Notes" "Boot"
+		(property "Notes" "Firmware DFU request - requires working firmware, use SWD for recovery"
 			(at 99.06 96.52 0)
 			(hide yes)
 			(show_name no)
