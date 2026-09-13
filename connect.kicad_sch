@@ -6937,12 +6937,6 @@
 		(uuid "0094cfad-6a94-4bc7-bf01-da66f85ac559")
 	)
 	(junction
-		(at 250.19 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02922f8b-0b77-4a35-91b5-e27bd7d1633a")
-	)
-	(junction
 		(at 40.64 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6967,10 +6961,10 @@
 		(uuid "22a95031-3717-4bc4-aa00-5ec35cc8d634")
 	)
 	(junction
-		(at 243.84 76.2)
+		(at 240.03 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2a15a001-3bd2-4cd8-ac19-1fabc4c7019d")
+		(uuid "29235873-4a8e-4023-8baa-646484901b47")
 	)
 	(junction
 		(at 106.68 139.7)
@@ -7015,6 +7009,12 @@
 		(uuid "5ab56cbc-58d5-4470-a5d1-0e5f412a5205")
 	)
 	(junction
+		(at 240.03 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5abd662b-d5a1-46a8-98b4-bc156988edcc")
+	)
+	(junction
 		(at 187.96 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7027,7 +7027,7 @@
 		(uuid "5df44f10-7880-4f0a-b1aa-53f3132a192c")
 	)
 	(junction
-		(at 231.14 86.36)
+		(at 233.68 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62750e9c-7878-49f6-be10-34d3f4ca7a7d")
@@ -7057,7 +7057,7 @@
 		(uuid "74efa0f0-a3c8-4ba4-89e6-aa3c80f14e75")
 	)
 	(junction
-		(at 231.14 76.2)
+		(at 233.68 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81cb5d25-18b8-47e1-9267-db932875ae34")
@@ -7117,22 +7117,10 @@
 		(uuid "c05e05c8-d4d2-434e-a7e5-3d0f2bbb2ba0")
 	)
 	(junction
-		(at 237.49 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c80fd4cb-f4e0-4e17-9606-ab4ed18a702e")
-	)
-	(junction
 		(at 40.64 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb076a3a-cfea-4d30-91e0-e7a8417c5624")
-	)
-	(junction
-		(at 237.49 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cbf35c31-19cc-4889-a72b-e336fee2b3bc")
 	)
 	(junction
 		(at 106.68 132.08)
@@ -7153,22 +7141,10 @@
 		(uuid "e269be5f-5824-4795-96e0-4b7e1740a609")
 	)
 	(junction
-		(at 250.19 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7b27555-a87c-44c4-a54c-51dc4ce2c7e7")
-	)
-	(junction
 		(at 40.64 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee67909d-06ce-4a2f-88d3-a7ccd6cfa34d")
-	)
-	(junction
-		(at 243.84 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f39a2dbb-c316-446f-bd58-68d772ff2c19")
 	)
 	(junction
 		(at 40.64 109.22)
@@ -7514,7 +7490,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 86.36) (xy 223.52 85.09)
+			(xy 224.79 86.36) (xy 224.79 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7524,7 +7500,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 76.2) (xy 243.84 77.47)
+			(xy 246.38 76.2) (xy 246.38 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7724,7 +7700,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 76.2) (xy 237.49 76.2)
+			(xy 233.68 76.2) (xy 240.03 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7754,7 +7730,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 86.36) (xy 237.49 86.36)
+			(xy 233.68 86.36) (xy 240.03 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7834,23 +7810,13 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 76.2) (xy 237.49 77.47)
+			(xy 240.03 76.2) (xy 240.03 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4bbbc754-32cc-4766-86df-a90cacd7cf0d")
-	)
-	(wire
-		(pts
-			(xy 250.19 76.2) (xy 250.19 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c1e0898-102c-4eb5-b561-b49d7faefaf7")
 	)
 	(wire
 		(pts
@@ -7884,7 +7850,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 76.2) (xy 231.14 76.2)
+			(xy 215.9 76.2) (xy 233.68 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7914,7 +7880,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 87.63) (xy 217.17 87.63)
+			(xy 196.85 88.9) (xy 217.17 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7931,6 +7897,16 @@
 			(type default)
 		)
 		(uuid "5c4db26a-b8ff-42e9-b2cd-dc95c438585f")
+	)
+	(wire
+		(pts
+			(xy 240.03 76.2) (xy 246.38 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf89637-cf8b-4f88-908b-4610315c8607")
 	)
 	(wire
 		(pts
@@ -7964,7 +7940,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 86.36) (xy 231.14 86.36)
+			(xy 224.79 86.36) (xy 233.68 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7984,7 +7960,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 81.28) (xy 196.85 87.63)
+			(xy 196.85 81.28) (xy 196.85 88.9)
 		)
 		(stroke
 			(width 0)
@@ -8164,16 +8140,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 86.36) (xy 256.54 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8271d964-89e0-46cd-968f-567cc50cd2f4")
-	)
-	(wire
-		(pts
 			(xy 43.18 78.74) (xy 40.64 78.74)
 		)
 		(stroke
@@ -8304,17 +8270,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 76.2) (xy 256.54 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b23d7eeb-cc93-449a-993a-c3a58e4f6ea0")
-	)
-	(wire
-		(pts
-			(xy 223.52 80.01) (xy 223.52 78.74)
+			(xy 224.79 80.01) (xy 224.79 78.74)
 		)
 		(stroke
 			(width 0)
@@ -8384,6 +8340,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 86.36) (xy 246.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb23597-fbb6-4f53-a325-cdb409073d82")
+	)
+	(wire
+		(pts
 			(xy 104.14 132.08) (xy 106.68 132.08)
 		)
 		(stroke
@@ -8431,16 +8397,6 @@
 			(type default)
 		)
 		(uuid "c7e8a494-f0a4-446e-8f17-ee4e515c917c")
-	)
-	(wire
-		(pts
-			(xy 250.19 82.55) (xy 250.19 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8c4a5f9-64a7-4f37-ba7d-3f399cf4a42b")
 	)
 	(wire
 		(pts
@@ -8524,23 +8480,13 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 82.55) (xy 237.49 86.36)
+			(xy 240.03 82.55) (xy 240.03 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db4a7309-4e15-4e43-a2c5-27db6c61d58f")
-	)
-	(wire
-		(pts
-			(xy 237.49 76.2) (xy 256.54 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db764f99-2c86-495d-a914-6d96a01256da")
 	)
 	(wire
 		(pts
@@ -8604,7 +8550,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 83.82) (xy 231.14 86.36)
+			(xy 233.68 83.82) (xy 233.68 86.36)
 		)
 		(stroke
 			(width 0)
@@ -8624,17 +8570,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 82.55) (xy 256.54 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef254350-be8a-4263-a654-f21a1f3d3544")
-	)
-	(wire
-		(pts
-			(xy 223.52 78.74) (xy 215.9 78.74)
+			(xy 224.79 78.74) (xy 215.9 78.74)
 		)
 		(stroke
 			(width 0)
@@ -8644,7 +8580,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 82.55) (xy 243.84 86.36)
+			(xy 246.38 82.55) (xy 246.38 86.36)
 		)
 		(stroke
 			(width 0)
@@ -8833,7 +8769,7 @@
 		(uuid "b6d52607-95ce-48a0-8136-9d28d1d727b8")
 	)
 	(label "USB_HOST_VBUS_EN"
-		(at 217.17 87.63 180)
+		(at 217.17 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8984,7 +8920,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 243.84 80.01 0)
+		(at 246.38 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8992,9 +8928,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "394c80a4-923a-49db-bb32-a386d4bd3ffa")
+		(uuid "3b7c674c-84be-44d2-8040-73c08034f423")
 		(property "Reference" "C40"
-			(at 239.776 78.486 0)
+			(at 247.396 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9005,7 +8941,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 238.76 82.296 0)
+			(at 247.65 82.042 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9016,7 +8952,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 244.8052 83.82 0)
+			(at 247.3452 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9026,8 +8962,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 243.84 80.01 0)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL21A106KAYNNN.do"
+			(at 246.38 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9038,7 +8974,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 80.01 0)
+			(at 246.38 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9048,8 +8984,8 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 243.84 80.01 0)
+		(property "Notes" "25V, X5R, ±10%, JLCPCB Basic"
+			(at 246.38 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9059,8 +8995,30 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 243.84 80.01 0)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 246.38 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 246.38 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 246.38 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9071,10 +9029,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "030f98c5-ba51-46c6-8642-bee9125ee212")
+			(uuid "f9547033-5fd9-462d-aae6-a6fb66281b78")
 		)
 		(pin "2"
-			(uuid "279fccc9-3663-4795-889e-07fbd4ba997c")
+			(uuid "409e9846-5504-455c-8343-8cc1a7e116b8")
 		)
 		(instances
 			(project "pedalboard-hw"
@@ -9190,7 +9148,7 @@
 		(dnp no)
 		(uuid "40f65923-1ffd-470e-8f47-d6efe87bbfcf")
 		(property "Reference" "C38"
-			(at 190.881 73.7616 0)
+			(at 190.246 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9201,7 +9159,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 190.881 76.073 0)
+			(at 190.246 75.946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9222,7 +9180,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL21A106KAYNNN.do"
 			(at 187.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9244,7 +9202,7 @@
 				)
 			)
 		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
+		(property "Notes" "25V, X5R, ±10%, JLCPCB Basic"
 			(at 187.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9255,7 +9213,29 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 187.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 187.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
 			(at 187.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -9379,7 +9359,7 @@
 				)
 			)
 		)
-		(property "Value" "AP22653W6-7"
+		(property "Value" "AP22653"
 			(at 208.026 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9433,6 +9413,39 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 208.28 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "AP22653W6-7"
+			(at 208.28 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "Extended part"
+			(at 208.28 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "0b6f1c49-3568-4cec-a20d-545da8815776")
 		)
@@ -9455,109 +9468,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 250.19 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "573fed1d-7426-4eb2-bd19-1ea9661e21c6")
-		(property "Reference" "C41"
-			(at 246.38 78.232 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 245.11 82.296 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 251.1552 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 250.19 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 250.19 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 250.19 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 250.19 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "805887ae-c537-4412-9de0-627e67ec7b1f")
-		)
-		(pin "2"
-			(uuid "253b9bfc-b0b9-4708-ab83-c3416829239e")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
-					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -10374,7 +10284,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 231.14 86.36 0)
+		(at 233.68 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10384,7 +10294,7 @@
 		(dnp no)
 		(uuid "5b243439-2c46-4c8c-91f7-fc26541e6042")
 		(property "Reference" "#PWR069"
-			(at 231.14 92.71 0)
+			(at 233.68 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10395,7 +10305,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 231.394 90.678 0)
+			(at 233.934 90.678 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10405,7 +10315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 86.36 0)
+			(at 233.68 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10416,7 +10326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 86.36 0)
+			(at 233.68 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10427,7 +10337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 231.14 86.36 0)
+			(at 233.68 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10444,109 +10354,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "#PWR069")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 256.54 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "62d720c9-0c4b-4e3d-b0ca-d3cb3ccb8b83")
-		(property "Reference" "C42"
-			(at 252.476 78.486 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 251.46 82.042 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 257.5052 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 256.54 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 256.54 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 256.54 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 256.54 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "803e8dfe-be0e-42e4-8a34-bb3d3be037f8")
-		)
-		(pin "2"
-			(uuid "315c8192-f750-4f3c-a788-62b1f322c6c7")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
-					(reference "C42")
 					(unit 1)
 				)
 			)
@@ -11065,7 +10872,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 223.52 82.55 180)
+		(at 224.79 82.55 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11075,7 +10882,7 @@
 		(dnp no)
 		(uuid "9264232b-de39-4689-8ef2-54e2fb7383ef")
 		(property "Reference" "R29"
-			(at 218.694 84.074 0)
+			(at 219.964 81.788 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11086,7 +10893,7 @@
 			)
 		)
 		(property "Value" "15k"
-			(at 219.456 86.106 0)
+			(at 220.218 84.074 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11097,7 +10904,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 225.298 82.55 90)
+			(at 226.568 82.55 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11108,7 +10915,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 82.55 0)
+			(at 224.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11119,7 +10926,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 223.52 82.55 0)
+			(at 224.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11129,8 +10936,8 @@
 				)
 			)
 		)
-		(property "Supplier" ""
-			(at 223.52 82.55 0)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 224.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11141,7 +10948,7 @@
 			)
 		)
 		(property "Manufacturer part" "0805W8F1502T5E"
-			(at 223.52 82.55 0)
+			(at 224.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11152,7 +10959,7 @@
 			)
 		)
 		(property "JLCPCB part" "C17475"
-			(at 223.52 82.55 0)
+			(at 224.79 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11340,109 +11147,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "R30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 237.49 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "aef842a7-bade-4a8f-b4e5-e2fe9c0be2e1")
-		(property "Reference" "C39"
-			(at 233.68 78.486 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 232.41 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 238.4552 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.samsungsem.com/resources/file/global/support/product_catalog/MLCC.pdf"
-			(at 237.49 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 237.49 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10% or 20% 35V Ceramic Capacitor X6S 0805 (2012 Metric)"
-			(at 237.49 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/samsung-electro-mechanics/CL21X106KAYNNNE/5961182"
-			(at 237.49 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1323c869-2a70-420c-83c6-2f06fd194d96")
-		)
-		(pin "2"
-			(uuid "70b702f8-8338-4557-bd2b-be2744343f78")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
-					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -12075,7 +11779,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 231.14 80.01 0)
+		(at 233.68 80.01 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12086,7 +11790,7 @@
 		(dnp no)
 		(uuid "e53c350d-b4a1-4353-b00c-3af6dfdcff16")
 		(property "Reference" "C43"
-			(at 230.124 77.978 0)
+			(at 232.664 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12097,7 +11801,7 @@
 			)
 		)
 		(property "Value" "100uF"
-			(at 230.632 82.296 0)
+			(at 233.172 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12108,7 +11812,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
-			(at 230.1748 83.82 0)
+			(at 232.7148 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12119,7 +11823,7 @@
 			)
 		)
 		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C49.pdf"
-			(at 231.14 80.01 0)
+			(at 233.68 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12130,7 +11834,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 231.14 80.01 0)
+			(at 233.68 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12140,8 +11844,8 @@
 				)
 			)
 		)
-		(property "Notes" "Capacitor, SP-Cap, 100u, 6.3V, 15mR ESR"
-			(at 231.14 80.01 0)
+		(property "Notes" "6.3V aluminum-polymer, ±20%, 15mΩ ESR. Required USB bulk capacitor"
+			(at 233.68 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12151,8 +11855,30 @@
 				)
 			)
 		)
-		(property "Supplier" "https://www.digikey.ch/de/products/detail/panasonic-electronic-components/EEF-CX0J101R/816418"
-			(at 231.14 80.01 0)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 233.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "EEF-CX0J101R"
+			(at 233.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C189619"
+			(at 233.68 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12305,6 +12031,131 @@
 							(value "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal")
 						)
 					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 240.03 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f17fb3d1-9f8b-40db-908d-808994c5b3cb")
+		(property "Reference" "C39"
+			(at 240.538 78.232 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 241.046 82.042 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 240.9952 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://product.samsungsem.com/mlcc/CL21A106KAYNNN.do"
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Notes" "25V, X5R, ±10%, JLCPCB Basic"
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL21A106KAYNNNE"
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C15850"
+			(at 240.03 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d3c4705-65a3-4f8f-9350-f494cbbb763b")
+		)
+		(pin "2"
+			(uuid "ae7e858b-b92c-4034-a0b9-665e24720fd2")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
+					(reference "C39")
+					(unit 1)
 				)
 			)
 		)
