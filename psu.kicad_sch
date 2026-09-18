@@ -7969,7 +7969,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "10uF"
 			(at 141.732 37.592 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8013,7 +8013,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8024,7 +8024,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "GRM31CR71H475KA12L"
+		(property "Manufacturer part" "CL31A106KBHNNNE"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8035,7 +8035,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C77096"
+		(property "JLCPCB part" "C13585"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
