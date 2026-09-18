@@ -458,6 +458,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -3253,7 +3433,7 @@
 		(uuid "7190fb5e-3853-44cb-a99b-1936e90c90f7")
 	)
 	(junction
-		(at 142.24 27.94)
+		(at 140.97 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d97676c-7dac-4154-af2f-d797d358dc75")
@@ -3688,7 +3868,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 35.56) (xy 233.68 35.56)
+			(xy 227.33 38.1) (xy 233.68 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3768,23 +3948,13 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 95.25) (xy 224.79 99.06)
+			(xy 224.79 97.79) (xy 224.79 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3ba31987-d108-4807-bb33-074236e212ff")
-	)
-	(wire
-		(pts
-			(xy 142.24 27.94) (xy 147.32 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3db6f429-5f1c-4b47-9473-b0651cc87379")
 	)
 	(wire
 		(pts
@@ -4018,6 +4188,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 38.1) (xy 233.68 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611f5ae4-2860-470b-8b30-9213e873dd88")
+	)
+	(wire
+		(pts
 			(xy 73.66 73.66) (xy 81.28 73.66)
 		)
 		(stroke
@@ -4108,7 +4288,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 27.94) (xy 142.24 27.94)
+			(xy 132.08 27.94) (xy 147.32 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4158,7 +4338,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 53.34) (xy 142.24 27.94)
+			(xy 140.97 53.34) (xy 140.97 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4228,7 +4408,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 90.17) (xy 224.79 87.63)
+			(xy 224.79 92.71) (xy 224.79 87.63)
 		)
 		(stroke
 			(width 0)
@@ -4268,7 +4448,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 90.17) (xy 233.68 90.17)
+			(xy 227.33 92.71) (xy 233.68 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4528,7 +4708,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 53.34) (xy 142.24 53.34)
+			(xy 175.26 53.34) (xy 140.97 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4625,6 +4805,16 @@
 			(type default)
 		)
 		(uuid "c2975bd9-8fd1-4247-99ae-e45772b01c35")
+	)
+	(wire
+		(pts
+			(xy 233.68 92.71) (xy 233.68 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a059e0-a108-4ef5-9acd-24d04d9f56fa")
 	)
 	(wire
 		(pts
@@ -4967,7 +5157,7 @@
 		(uuid "3a127ee3-b72b-4a84-86a8-a63c1db9c56a")
 	)
 	(label "5V_PG"
-		(at 227.33 35.56 0)
+		(at 227.33 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4977,7 +5167,7 @@
 		(uuid "78100fa7-2fb2-4abd-809e-a6bcd5e76c20")
 	)
 	(label "5V_PG"
-		(at 227.33 90.17 0)
+		(at 227.33 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5222,7 +5412,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 224.79 92.71 0)
+		(at 224.79 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5232,7 +5422,7 @@
 		(dnp no)
 		(uuid "0bdfaf47-e02a-4b10-9eb2-261b4bc55614")
 		(property "Reference" "C71"
-			(at 220.472 90.932 0)
+			(at 220.472 93.472 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5243,7 +5433,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 220.726 94.488 0)
+			(at 220.726 97.028 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5254,7 +5444,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 225.7552 96.52 0)
+			(at 225.7552 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5265,7 +5455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5276,7 +5466,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5287,7 +5477,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +5488,7 @@
 			)
 		)
 		(property "Manufacturer part" "CL21B105KBFNNNE"
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,7 +5499,7 @@
 			)
 		)
 		(property "JLCPCB part" "C28323"
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5320,7 +5510,7 @@
 			)
 		)
 		(property "Notes" "1uF, 50V, X7R, ±10%. U15 input capacitor. JLCPCB Basic."
-			(at 224.79 92.71 0)
+			(at 224.79 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7059,7 +7249,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" ""
+		(property "JLCPCB part" "C69847"
 			(at 162.56 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7779,8 +7969,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 142.494 37.338 0)
+		(property "Value" "4.7uF"
+			(at 141.732 37.592 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7790,7 +7980,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 148.2852 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7823,29 +8013,29 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "GRM21BR61H106KE43L"
-			(at 147.32 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C440198"
-			(at 147.32 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Manufacturer" "Murata"
+			(at 147.32 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "GRM31CR71H475KA12L"
+			(at 147.32 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C77096"
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8538,120 +8728,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 168.91 46.99 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ad05ac37-0f8e-4019-9733-6d3badc1a07b")
-		(property "Reference" "C53"
-			(at 170.688 49.784 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7uF"
-			(at 171.704 51.562 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 172.72 46.0248 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer part" "CL21A475KAQNNNE"
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C1779"
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1d227c69-868b-4ae7-8249-d72168f2a5e5")
-		)
-		(pin "2"
-			(uuid "74fdd040-46c0-4fb6-aaa5-bac509c9bc2c")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 64.77 158.75 0)
 		(unit 1)
@@ -8837,6 +8913,118 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 168.91 46.99 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bedb00c8-92ef-4b00-ada8-b52183a90913")
+		(property "Reference" "C53"
+			(at 168.91 49.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 168.91 51.562 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A"
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "TAJA475K025RNJ"
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C7189"
+			(at 168.91 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "80abcb34-6307-4548-89a8-e6cd56238f27")
+		)
+		(pin "1"
+			(uuid "48c69081-17b6-45db-ae4e-60a6407a18ac")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C53")
 					(unit 1)
 				)
 			)
