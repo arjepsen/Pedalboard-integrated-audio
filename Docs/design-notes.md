@@ -1,6 +1,6 @@
 # Design Notes
 
-Last updated: 2026-09-11
+Last updated: 2026-09-17
 
 ## Audio architecture
 
@@ -18,7 +18,7 @@ The TAC5212 combines the required stereo ADC and DAC. Its differential AC-couple
 
 ## Guitar input
 
-The first OPA1656 half is a unity-gain buffer. The second produces an equal, inverted signal for the differential ADC input. The target is approximately 2 V peak at the guitar jack with overall analog gain near 1x.
+The first OPA1656 half is a non-inverting guitar buffer with switchable gain. The second produces an equal, inverted signal for the differential ADC input. SW11 provides three useful gain settings without an invalid switch combination.
 
 | Part | Purpose and reason |
 |---|---|
@@ -27,12 +27,16 @@ The first OPA1656 half is a unity-gain buffer. The second produces an equal, inv
 | R33: 1 MΩ | Defines normal guitar input impedance and biases the buffer at 4 V |
 | R34/R37: 1 kΩ | Equal values set the second amplifier to an inverting gain of -1 |
 | R38/R39: 470 Ω and R40: 1 kΩ | Isolate the op-amp outputs and form a balanced divider that gives approximately 1x overall differential gain |
+| R54/R56: 820 Ω, R55: 390 Ω, R57: 1 kΩ | Set the selectable non-inverting gains to approximately 1.39×, 2.21×, and 3.03× |
+| SW11: EM-02-Q | Independently bypasses R54 and R56; either single-switch position gives the same middle gain |
 | C57/C58: 4.7 µF Rubycon MF | Low-voltage-coefficient coupling into TAC5212 input 1 |
 | D3: H5VUD5BB, DNP | Protection placeholder; not fitted until its capacitance and behavior are accepted |
 
 C56 and R33 form a high-pass corner of about 1.6 Hz. The high-impedance node after C56 should be kept short and away from digital and switching signals.
 
 The OPA1656 was chosen for its FET inputs, very low input bias current, low noise and distortion, and ability to operate from the 10 V single supply.
+
+The selected TAC5212 range is 2 V RMS differential. Approximate guitar-jack clipping levels are 2.0 V peak on low gain, 1.3 V peak on middle gain, and 0.94 V peak on high gain.
 
 ## Line input
 
@@ -44,7 +48,7 @@ J22 is a balanced TRS line input. A TS plug remains usable because the ring is g
 | C62/C63: 4.7 µF Rubycon MF | AC-couple both balanced legs with a corner safely below the audio band |
 | R43/R44: 7.5 kΩ | Provide equal series impedance, fault-current limiting, and line-level attenuation before the codec |
 
-With the TAC5212 set to 5 kΩ input impedance, each 7.5 kΩ resistor gives approximately 0.4x voltage transfer. This corresponds to about 5 V RMS differential at J22 for the codec's 2 V RMS differential full scale. The final input-impedance/full-scale settings are still being checked against the TAC5212 datasheet before this estimate is frozen.
+With the TAC5212 set to 5 kΩ input impedance, each 7.5 kΩ resistor gives approximately 0.4x voltage transfer. This corresponds to about 5 V RMS differential at J22 for the codec's 2 V RMS differential full scale.
 
 The former JP4 connection from the jack switch to CM GPIO27 has been removed. The software does not use this automatic stereo-detection signal, and GPIO27 is intentionally unconnected.
 
@@ -57,8 +61,8 @@ The former JP4 connection from the jack switch to CM GPIO27 has been removed. Th
 - No dedicated audio master-clock oscillator is required.
 - Use ultra-low-latency ADC and DAC filters for the main low-latency path.
 - Set input-capacitor quick-charge timing to 25 ms for the 4.7 µF coupling capacitors.
-- Approximately 5 kΩ per input pin and 2 V RMS differential full scale remain provisional until the analog input-setting review is complete.
-- Use the low-common-mode-variation setting for best noise performance when the finished circuit permits it.
+- Use 5 kΩ per input pin, 2 V RMS differential full scale, and 0 dB initial codec gain on both ADC channels.
+- Use the low-common-mode-variation AC-coupled setting for best noise performance.
 - Final Linux register configuration and practical bring-up still require verification.
 
 ### TAC5212 local decoupling
@@ -85,16 +89,16 @@ This arrangement matches the primary desk-practice use without adding a separate
 
 - Specify a regulated 12 V input with ±10% tolerance.
 - Retain the 4 A / 15 V input PTC and FDS4435BZ reverse-polarity protection.
-- Generate approximately 5.08 V with TPS56637RPAR, a 3.3 µH inductor, and 68 kΩ / 9.1 kΩ feedback resistors. This rail supplies the CM and downstream regulators.
-- Use AP22653W6-7 to switch and current-limit the external USB-A VBUS to approximately 1.5 A. Retain its local bulk capacitance for USB load steps.
+- Generate approximately 5.02 V with TLVM13660RDLR and its integrated inductor. R12 at 40.2 kΩ and R15 at 10 kΩ set the output. This rail supplies the CM and downstream regulators.
+- Use AP22653W6-7 to switch and current-limit the external USB-A VBUS. R29 at 15 kΩ sets approximately 1.735 A typical. C39 and C40 at 10 µF plus C43 at 100 µF provide the recommended 120 µF output bank.
 - Generate the general digital 3.3 V and `3V3_CODEC` analog rail with separate TPS7A2033PDBVR regulators.
 - Keep C24 at 10 µF on the general 3.3 V regulator output.
 - Generate the quiet 10 V guitar-front-end rail with LT3045EMSE#PBF. Use 4.7 µF on SET, 100 kΩ for 10 V, 10 µF at its input, and 22 µF at its output.
 - Continue tracking total capacitance rail-by-rail together with regulator stability, soft-start, source impedance, and startup/inrush. Do not add local bulk capacitance without checking its effect on the whole rail.
 
-The 10 V rail is retained because it gives the OPA1656 input path comfortable signal headroom. The 5.08 V / 6 A supply provides useful CM5 and USB-current margin.
+The 10 V rail is retained because it gives the OPA1656 input path comfortable signal headroom. The approximately 5.02 V / 6 A supply provides useful CM5 and USB-current margin.
 
-The general 3.3 V rail has been rechecked with the selected Waveshare displays. Each display is specified at about 46 mA maximum at 3.3 V, so the pair contributes about 92 mA. With the STM32 and the remaining small digital loads, the expected total is around 120 mA. The TPS7A2033 is rated for 300 mA, leaving comfortable current and thermal margin from the approximately 5.08 V input. C24 remains 10 µF because it is within the regulator's supported output-capacitance range and provides useful transient margin.
+The general 3.3 V rail has been rechecked with the selected Waveshare displays. Each display is specified at about 46 mA maximum at 3.3 V, so the pair contributes about 92 mA. With the STM32 and the remaining small digital loads, the expected total is around 120 mA. The TPS7A2033 is rated for 300 mA, leaving comfortable current and thermal margin from the approximately 5.02 V input. C24 remains 10 µF because it is within the regulator's supported output-capacitance range and provides useful transient margin.
 
 ## Controller and displays
 
@@ -144,7 +148,13 @@ CM2 is now a Compute Module 5 using the `CM5IO:Raspberry-Pi-5-Compute-Module` fo
 | USB port 0 USB 2.0 pair | Internal STM32 USB-MIDI and firmware update |
 | USB port 1 USB 2.0 pair | External USB-A host connector |
 
-Leave the SuperSpeed pairs unused. The USB port 0 companion pair connects directly to U3; USB port 1 connects to the external USB-A connector; and the legacy USB 2.0 pair connects to the service USB-C connector. U11 provides external-connector ESD protection, and AP22653 provides switched, current-limited USB-A VBUS. Final checks still include USB role/recovery behavior, protection details, and a complete ERC review.
+Leave the SuperSpeed pairs unused. The USB port 0 companion pair connects directly to U3; USB port 1 connects to the external USB-A connector; and the legacy USB 2.0 pair connects to the service USB-C connector. U11 and U16 provide low-capacitance data-line ESD protection.
+
+The external USB-A power circuit follows Raspberry Pi's CM5 IO reference direction. CM5 pin 111 `VBUS_EN` directly drives the active-high AP22653 enable. R29 at 15 kΩ sets approximately 1.735 A typical current limit. C16 100 nF and C38 10 µF provide local input bypass, while C39, C40, and C43 total 120 µF on VBUS. The AP22653 also provides soft start, reverse-current protection, output discharge, current limiting, and thermal protection. Its `nFAULT` output may remain unconnected because the board does not presently need software fault reporting.
+
+J9 is a self-powered USB-C device/service connection. R30 and R31 are 5.1 kΩ pull-downs on CC1 and CC2. Connector VBUS remains intentionally unconnected to prevent back-powering the board. SBU1 and SBU2 remain unconnected. CM5 `USB_OTG_ID` remains unconnected so its internal pull-up selects device operation, while J11 pulls `nRPIBOOT` low when recovery or eMMC flashing is required.
+
+During PCB layout, place U11 and U16 immediately behind their connectors with short ground returns. Route each USB 2.0 pair over a continuous ground plane as a 90 Ω differential pair and avoid stubs. Place U10 input and output capacitors close to their corresponding pins.
 
 ## USB software compatibility
 
@@ -174,9 +184,12 @@ The DNP state has been confirmed in the raw KiCad schematic and by exporting a B
 - Manual fitting is acceptable for a limited number of practical components.
 - Use 0603 passives where practical.
 - Fine-pitch and exposed-pad packages require suitable footprints, stencil design, and inspection.
-- Write passive values without redundant unit letters: for example `100n`, `1u`, `4.7u`, `27R`, `1k5`, and `100k`.
+- Write capacitor values with their unit, for example `100nF`, `1uF`, and `4.7uF`. Use compact resistor notation such as `27R`, `1k5`, and `100k`.
 - Standard sourcing fields are `Manufacturer`, `Manufacturer part`, and `JLCPCB part`. Use KiCad's native footprint, datasheet, description, and DNP properties instead of duplicating them as custom fields.
-- Perform a complete field and sourcing audit after the circuit topology is stable and before PCB/BOM release. Exact production part numbers are most useful for ICs, connectors, special capacitors, and any passive whose dielectric, voltage rating, or tolerance matters.
+- The electrical-component field audit is substantially complete. Finish exact purchasing choices for connectors and other hand-fitted mechanical parts before PCB/BOM release.
+- Use a four-layer PCB with continuous reference planes. Do not attempt to preserve the original two-layer layout approach.
+- Ignore gaps in reference numbering. References must be unique, not continuous.
+- Remove the incomplete JLCPCB variant and create a new complete variant only after the default DNP state and schematic are frozen.
 
 ## Important project state
 
@@ -186,5 +199,5 @@ The DNP state has been confirmed in the raw KiCad schematic and by exporting a B
 - The updated power architecture is present in the schematic.
 - The STM32 controller, both Waveshare display connectors, optional DIN MIDI circuit, and direct CM5 USB arrangement are present in the schematic.
 - The general 3.3 V rail has been checked with the selected displays and the TPS7A2033 is retained.
-- A whole-project component-value and sourcing-field audit remains to be done after the schematic topology is stable.
+- The electrical-component value and sourcing-field audit is substantially complete; remaining gaps mainly concern mechanical or hand-fitted parts.
 - The PCB has not yet been updated for the integrated audio circuit.

@@ -1,6 +1,6 @@
 # Decisions
 
-Last updated: 2026-09-11
+Last updated: 2026-09-17
 
 ## Confirmed
 
@@ -24,6 +24,7 @@ Last updated: 2026-09-11
 | Keep C64 as a DNP C0G alternative to C56 | Provides an SMD assembly option without fitting two capacitors in parallel |
 | Use Rubycon 16MF475KB23225 for C57/C58 and C62/C63 | The 4.7 µF non-polar polymer capacitors have low voltage dependence and suit low-distortion codec coupling |
 | Use Basic 1% driver resistors | Premium 0.1% thin-film parts offer no meaningful system benefit here |
+| Use a two-switch three-level guitar gain selector | SW11 independently bypasses two 820 Ω feedback sections, giving approximately 1.39×, 2.21×, and 3.03× gain with no invalid switch combination |
 | Remove `audio_in_stereo` and JP4 | The original GPIO27 jack-detection idea is unused by the published Open Pedalboard software |
 | Use four single-ended TAC5212 outputs | Allows simultaneous stereo headphones and stereo line outputs without another amplifier IC |
 | Add a dedicated 3.5 mm stereo headphone output | Headphone practice is a primary use case; the TAC5212 provides a genuine headphone-driver mode |
@@ -41,9 +42,9 @@ Last updated: 2026-09-11
 | Keep the AT24CS01 EEPROM | Existing controller software stores frequently changing preset, toggle, cycle, and encoder state in its 128 bytes at I2C address 0x50 to avoid internal-flash wear |
 | Target C/C++ controller firmware | Port the required behavior rather than continuing the original Rust firmware |
 | Specify a regulated 12 V input, ±10% | Provides suitable margin for the 10 V analog regulator without unnecessary converter stress |
-| Use TPS56637RPAR for the 5 V rail | A modern 6 A synchronous buck provides CM5 and USB-current margin with few external parts |
-| Set the main 5 V rail to approximately 5.08 V | Provides wiring and load-transient margin while staying within the CM supply range |
-| Keep AP22653W6-7 for external USB power | Provides controlled, current-limited USB VBUS; set to approximately 1.5 A with 15 kΩ |
+| Use TLVM13660RDLR for the 5 V rail | The integrated-inductor 6 A module reduces external parts and layout risk while retaining suitable 12 V input and CM5 load margin |
+| Set the main 5 V rail to approximately 5.02 V | R12 at 40.2 kΩ and R15 at 10 kΩ provide a small margin above nominal 5 V while staying close to the CM5 reference level |
+| Keep AP22653W6-7 for external USB power | It is used by Raspberry Pi's CM5 IO reference design and provides soft start, reverse-current protection, output discharge, and controlled USB VBUS; 15 kΩ sets approximately 1.735 A typical |
 | Use separate TPS7A2033 regulators for digital 3.3 V and codec analog 3.3 V | Keeps codec analog power isolated without an excessive component count |
 | Keep LT3045 for the 10 V analog rail | Its low noise is useful for the guitar front end, and hand assembly is acceptable here |
 | Make the redesigned mainboard CM5-only | Current Open Pedalboard software targets CM5, PiPedal supports the Pi 5 platform, and CM5 provides enough native USB ports to simplify the carrier |
@@ -52,7 +53,9 @@ Last updated: 2026-09-11
 | Preserve the Open Pedalboard controller behaviour on STM32 | Keep class-compliant bidirectional USB-MIDI and the useful existing MIDI/configuration protocol while replacing RP2040-specific hardware code |
 | Keep optional DIN MIDI hardware, initially DNP | The software already supports DIN-to-USB and USB-to-DIN routing; retaining footprints allows the feature to be added later without paying for unused parts now |
 | Target JLCPCB production | Prefer economical assembly choices while allowing justified premium or hand-fitted parts |
-| Keep a two-layer mainboard | Maintain the cost and construction approach of the existing project |
+| Use a four-layer mainboard | Continuous ground and power planes improve switching-current return paths, codec grounding, USB routing, and first-build reliability |
+| Recreate manufacturing variants only after design freeze | The current partial JLCPCB variant contains inconsistent overrides; the normal schematic DNP state remains the design source of truth until a new complete variant is made |
+| Keep existing reference designators | Missing numbers such as C10 are harmless; preserving references avoids unnecessary schematic, PCB, and documentation churn |
 
 ## Preferences
 
@@ -68,10 +71,9 @@ Last updated: 2026-09-11
 | Question | Current position |
 |---|---|
 | Guitar-input protection | D3 is currently DNP; choose protection that does not significantly load or distort the high-impedance input |
-| Project-wide component metadata | Audit values, manufacturer names, manufacturer part numbers, JLCPCB part numbers, footprints, DNP state, and datasheet links before the production BOM |
+| Remaining mechanical-part metadata | Electrical passives and active parts are substantially audited; exact connectors and other hand-fitted mechanical parts still need final purchasing choices |
 | Which parts should be hand-fitted? | Decide from JLCPCB availability, assembly cost, and soldering difficulty |
-| Final TAC5212 analog configuration | Confirm exact ADC input impedance/full-scale/gain settings against the guitar and line-input networks, then freeze the Linux register configuration |
-| USB protection and service-port details | Finalize ESD parts, role handling, and the external-port power-control connection |
+| USB practical validation | The schematic topology and parts are confirmed; verify differential routing, connector-side ESD placement, shield bonding, and service/recovery operation on the finished PCB |
 | STM32 USB identity and updating | Select a legitimate VID/PID and replace the RP2040 UF2 update path with STM32 USB DFU |
 | USB-C networking after boot | USB Ethernet gadget mode would provide convenient web-interface and SSH access, but is a future software choice rather than a present hardware requirement |
 
@@ -85,8 +87,8 @@ Last updated: 2026-09-11
 | Guitar driver | R38/R39: 470 Ω, 0603WAF4700T5E, C23179 | Basic |
 | Codec coupling | C57/C58/C62/C63: Rubycon 16MF475KB23225, C50394238 | Extended; stock must be rechecked |
 | Codec DREG bulk decoupling | C79: 10 µF, Samsung CL21A106KAYNNNE, C15850 | Basic when last checked |
-| 5 V buck | U6: TPS56637RPAR | Extended; compact 6 A synchronous buck |
-| External USB switch | AP22653W6-7, 15 kΩ current-setting resistor | Reuse selected circuit; status must be rechecked |
+| 5 V buck module | U6: TLVM13660RDLR, C5219281 | Integrated-inductor 6 A module; assembly status must be rechecked |
+| External USB switch | AP22653W6-7, 15 kΩ current-setting resistor, C2158037 | Extended; matches the CM5 IO reference circuit |
 | 3.3 V regulators | TPS7A2033PDBVR | Status must be rechecked |
 | Digital 3.3 V output capacitor | C24: 10 µF, Samsung CL21A106KAYNNNE, C15850 | Basic when last checked |
 | 10 V analog regulator | LT3045EMSE#PBF | Intended for manual assembly |
@@ -104,7 +106,7 @@ The assistant must not change design or project files without explicit approval.
 
 ## Schematic value and field convention
 
-- Passive `Value` fields use engineering suffixes without unit letters: `100n`, `1u`, `4.7u`, `27R`, `1k5`, and `100k`.
+- Capacitor `Value` fields include the capacitance unit: `100nF`, `1uF`, and `4.7uF`. Resistors use compact engineering notation such as `27R`, `1k5`, and `100k`.
 - Use `Manufacturer`, `Manufacturer part`, and `JLCPCB part` as the standard sourcing fields.
 - Use the native KiCad footprint, datasheet, description, and DNP properties instead of duplicating them as new custom fields.
 - Generic passives should still receive exact manufacturer and JLCPCB parts once a production choice is made.

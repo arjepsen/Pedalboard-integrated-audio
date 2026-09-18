@@ -1,5 +1,19 @@
 # Work Log
 
+## 2026-09-17 - Input settings, metadata, and manufacturing direction confirmed
+
+- Confirmed TAC5212 differential AC-coupled inputs at 5 kΩ per pin, 2 V RMS differential full scale, 0 dB initial codec gain, and 25 ms input-capacitor quick charge.
+- Confirmed SW11 independently bypasses the two 820 Ω feedback sections and provides approximately 1.39×, 2.21×, and 3.03× guitar gain.
+- Completed the main electrical-component metadata pass. Remaining gaps mainly concern mechanical or hand-fitted parts.
+- Confirmed TLVM13660RDLR as the integrated-inductor 5 V regulator module.
+- Selected a four-layer PCB for the integrated design.
+- Agreed to remove the incomplete JLCPCB variant and recreate production variants only after design freeze.
+- Agreed to retain existing reference designators; missing numbers are harmless.
+- Restored the agreed capacitor-value convention using `uF` and `nF`.
+- Confirmed AP22653W6-7 as the external USB-A power switch. The circuit matches Raspberry Pi's CM5 IO reference direction with active-high `VBUS_EN`, a 15 kΩ current-setting resistor, and 120 µF output capacitance.
+- Corrected the documented USB current-limit target from 1.5 A to approximately 1.735 A typical.
+- Confirmed the service USB-C CC pull-downs, data-line ESD parts, intentional unconnected VBUS, `nRPIBOOT` header, and device-role connection.
+
 ## 2026-09-11 - TAC5212 clocking, latency, and DREG decoupling confirmed
 
 - Added C79, 10 µF, on TAC5212 DREG in parallel with C65 100 nF.
