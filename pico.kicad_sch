@@ -6732,8 +6732,8 @@
 		)
 	)
 	(rectangle
-		(start 19.05 134.62)
-		(end 77.47 180.34)
+		(start 16.51 132.08)
+		(end 59.69 181.61)
 		(stroke
 			(width 0)
 			(type default)
@@ -6853,7 +6853,7 @@
 	)
 	(text "MIDI Bites allow to remove some of the \nboard material that is used to hold the\nDIN5 or 3.5mm Jack connectors and instead\nmount the connectors to the case"
 		(exclude_from_sim no)
-		(at 28.956 195.326 0)
+		(at 33.528 193.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6864,7 +6864,7 @@
 	)
 	(text "Rotary Encoders"
 		(exclude_from_sim no)
-		(at 68.58 136.144 0)
+		(at 25.4 134.366 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7119,7 +7119,7 @@
 		(uuid "b2a59dd3-348f-435b-bfd7-6edd097eedb8")
 	)
 	(junction
-		(at 54.61 173.99)
+		(at 52.07 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2fb010e-3b84-4828-a398-8bf0d5d084fb")
@@ -7137,7 +7137,7 @@
 		(uuid "b43f192d-3a87-472c-9c22-2c280c2cdad5")
 	)
 	(junction
-		(at 53.34 151.13)
+		(at 50.8 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5302de0-f363-4497-bdd0-f81b8833241f")
@@ -7394,7 +7394,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 144.78) (xy 53.34 151.13)
+			(xy 50.8 146.05) (xy 50.8 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7634,7 +7634,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 139.7) (xy 35.56 139.7)
+			(xy 21.59 140.97) (xy 33.02 140.97)
 		)
 		(stroke
 			(width 0)
@@ -7824,7 +7824,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 139.7) (xy 50.8 139.7)
+			(xy 58.42 140.97) (xy 48.26 140.97)
 		)
 		(stroke
 			(width 0)
@@ -7874,7 +7874,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 172.72) (xy 22.86 173.99)
+			(xy 19.05 173.99) (xy 20.32 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7934,7 +7934,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 162.56) (xy 35.56 162.56)
+			(xy 21.59 163.83) (xy 33.02 163.83)
 		)
 		(stroke
 			(width 0)
@@ -8284,7 +8284,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 165.1) (xy 21.59 172.72)
+			(xy 19.05 166.37) (xy 19.05 173.99)
 		)
 		(stroke
 			(width 0)
@@ -8294,7 +8294,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 165.1) (xy 35.56 165.1)
+			(xy 19.05 166.37) (xy 33.02 166.37)
 		)
 		(stroke
 			(width 0)
@@ -8474,7 +8474,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 142.24) (xy 35.56 142.24)
+			(xy 19.05 143.51) (xy 33.02 143.51)
 		)
 		(stroke
 			(width 0)
@@ -8514,7 +8514,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 167.64) (xy 35.56 167.64)
+			(xy 21.59 168.91) (xy 33.02 168.91)
 		)
 		(stroke
 			(width 0)
@@ -8574,7 +8574,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 142.24) (xy 21.59 149.86)
+			(xy 19.05 143.51) (xy 19.05 151.13)
 		)
 		(stroke
 			(width 0)
@@ -8624,7 +8624,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 167.64) (xy 54.61 173.99)
+			(xy 52.07 168.91) (xy 52.07 175.26)
 		)
 		(stroke
 			(width 0)
@@ -8644,7 +8644,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 149.86) (xy 22.86 151.13)
+			(xy 19.05 151.13) (xy 20.32 152.4)
 		)
 		(stroke
 			(width 0)
@@ -8884,7 +8884,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 162.56) (xy 50.8 162.56)
+			(xy 59.69 163.83) (xy 48.26 163.83)
 		)
 		(stroke
 			(width 0)
@@ -9114,7 +9114,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 173.99) (xy 54.61 173.99)
+			(xy 20.32 175.26) (xy 52.07 175.26)
 		)
 		(stroke
 			(width 0)
@@ -9184,7 +9184,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 144.78) (xy 35.56 144.78)
+			(xy 21.59 146.05) (xy 33.02 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9214,7 +9214,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 151.13) (xy 53.34 151.13)
+			(xy 20.32 152.4) (xy 50.8 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9244,7 +9244,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 167.64) (xy 54.61 167.64)
+			(xy 48.26 168.91) (xy 52.07 168.91)
 		)
 		(stroke
 			(width 0)
@@ -9554,7 +9554,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 144.78) (xy 53.34 144.78)
+			(xy 48.26 146.05) (xy 50.8 146.05)
 		)
 		(stroke
 			(width 0)
@@ -9693,7 +9693,7 @@
 		(uuid "1a5ae772-827d-41cb-b21f-3a272fa44c20")
 	)
 	(label "ROT_GAIN_A"
-		(at 24.13 162.56 0)
+		(at 21.59 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9743,7 +9743,7 @@
 		(uuid "33a182d2-d65e-40cc-a7bc-6cddfa0461b5")
 	)
 	(label "SW_GAIN"
-		(at 62.23 162.56 180)
+		(at 59.69 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9903,7 +9903,7 @@
 		(uuid "6c06199d-6584-4bf8-8ff2-f9d497a72a48")
 	)
 	(label "ROT_VOL_A"
-		(at 24.13 139.7 0)
+		(at 21.59 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9913,7 +9913,7 @@
 		(uuid "6e458443-80cb-433e-8251-9cb44202c085")
 	)
 	(label "ROT_GAIN_B"
-		(at 24.13 167.64 0)
+		(at 21.59 168.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10013,7 +10013,7 @@
 		(uuid "9543a40e-c065-4bf0-a160-348f5e927710")
 	)
 	(label "SW_VOL"
-		(at 60.96 139.7 180)
+		(at 58.42 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10113,7 +10113,7 @@
 		(uuid "bdd0aacc-2e33-4268-accc-fde717e23ef2")
 	)
 	(label "ROT_VOL_B"
-		(at 24.13 144.78 0)
+		(at 21.59 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -14895,7 +14895,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 173.99 0)
+		(at 52.07 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14905,7 +14905,7 @@
 		(dnp no)
 		(uuid "83185c3b-1ac1-41d8-9b8f-a4c4dff11379")
 		(property "Reference" "#PWR014"
-			(at 54.61 180.34 0)
+			(at 52.07 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14916,7 +14916,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 177.8 0)
+			(at 52.07 179.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14926,7 +14926,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 173.99 0)
+			(at 52.07 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14937,7 +14937,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 173.99 0)
+			(at 52.07 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14948,7 +14948,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 173.99 0)
+			(at 52.07 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17039,7 +17039,7 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch")
-		(at 43.18 165.1 0)
+		(at 40.64 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17049,7 +17049,7 @@
 		(dnp no)
 		(uuid "bb5b798c-1834-4420-a1b7-233d6852de33")
 		(property "Reference" "SW2"
-			(at 43.18 171.45 0)
+			(at 40.64 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17059,7 +17059,7 @@
 			)
 		)
 		(property "Value" "24P/R 24mm"
-			(at 43.18 158.75 0)
+			(at 40.64 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17069,7 +17069,7 @@
 			)
 		)
 		(property "Footprint" "Pedalboard Library:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles"
-			(at 39.37 161.036 0)
+			(at 36.83 162.306 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17080,7 +17080,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC11R.pdf"
-			(at 43.18 158.496 0)
+			(at 40.64 159.766 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17091,7 +17091,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 165.1 0)
+			(at 40.64 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17102,7 +17102,7 @@
 			)
 		)
 		(property "Notes" "GAIN"
-			(at 43.18 165.1 0)
+			(at 40.64 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17138,7 +17138,7 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch")
-		(at 43.18 142.24 0)
+		(at 40.64 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17148,7 +17148,7 @@
 		(dnp no)
 		(uuid "bd29f98c-2393-406a-a7f5-1e04e30ba1fe")
 		(property "Reference" "SW1"
-			(at 42.672 148.336 0)
+			(at 40.132 149.606 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17158,7 +17158,7 @@
 			)
 		)
 		(property "Value" "24P/R 24mm"
-			(at 43.18 135.89 0)
+			(at 40.64 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17168,7 +17168,7 @@
 			)
 		)
 		(property "Footprint" "Pedalboard Library:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_CircularMountingHoles"
-			(at 39.37 138.176 0)
+			(at 36.83 139.446 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17179,7 +17179,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC11R.pdf"
-			(at 43.18 135.636 0)
+			(at 40.64 136.906 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17190,7 +17190,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 142.24 0)
+			(at 40.64 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17201,7 +17201,7 @@
 			)
 		)
 		(property "Notes" "VOL"
-			(at 43.18 142.24 0)
+			(at 40.64 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18571,7 +18571,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 151.13 0)
+		(at 50.8 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18582,7 +18582,7 @@
 		(fields_autoplaced yes)
 		(uuid "fa3f8602-00d9-4d19-ac9a-0e8105e65e80")
 		(property "Reference" "#PWR015"
-			(at 53.34 157.48 0)
+			(at 50.8 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18593,7 +18593,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 156.21 0)
+			(at 50.8 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18603,7 +18603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 151.13 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18614,7 +18614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 151.13 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18625,7 +18625,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 151.13 0)
+			(at 50.8 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

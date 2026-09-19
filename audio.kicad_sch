@@ -7450,6 +7450,12 @@
 		(uuid "19c2eb59-c6d5-4f6c-a6b9-84e09668d421")
 	)
 	(junction
+		(at 40.64 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1caca187-ff63-4183-a34e-18c744e28f1f")
+	)
+	(junction
 		(at 190.5 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7516,10 +7522,16 @@
 		(uuid "461e755a-e788-42d9-b0d7-8737cc647bbe")
 	)
 	(junction
-		(at 246.38 149.86)
+		(at 246.38 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "476ef990-3623-434c-a5d2-ee5422390c7c")
+	)
+	(junction
+		(at 38.1 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e1ceaa9-0f7a-428e-b3d7-a337cdcc4d0d")
 	)
 	(junction
 		(at 29.21 185.42)
@@ -8215,6 +8227,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 88.9) (xy 40.64 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02dcd0b3-4ef7-4d8d-bdfb-caab169ee7b6")
+	)
+	(wire
+		(pts
 			(xy 238.76 46.99) (xy 241.3 46.99)
 		)
 		(stroke
@@ -8562,6 +8584,16 @@
 			(type default)
 		)
 		(uuid "18a2a809-2c32-4029-b6dd-f1fd4bbc3dfd")
+	)
+	(wire
+		(pts
+			(xy 24.13 86.36) (xy 57.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa41069-3389-4113-8b49-7f0edfb3a631")
 	)
 	(wire
 		(pts
@@ -8942,6 +8974,16 @@
 			(type default)
 		)
 		(uuid "403fca6d-8956-49e2-8423-bfa8bf97a3ad")
+	)
+	(wire
+		(pts
+			(xy 251.46 148.59) (xy 251.46 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "405888d9-fa27-45e4-b483-985c5932fd70")
 	)
 	(wire
 		(pts
@@ -9502,16 +9544,6 @@
 			(type default)
 		)
 		(uuid "79716513-d23a-46d2-884b-04fb918ef5eb")
-	)
-	(wire
-		(pts
-			(xy 38.1 86.36) (xy 57.15 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7cce955f-106d-4920-b19a-8806d22c80f3")
 	)
 	(wire
 		(pts
@@ -10145,7 +10177,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 149.86) (xy 251.46 149.86)
+			(xy 246.38 148.59) (xy 251.46 148.59)
 		)
 		(stroke
 			(width 0)
@@ -10924,7 +10956,7 @@
 		(uuid "77fbe7aa-082c-4a98-a571-4a501b17bf1f")
 	)
 	(label "conf_i2c_scl"
-		(at 40.64 86.36 0)
+		(at 24.13 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11004,7 +11036,7 @@
 		(uuid "a0157d1b-dc4b-43eb-ab60-863331d7758f")
 	)
 	(label "conf_i2c_sda"
-		(at 40.64 88.9 0)
+		(at 24.13 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11908,7 +11940,7 @@
 		(dnp no)
 		(uuid "0dfca386-f3eb-4f0f-a31f-22dac688bf01")
 		(property "Reference" "C58"
-			(at 252.984 53.594 90)
+			(at 252.73 61.468 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11918,7 +11950,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 252.73 55.626 90)
+			(at 252.73 63.246 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17893,7 +17925,7 @@
 			)
 		)
 		(property "Value" "H5VUD5BB"
-			(at 250.444 146.05 90)
+			(at 249.936 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19621,10 +19653,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f873b5ff-c8f6-4e37-846d-01c19403fa80")
 		(property "Reference" "C73"
-			(at 216.7382 110.49 90)
+			(at 216.662 111.252 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
