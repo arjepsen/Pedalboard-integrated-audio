@@ -2628,145 +2628,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+5VP"
 			(power global)
 			(pin_numbers
@@ -3234,26 +3095,6 @@
 		)
 		(uuid "02585c26-8c1b-49ae-a5b5-38fd006185cc")
 	)
-	(text_box "General 3.3V and TAC5212 I/O power"
-		(exclude_from_sim no)
-		(at 218.44 16.51 0)
-		(size 45.72 38.1)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "12ec5597-b76f-4a36-ab4b-c690c9e0e019")
-	)
 	(text_box "+5.0V / 6A buck module - regulated 12V input"
 		(exclude_from_sim no)
 		(at 21.59 127 0)
@@ -3367,12 +3208,6 @@
 		(uuid "348701d5-424d-4ac3-b3e3-54447b312b13")
 	)
 	(junction
-		(at 224.79 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3bb49e82-5626-4462-88c1-16f4afc41a65")
-	)
-	(junction
 		(at 157.48 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3383,12 +3218,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "416ea70e-710e-4b92-a324-99430d6bd30f")
-	)
-	(junction
-		(at 241.3 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ba3556a-9af5-4cac-899f-b756e645db7e")
 	)
 	(junction
 		(at 64.77 157.48)
@@ -3407,12 +3236,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "634e1d51-31fe-4773-9074-c698ae16bdac")
-	)
-	(junction
-		(at 255.27 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69b96885-1ebf-4003-8cc7-1d88bd99dd57")
 	)
 	(junction
 		(at 81.28 40.64)
@@ -3868,16 +3691,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 38.1) (xy 233.68 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "313bca1d-2735-4cf2-b7a8-bca1ebbba1f4")
-	)
-	(wire
-		(pts
 			(xy 90.17 45.72) (xy 90.17 73.66)
 		)
 		(stroke
@@ -3915,16 +3728,6 @@
 			(type default)
 		)
 		(uuid "33e8c74f-062d-4a1d-bd26-a3772d555d8d")
-	)
-	(wire
-		(pts
-			(xy 255.27 31.75) (xy 255.27 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "355c531e-71b8-48cd-87b7-8bbb75635355")
 	)
 	(wire
 		(pts
@@ -3968,16 +3771,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 33.02) (xy 255.27 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f941b37-8a24-43a2-84f7-a0701ac817e4")
-	)
-	(wire
-		(pts
 			(xy 50.8 172.72) (xy 58.42 172.72)
 		)
 		(stroke
@@ -3985,16 +3778,6 @@
 			(type default)
 		)
 		(uuid "40d46c70-376d-47cd-beff-3135db3a34d2")
-	)
-	(wire
-		(pts
-			(xy 255.27 33.02) (xy 255.27 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "429eae37-9b36-4a02-b534-2ce0bc0ae6e8")
 	)
 	(wire
 		(pts
@@ -4025,16 +3808,6 @@
 			(type default)
 		)
 		(uuid "46ce4a81-c229-44fd-92d4-240bce284f0a")
-	)
-	(wire
-		(pts
-			(xy 241.3 43.18) (xy 241.3 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48d0631c-5a49-4571-a105-1760baae47b2")
 	)
 	(wire
 		(pts
@@ -4158,16 +3931,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 30.48) (xy 224.79 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f518e2f-7678-4bbc-992a-0e656c6ff247")
-	)
-	(wire
-		(pts
 			(xy 171.45 46.99) (xy 172.72 46.99)
 		)
 		(stroke
@@ -4185,16 +3948,6 @@
 			(type default)
 		)
 		(uuid "607f15b7-c71a-4f0d-a6ae-e9128e647468")
-	)
-	(wire
-		(pts
-			(xy 233.68 38.1) (xy 233.68 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "611f5ae4-2860-470b-8b30-9213e873dd88")
 	)
 	(wire
 		(pts
@@ -4295,16 +4048,6 @@
 			(type default)
 		)
 		(uuid "799ae4f6-8e74-46f0-ba28-e84cdbfbf0fd")
-	)
-	(wire
-		(pts
-			(xy 255.27 45.72) (xy 241.3 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b91b9b6-48dc-4812-a1c0-6088b399549e")
 	)
 	(wire
 		(pts
@@ -4588,16 +4331,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 33.02) (xy 224.79 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e173a05-3d9a-46f8-92ea-c97e4fa19ca1")
-	)
-	(wire
-		(pts
 			(xy 184.15 27.94) (xy 184.15 30.48)
 		)
 		(stroke
@@ -4688,16 +4421,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 40.64) (xy 255.27 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afa6d5fa-7437-4a5c-b4e7-266e919c58f0")
-	)
-	(wire
-		(pts
 			(xy 58.42 154.94) (xy 58.42 165.1)
 		)
 		(stroke
@@ -4718,16 +4441,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 43.18) (xy 224.79 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4eacbdf-c29f-47cc-a2bd-fa1907b2e01b")
-	)
-	(wire
-		(pts
 			(xy 133.35 171.45) (xy 133.35 172.72)
 		)
 		(stroke
@@ -4745,16 +4458,6 @@
 			(type default)
 		)
 		(uuid "b6466d99-eb95-46ee-9789-e8410e4024c0")
-	)
-	(wire
-		(pts
-			(xy 224.79 33.02) (xy 233.68 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7e510ec-8940-4892-85d7-ae1b6f4da8ad")
 	)
 	(wire
 		(pts
@@ -4988,16 +4691,6 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 45.72) (xy 241.3 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e17a520a-bca2-4c30-8a64-143eb4959ad0")
-	)
-	(wire
-		(pts
 			(xy 116.84 171.45) (xy 133.35 171.45)
 		)
 		(stroke
@@ -5078,16 +4771,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 45.72) (xy 241.3 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4698524-d3ea-4be8-a3f1-6609fb475f44")
-	)
-	(wire
-		(pts
 			(xy 96.52 40.64) (xy 115.57 40.64)
 		)
 		(stroke
@@ -5155,16 +4838,6 @@
 			(justify right bottom)
 		)
 		(uuid "3a127ee3-b72b-4a84-86a8-a63c1db9c56a")
-	)
-	(label "5V_PG"
-		(at 227.33 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "78100fa7-2fb2-4abd-809e-a6bcd5e76c20")
 	)
 	(label "5V_PG"
 		(at 227.33 92.71 0)
@@ -6894,89 +6567,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 241.3 46.99 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4bec0ffb-75a3-4017-8956-30340cf9e297")
-		(property "Reference" "#PWR045"
-			(at 241.3 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 237.49 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "099b4316-eb7e-4371-9ab2-e50d11c4fb32")
-		)
-		(instances
-			(project "RP2040_minimal"
-				(path "/aa156aab-bead-4c71-9076-01087371a0f1"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -9425,139 +9015,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:TPS7A20xxxDBV")
-		(at 241.3 35.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc987e2c-ea2a-4b66-b60e-0195f36d711c")
-		(property "Reference" "U5"
-			(at 241.3 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS7A20"
-			(at 241.3 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 241.3 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf"
-			(at 241.3 22.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "300 mA Low Dropout Voltage Regulator, Fixed Output, 1.6..6.0Vin, Low-Noise (7μV RMS), 6.5μA IQ LDO, SOT-23"
-			(at 241.3 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer part" "TPS7A2033PDBVR"
-			(at 241.3 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C2862740"
-			(at 241.3 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 241.3 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "General 3.3V rail and TAC5212 IOVDD. Required in full and minimal builds. Extended part."
-			(at 241.3 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "23fd2660-ef11-4d37-be44-836d06271567")
-		)
-		(pin "1"
-			(uuid "b3152db5-f469-4d08-aecd-f41bc3a12f95")
-		)
-		(pin "3"
-			(uuid "7205d9e4-709c-44d8-8286-102ca8c5b20e")
-		)
-		(pin "4"
-			(uuid "6f2dd0a1-0f78-428f-bd94-eece243c3df7")
-		)
-		(pin "5"
-			(uuid "95a28996-6347-4adf-a662-89779c1829ad")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 241.3 100.33 0)
 		(unit 1)
@@ -9629,89 +9086,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 255.27 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e00ecfce-e3fb-4f56-a6f6-c1254da3920a")
-		(property "Reference" "#PWR046"
-			(at 255.27 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 255.651 27.3558 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 255.27 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "066c1c3e-f533-4d72-b2bd-1321899607e1")
-		)
-		(instances
-			(project "RP2040_minimal"
-				(path "/aa156aab-bead-4c71-9076-01087371a0f1"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -10123,256 +9497,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 255.27 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "edb6087e-91c5-4828-9b35-0dfa671c77dc")
-		(property "Reference" "C24"
-			(at 249.682 37.084 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 249.428 39.878 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 256.2352 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer part" "CL21A106KAYNNNE"
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C15850"
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10uF, 25V, X5R, ±10%. U5 output capacitor. JLCPCB Basic."
-			(at 255.27 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58e3888d-51ba-4e77-846e-12f394b86e17")
-		)
-		(pin "2"
-			(uuid "5c00f84b-f4b3-4f3d-bd96-c1d054ce93c6")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 224.79 40.64 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f126c87e-9440-4ffa-b731-090f5b7290d6")
-		(property "Reference" "C27"
-			(at 219.202 39.624 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 218.948 42.418 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 225.7552 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer part" "CL21A106KAYNNNE"
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C15850"
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "10uF, 25V, X5R, ±10%. U5 input capacitor. JLCPCB Basic."
-			(at 224.79 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fe1ccb07-cb29-48c2-bd2f-8d406f212a8c")
-		)
-		(pin "2"
-			(uuid "51147100-98ad-4309-891d-07ddd84e5e03")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 157.48 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -10480,84 +9604,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "C59")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5VP")
-		(at 224.79 30.48 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fca25649-2964-429d-97fd-f41c19b2bee3")
-		(property "Reference" "#PWR034"
-			(at 224.79 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5VP"
-			(at 224.79 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5VP\""
-			(at 224.79 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bca8e4dc-40ea-46cb-99c3-8e3273edbbdf")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
