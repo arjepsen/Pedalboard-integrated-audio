@@ -9188,7 +9188,7 @@
 			)
 		)
 	)
-	(global_label "CM5_UART_TX"
+	(global_label "UI_UART_TX"
 		(shape input)
 		(at 137.16 172.72 180)
 		(fields_autoplaced yes)
@@ -9200,7 +9200,7 @@
 		)
 		(uuid "6b5ba009-87ae-4215-a2a4-be7c04d17520")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.4749 172.72 0)
+			(at 123.4705 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9236,7 +9236,7 @@
 			)
 		)
 	)
-	(global_label "CM5_UART_RX"
+	(global_label "UI_UART_RX"
 		(shape input)
 		(at 137.16 175.26 180)
 		(fields_autoplaced yes)
@@ -9248,7 +9248,7 @@
 		)
 		(uuid "91330456-2e1c-4196-a0df-cbc40c090b19")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.1725 175.26 0)
+			(at 123.1681 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13013,7 +13013,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "efaaaf0c-ea13-4073-bc1f-df4de7a0a34a")
 		(property "Reference" "J21"
