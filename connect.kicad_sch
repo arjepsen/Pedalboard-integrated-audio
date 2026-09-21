@@ -7017,7 +7017,7 @@
 		(uuid "e3353e9b-68c8-49ed-9216-5628e9e070b6")
 	)
 	(junction
-		(at 158.75 48.26)
+		(at 166.37 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0094cfad-6a94-4bc7-bf01-da66f85ac559")
@@ -7065,7 +7065,7 @@
 		(uuid "387b8876-9558-4e3a-9b3d-f6c8cd33098a")
 	)
 	(junction
-		(at 158.75 50.8)
+		(at 166.37 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "497f5a43-af20-4fac-9cf5-4fb5de51680b")
@@ -7089,7 +7089,7 @@
 		(uuid "4fb34a27-2e0a-4fc0-abb9-b610f0694ef8")
 	)
 	(junction
-		(at 148.59 40.64)
+		(at 156.21 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5ab56cbc-58d5-4470-a5d1-0e5f412a5205")
@@ -7155,7 +7155,7 @@
 		(uuid "74efa0f0-a3c8-4ba4-89e6-aa3c80f14e75")
 	)
 	(junction
-		(at 181.61 72.39)
+		(at 189.23 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7772f888-1bf2-4ec4-bcad-8ee326d3e324")
@@ -7185,7 +7185,7 @@
 		(uuid "9c5007be-0ff0-4af9-ab7e-fc355dc044fd")
 	)
 	(junction
-		(at 173.99 72.39)
+		(at 181.61 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a2846979-c491-4566-b880-b566209780c0")
@@ -7279,7 +7279,7 @@
 		(uuid "04b83b85-2244-4ba6-b00d-627d5d3bfbc5")
 	)
 	(no_connect
-		(at 158.75 63.5)
+		(at 166.37 63.5)
 		(uuid "0860d11c-3cf9-4a55-bfe8-7f074b8410cd")
 	)
 	(no_connect
@@ -7291,10 +7291,6 @@
 		(uuid "1f98e904-886c-412c-9d4b-0a62afb5399e")
 	)
 	(no_connect
-		(at 158.75 33.02)
-		(uuid "203a66c5-95cf-4847-a271-c80784eb831d")
-	)
-	(no_connect
 		(at 43.18 152.4)
 		(uuid "2494af46-4985-499d-a49a-2b471d8a2e31")
 	)
@@ -7303,7 +7299,7 @@
 		(uuid "2d2f1cf7-ebd5-434c-8ac9-f2244fbe1201")
 	)
 	(no_connect
-		(at 158.75 60.96)
+		(at 166.37 60.96)
 		(uuid "2f0dc324-5fef-4aba-a3d9-933e14d80f8d")
 	)
 	(no_connect
@@ -7552,7 +7548,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 72.39) (xy 181.61 72.39)
+			(xy 187.96 72.39) (xy 189.23 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7662,7 +7658,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 38.1) (xy 148.59 38.1)
+			(xy 158.75 38.1) (xy 156.21 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7692,7 +7688,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 48.26) (xy 214.63 55.88)
+			(xy 220.98 48.26) (xy 220.98 55.88)
 		)
 		(stroke
 			(width 0)
@@ -7722,7 +7718,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 38.1) (xy 158.75 38.1)
+			(xy 163.83 38.1) (xy 166.37 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7792,7 +7788,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 72.39) (xy 175.26 72.39)
+			(xy 181.61 72.39) (xy 182.88 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7852,7 +7848,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 45.72) (xy 158.75 48.26)
+			(xy 166.37 45.72) (xy 166.37 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7892,7 +7888,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 76.2) (xy 173.99 76.2)
+			(xy 182.88 76.2) (xy 181.61 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7922,7 +7918,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 76.2) (xy 173.99 72.39)
+			(xy 181.61 76.2) (xy 181.61 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7932,7 +7928,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 76.2) (xy 181.61 72.39)
+			(xy 189.23 76.2) (xy 189.23 72.39)
 		)
 		(stroke
 			(width 0)
@@ -7942,7 +7938,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 40.64) (xy 151.13 40.64)
+			(xy 156.21 40.64) (xy 158.75 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7952,7 +7948,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 50.8) (xy 158.75 53.34)
+			(xy 166.37 50.8) (xy 166.37 53.34)
 		)
 		(stroke
 			(width 0)
@@ -8042,7 +8038,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 49.53) (xy 218.44 49.53)
+			(xy 223.52 49.53) (xy 224.79 49.53)
 		)
 		(stroke
 			(width 0)
@@ -8062,7 +8058,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 49.53) (xy 217.17 48.26)
+			(xy 223.52 49.53) (xy 223.52 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8172,7 +8168,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 40.64) (xy 207.01 40.64)
+			(xy 200.66 40.64) (xy 213.36 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8302,6 +8298,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 33.02) (xy 166.37 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dee45c0-9692-4833-b493-ef2e5c4b7a01")
+	)
+	(wire
+		(pts
 			(xy 106.68 132.08) (xy 106.68 124.46)
 		)
 		(stroke
@@ -8322,7 +8328,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 72.39) (xy 173.99 72.39)
+			(xy 175.26 72.39) (xy 181.61 72.39)
 		)
 		(stroke
 			(width 0)
@@ -8332,7 +8338,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 76.2) (xy 181.61 76.2)
+			(xy 187.96 76.2) (xy 189.23 76.2)
 		)
 		(stroke
 			(width 0)
@@ -8352,7 +8358,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 33.02) (xy 207.01 33.02)
+			(xy 203.2 33.02) (xy 213.36 33.02)
 		)
 		(stroke
 			(width 0)
@@ -8382,7 +8388,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 38.1) (xy 148.59 40.64)
+			(xy 156.21 38.1) (xy 156.21 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8422,7 +8428,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 40.64) (xy 158.75 40.64)
+			(xy 163.83 40.64) (xy 166.37 40.64)
 		)
 		(stroke
 			(width 0)
@@ -8532,7 +8538,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 50.8) (xy 158.75 50.8)
+			(xy 146.05 50.8) (xy 166.37 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8562,7 +8568,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 48.26) (xy 158.75 48.26)
+			(xy 146.05 48.26) (xy 166.37 48.26)
 		)
 		(stroke
 			(width 0)
@@ -8602,7 +8608,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 72.39) (xy 181.61 71.12)
+			(xy 189.23 72.39) (xy 189.23 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8692,7 +8698,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 38.1) (xy 194.31 38.1)
+			(xy 213.36 38.1) (xy 200.66 38.1)
 		)
 		(stroke
 			(width 0)
@@ -8702,7 +8708,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 72.39) (xy 167.64 73.66)
+			(xy 175.26 72.39) (xy 175.26 73.66)
 		)
 		(stroke
 			(width 0)
@@ -8742,7 +8748,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 72.39) (xy 173.99 71.12)
+			(xy 181.61 72.39) (xy 181.61 71.12)
 		)
 		(stroke
 			(width 0)
@@ -8962,7 +8968,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 72.39) (xy 182.88 72.39)
+			(xy 189.23 72.39) (xy 190.5 72.39)
 		)
 		(stroke
 			(width 0)
@@ -8981,7 +8987,7 @@
 		(uuid "fe384e28-eecb-45c3-beec-8ec2320318c4")
 	)
 	(label "USB_HOST_P"
-		(at 194.31 38.1 0)
+		(at 200.66 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9001,7 +9007,7 @@
 		(uuid "2dd5f6f1-653b-4ee4-acab-9f6f0d2ea1d8")
 	)
 	(label "VBUS"
-		(at 196.85 33.02 0)
+		(at 203.2 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9041,7 +9047,7 @@
 		(uuid "5074d460-6448-4357-9a60-6cb6383ebf89")
 	)
 	(label "USB_HOST_N"
-		(at 194.31 40.64 0)
+		(at 200.66 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9071,7 +9077,7 @@
 		(uuid "81a60ab9-35ce-4f31-8009-7b5751b9f9f3")
 	)
 	(label "USB_SERVICE_N"
-		(at 138.43 48.26 0)
+		(at 146.05 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9091,7 +9097,7 @@
 		(uuid "93d6dfb1-fca4-49a4-bfee-f93e182af5cf")
 	)
 	(label "USB_SERVICE_P"
-		(at 138.43 50.8 0)
+		(at 146.05 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9109,6 +9115,16 @@
 			(justify left bottom)
 		)
 		(uuid "c2f00124-ff3e-4555-84bf-536cf51f664d")
+	)
+	(label "USB_SERVICE_VBUS_UNUSED"
+		(at 137.16 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c53d22ee-0347-48ed-a6da-5763dfa6702d")
 	)
 	(label "USB_HOST_VBUS_EN"
 		(at 237.49 95.25 180)
@@ -9214,7 +9230,7 @@
 	)
 	(global_label "CHASSIS"
 		(shape input)
-		(at 182.88 72.39 0)
+		(at 190.5 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9224,7 +9240,7 @@
 		)
 		(uuid "83e1ff01-2fe6-44e6-be74-3a6dbee4f623")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 193.7876 72.39 0)
+			(at 201.4076 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9262,7 +9278,7 @@
 	)
 	(global_label "CHASSIS"
 		(shape input)
-		(at 218.44 49.53 0)
+		(at 224.79 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9272,7 +9288,7 @@
 		)
 		(uuid "a0682f9f-ef5f-4e02-a3de-5d46559084b4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.3476 49.53 0)
+			(at 235.6976 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9612,7 +9628,7 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_A")
-		(at 214.63 38.1 0)
+		(at 220.98 38.1 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9623,7 +9639,7 @@
 		(dnp no)
 		(uuid "3e56d942-6828-4296-924e-42606ecbe9fa")
 		(property "Reference" "J10"
-			(at 214.63 25.4 0)
+			(at 220.98 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9633,7 +9649,7 @@
 			)
 		)
 		(property "Value" "USB-A HOST"
-			(at 214.63 27.94 0)
+			(at 220.98 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9643,7 +9659,7 @@
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_A_Molex_67643_Horizontal"
-			(at 210.82 39.37 0)
+			(at 217.17 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9654,7 +9670,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/676433910?display=pdf"
-			(at 210.82 39.37 0)
+			(at 217.17 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9665,7 +9681,7 @@
 			)
 		)
 		(property "Description" "USB Type A connector"
-			(at 214.63 38.1 0)
+			(at 220.98 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9676,7 +9692,7 @@
 			)
 		)
 		(property "Manufacturer" "Molex"
-			(at 214.63 38.1 0)
+			(at 220.98 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9687,7 +9703,7 @@
 			)
 		)
 		(property "Manufacturer part" "67643-3910"
-			(at 214.63 38.1 0)
+			(at 220.98 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9698,7 +9714,7 @@
 			)
 		)
 		(property "Notes" "USB 2.0 host connector. Through-hole, intended for manual fitting."
-			(at 214.63 38.1 0)
+			(at 220.98 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9936,7 +9952,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 153.67 40.64 270)
+		(at 161.29 40.64 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9946,7 +9962,7 @@
 		(dnp no)
 		(uuid "4db9ba0e-f4f6-49b3-9680-c0fdd597ca21")
 		(property "Reference" "R31"
-			(at 153.924 42.672 90)
+			(at 161.544 42.672 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9956,7 +9972,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 153.924 44.45 90)
+			(at 161.544 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9966,7 +9982,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 153.67 38.862 90)
+			(at 161.29 38.862 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9977,7 +9993,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 40.64 0)
+			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9988,7 +10004,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 153.67 40.64 0)
+			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9999,7 +10015,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 153.67 40.64 0)
+			(at 161.29 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10010,7 +10026,7 @@
 			)
 		)
 		(property "Manufacturer part" "0402WGF5101TCE"
-			(at 153.67 40.64 90)
+			(at 161.29 40.64 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10021,7 +10037,7 @@
 			)
 		)
 		(property "JLCPCB part" "C25905"
-			(at 153.67 40.64 90)
+			(at 161.29 40.64 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11441,7 +11457,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 177.8 72.39 90)
+		(at 185.42 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11451,7 +11467,7 @@
 		(dnp no)
 		(uuid "83eb4771-3c6e-4eff-827d-afea9db99341")
 		(property "Reference" "C50"
-			(at 179.07 68.072 90)
+			(at 186.69 68.072 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11462,7 +11478,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 179.324 69.85 90)
+			(at 186.944 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11473,7 +11489,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 181.61 71.4248 0)
+			(at 189.23 71.4248 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11484,7 +11500,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/C521240.pdf"
-			(at 177.8 72.39 0)
+			(at 185.42 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11495,7 +11511,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 177.8 72.39 0)
+			(at 185.42 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11506,7 +11522,7 @@
 			)
 		)
 		(property "Notes" "1kV C0G; chassis-to-signal-ground HF/ESD bond"
-			(at 177.8 72.39 0)
+			(at 185.42 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11517,7 +11533,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata"
-			(at 177.8 72.39 90)
+			(at 185.42 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11528,7 +11544,7 @@
 			)
 		)
 		(property "Manufacturer part" "GRM31C5C3A102JWA3L"
-			(at 177.8 72.39 90)
+			(at 185.42 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11539,7 +11555,7 @@
 			)
 		)
 		(property "JLCPCB part" "C521240"
-			(at 177.8 72.39 90)
+			(at 185.42 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12002,7 +12018,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 153.67 38.1 270)
+		(at 161.29 38.1 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12012,7 +12028,7 @@
 		(dnp no)
 		(uuid "9843c2df-dc18-4e0e-a0fb-8a0623d03a2b")
 		(property "Reference" "R30"
-			(at 153.67 34.544 90)
+			(at 161.29 34.544 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12022,7 +12038,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 153.67 36.322 90)
+			(at 161.29 36.322 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12032,7 +12048,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 153.67 36.322 90)
+			(at 161.29 36.322 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12043,7 +12059,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 38.1 0)
+			(at 161.29 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12054,7 +12070,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 153.67 38.1 0)
+			(at 161.29 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12065,7 +12081,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 153.67 38.1 0)
+			(at 161.29 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12076,7 +12092,7 @@
 			)
 		)
 		(property "Manufacturer part" "0402WGF5101TCE"
-			(at 153.67 38.1 90)
+			(at 161.29 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12087,7 +12103,7 @@
 			)
 		)
 		(property "JLCPCB part" "C25905"
-			(at 153.67 38.1 90)
+			(at 161.29 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12114,7 +12130,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 55.88 0)
+		(at 220.98 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12124,7 +12140,7 @@
 		(dnp no)
 		(uuid "b4b95b04-0082-4611-b1c0-5c351b37ada0")
 		(property "Reference" "#PWR070"
-			(at 214.63 62.23 0)
+			(at 220.98 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12135,7 +12151,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.884 60.452 0)
+			(at 221.234 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12145,7 +12161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 55.88 0)
+			(at 220.98 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12156,7 +12172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 55.88 0)
+			(at 220.98 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12167,7 +12183,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 55.88 0)
+			(at 220.98 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12191,7 +12207,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 177.8 76.2 270)
+		(at 185.42 76.2 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12201,7 +12217,7 @@
 		(dnp no)
 		(uuid "bfe638f3-0b2f-49c1-8507-37c2b664b9f2")
 		(property "Reference" "R53"
-			(at 177.546 78.232 90)
+			(at 185.166 78.232 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12211,7 +12227,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 177.292 80.264 90)
+			(at 184.912 80.264 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12221,7 +12237,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 177.8 74.422 90)
+			(at 185.42 74.422 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12232,7 +12248,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 76.2 0)
+			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12243,7 +12259,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 177.8 76.2 0)
+			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12254,7 +12270,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 177.8 76.2 0)
+			(at 185.42 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12265,7 +12281,7 @@
 			)
 		)
 		(property "Manufacturer part" "0603WAF1004T5E"
-			(at 177.8 76.2 90)
+			(at 185.42 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12276,7 +12292,7 @@
 			)
 		)
 		(property "JLCPCB part" "C22935"
-			(at 177.8 76.2 90)
+			(at 185.42 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12287,7 +12303,7 @@
 			)
 		)
 		(property "Notes" "Chassis DC bleed"
-			(at 177.8 76.2 90)
+			(at 185.42 76.2 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12556,7 +12572,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 40.64 0)
+		(at 156.21 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12566,7 +12582,7 @@
 		(dnp no)
 		(uuid "d76bcac8-6401-4acd-ac05-79f55f809873")
 		(property "Reference" "#PWR074"
-			(at 148.59 46.99 0)
+			(at 156.21 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12577,7 +12593,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 44.196 0)
+			(at 156.21 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12587,7 +12603,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 40.64 0)
+			(at 156.21 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12598,7 +12614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 40.64 0)
+			(at 156.21 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12609,7 +12625,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 40.64 0)
+			(at 156.21 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12837,7 +12853,7 @@
 	)
 	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
-		(at 173.99 48.26 0)
+		(at 181.61 48.26 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12848,7 +12864,7 @@
 		(dnp no)
 		(uuid "eaba7cb2-60ea-4a3e-aadb-92fd5689b007")
 		(property "Reference" "J9"
-			(at 173.736 25.4 0)
+			(at 181.356 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12858,7 +12874,7 @@
 			)
 		)
 		(property "Value" "USB-C SERVICE"
-			(at 174.498 28.448 0)
+			(at 182.118 28.448 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12868,7 +12884,7 @@
 			)
 		)
 		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
-			(at 170.18 48.26 0)
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12879,7 +12895,7 @@
 			)
 		)
 		(property "Datasheet" "https://gct.co/files/drawings/usb4105.pdf"
-			(at 170.18 48.26 0)
+			(at 177.8 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12890,7 +12906,7 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
-			(at 173.99 48.26 0)
+			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12901,7 +12917,7 @@
 			)
 		)
 		(property "Manufacturer" "Global Connector Technology"
-			(at 173.99 48.26 0)
+			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12912,7 +12928,7 @@
 			)
 		)
 		(property "Manufacturer part" "USB4105-GF-A-060"
-			(at 173.99 48.26 0)
+			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12923,7 +12939,7 @@
 			)
 		)
 		(property "JLCPCB part" "C3025063"
-			(at 173.99 48.26 0)
+			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12934,7 +12950,7 @@
 			)
 		)
 		(property "Notes" "Self-powered CM5 USB 2.0 service port for rpiboot flashing, USB Ethernet, and SSH. VBUS intentionally unconnected"
-			(at 173.99 48.26 0)
+			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13257,7 +13273,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 167.64 73.66 0)
+		(at 175.26 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13267,7 +13283,7 @@
 		(dnp no)
 		(uuid "fcf5d89f-1fae-4ea8-a114-390fbba22a3f")
 		(property "Reference" "#PWR066"
-			(at 167.64 80.01 0)
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13278,7 +13294,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 164.338 76.2 0)
+			(at 171.958 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13288,7 +13304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.64 73.66 0)
+			(at 175.26 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13299,7 +13315,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 73.66 0)
+			(at 175.26 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13310,7 +13326,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 167.64 73.66 0)
+			(at 175.26 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
