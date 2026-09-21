@@ -864,7 +864,7 @@
         "uuid": "df521c2a-9827-4355-b809-366f4b88d5d7"
       }
     ],
-    "used_designators": "R6,R9-10,R12-15,R17,R19-20,R30-57,J11,J13,J15-17,J20-21,IC1,#PWR5,#PWR24-26,#PWR29,#PWR31-32,#PWR36-39,#PWR42,#PWR44,#PWR47-50,#PWR63-64,#PWR74-101,D3-5,D7-9,U4-5,U7,U13-16,C56a1,C3-7,C15-16,C21-22,C25,C28-31,C37,C39-40,C53-81,C56b1,JP4,Module1,TP5,SW11",
+    "used_designators": "R6,R9-10,R12-15,R17,R19-20,R30-57,J11,J13,J15-17,J20-21,IC1,#PWR5,#PWR24-26,#PWR29,#PWR31-32,#PWR36-39,#PWR42-44,#PWR47-50,#PWR63-64,#PWR74-102,D3-5,D7-9,U4-5,U7,U13-16,C56a1,C3-7,C15-16,C21-22,C25,C28-31,C37,C39-40,C53-81,C56b1,JP4,Module1,TP5,SW11",
     "variants": []
   },
   "sheets": [
@@ -873,20 +873,12 @@
       "pedalboard-hw"
     ],
     [
-      "d36964e5-9373-47ae-95a7-088f8df77199",
-      "MIDI"
-    ],
-    [
       "6bd0afd4-cd8b-4c1d-a236-891eed0b2d91",
       "Audio"
     ],
     [
       "0d7c87b0-1309-475f-a9d7-edcf3dee5e4e",
       "Power Supply"
-    ],
-    [
-      "539b926e-3ef4-477a-b921-49e2b2b26dfc",
-      "LEDs"
     ],
     [
       "e8ab7a61-8d57-4690-876b-f6a417060d03",

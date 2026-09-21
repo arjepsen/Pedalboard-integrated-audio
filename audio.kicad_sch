@@ -7960,10 +7960,6 @@
 		(uuid "1932b6e7-58eb-49d0-a31b-4e7749125cbe")
 	)
 	(no_connect
-		(at 57.15 83.82)
-		(uuid "1d7da045-0bd7-4276-9b53-ec868f42cdfc")
-	)
-	(no_connect
 		(at 124.46 184.15)
 		(uuid "20084828-815c-45d9-a76f-0d836d2f244a")
 	)
@@ -7976,10 +7972,6 @@
 		(uuid "29c31ffe-76b9-4738-b1a9-9f95b59beb23")
 	)
 	(no_connect
-		(at 57.15 73.66)
-		(uuid "2c086d55-c57d-417d-abb2-c59f45689b3b")
-	)
-	(no_connect
 		(at 208.28 143.51)
 		(uuid "2dc63970-bbe1-4117-a58e-bfa6e453ff61")
 	)
@@ -7990,10 +7982,6 @@
 	(no_connect
 		(at 118.11 53.34)
 		(uuid "39ce5c0b-04d0-4141-9573-bca7c5e34967")
-	)
-	(no_connect
-		(at 57.15 58.42)
-		(uuid "480e8daa-6b82-467c-b212-56bff03e661b")
 	)
 	(no_connect
 		(at 57.15 50.8)
@@ -8174,10 +8162,6 @@
 	(no_connect
 		(at 118.11 129.54)
 		(uuid "e203f3ce-19db-43b1-9d30-44e7b9671bc4")
-	)
-	(no_connect
-		(at 118.11 76.2)
-		(uuid "e6ebf948-7b23-4030-8eed-be35df9e2187")
 	)
 	(no_connect
 		(at 118.11 132.08)
@@ -8727,6 +8711,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 58.42) (xy 57.15 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27336559-983f-4e53-9098-16ce52798b2e")
+	)
+	(wire
+		(pts
 			(xy 232.41 114.3) (xy 232.41 124.46)
 		)
 		(stroke
@@ -8864,6 +8858,16 @@
 			(type default)
 		)
 		(uuid "30ecccad-147a-4f92-9876-17e0338330b4")
+	)
+	(wire
+		(pts
+			(xy 124.46 73.66) (xy 124.46 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3114fde6-ff6f-4e6a-8ec0-28353044cc16")
 	)
 	(wire
 		(pts
@@ -9554,6 +9558,16 @@
 			(type default)
 		)
 		(uuid "7d0521ed-116d-42c4-97b1-6f3bb6003184")
+	)
+	(wire
+		(pts
+			(xy 124.46 76.2) (xy 118.11 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ec0a834-1e10-4365-aa06-08edd20d5860")
 	)
 	(wire
 		(pts
@@ -10407,6 +10421,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 73.66) (xy 124.46 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4421fbe-e57d-4464-80e5-987ce3f5b53a")
+	)
+	(wire
+		(pts
 			(xy 207.01 146.05) (xy 207.01 153.67)
 		)
 		(stroke
@@ -10494,6 +10518,16 @@
 			(type default)
 		)
 		(uuid "d95bb683-3e2e-4198-99b8-198eae8e15d6")
+	)
+	(wire
+		(pts
+			(xy 50.8 83.82) (xy 57.15 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9fe7ae5-7636-4e65-b7c3-197fa168c58d")
 	)
 	(wire
 		(pts
@@ -10754,6 +10788,16 @@
 			(type default)
 		)
 		(uuid "f49307ea-a5ae-44e8-b24d-c739e316a693")
+	)
+	(wire
+		(pts
+			(xy 50.8 73.66) (xy 57.15 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f55a1908-9bc4-4988-8097-cdf148963e65")
 	)
 	(wire
 		(pts
@@ -11135,7 +11179,7 @@
 		)
 		(uuid "ebe7fe73-20c8-41fa-b63d-5c95587df19c")
 	)
-	(global_label "CM5_UART_TX"
+	(global_label "CM5_DEBUG_UART_TX"
 		(shape input)
 		(at 125.73 86.36 0)
 		(fields_autoplaced yes)
@@ -11147,7 +11191,7 @@
 		)
 		(uuid "03382c37-797d-49ac-95f4-c8ba4f580ffd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4151 86.36 0)
+			(at 148.6722 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11156,6 +11200,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "UI_UART_TX"
+		(shape input)
+		(at 50.8 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ff1e061-f994-4a33-aa94-4c801ec5b3b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.1105 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -11207,6 +11275,30 @@
 			)
 		)
 	)
+	(global_label "ESP_RESET"
+		(shape input)
+		(at 50.8 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a1eb962f-4dd2-4b58-993d-8a1f0bb6ff82")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.4736 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "3V3_CODEC"
 		(shape input)
 		(at 74.93 168.91 180)
@@ -11255,6 +11347,30 @@
 			)
 		)
 	)
+	(global_label "ESP_BOOT"
+		(shape input)
+		(at 127 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb2a59b6-3626-43e7-bdcd-9bc7eb3962d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.4799 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "CM5_3V"
 		(shape input)
 		(at 265.43 26.67 0)
@@ -11279,7 +11395,31 @@
 			)
 		)
 	)
-	(global_label "CM5_UART_RX"
+	(global_label "UI_UART_RX"
+		(shape input)
+		(at 50.8 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e4511a53-9e09-40eb-bb9c-55388a169d83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.1105 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "CM5_DEBUG_UART_RX"
 		(shape input)
 		(at 125.73 81.28 0)
 		(fields_autoplaced yes)
@@ -11291,7 +11431,7 @@
 		)
 		(uuid "f65e0a29-1270-4da4-8e11-5d61a22e6fc9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4151 81.28 0)
+			(at 148.9746 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

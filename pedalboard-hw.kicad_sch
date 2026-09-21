@@ -362,16 +362,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(wire
-		(pts
-			(xy 60.96 78.74) (xy 60.96 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44692e73-b58e-46c5-8a56-edf6f039cc3c")
-	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 74.93 167.64 0)
@@ -1179,62 +1169,6 @@
 		)
 	)
 	(sheet
-		(at 21.59 88.9)
-		(size 58.42 53.34)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "539b926e-3ef4-477a-b921-49e2b2b26dfc")
-		(property "Sheetname" "LEDs"
-			(at 21.59 88.1884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "leds.kicad_sch"
-			(at 21.59 142.8246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "RGB_DATA" input
-			(at 60.96 88.9 90)
-			(uuid "c3e5f99b-9260-47ca-83a0-7296d638ecba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 120.65 25.4)
 		(size 66.04 53.34)
 		(exclude_from_sim no)
@@ -1276,62 +1210,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 21.59 25.4)
-		(size 59.69 53.34)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "d36964e5-9373-47ae-95a7-088f8df77199")
-		(property "Sheetname" "MIDI"
-			(at 21.59 24.6884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "pico.kicad_sch"
-			(at 21.59 79.3246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "RGB_DATA" input
-			(at 60.96 78.74 270)
-			(uuid "befe0c14-bc80-4f40-803d-df1ea674008d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7"
-					(page "2")
 				)
 			)
 		)
