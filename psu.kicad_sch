@@ -458,6 +458,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Polarized_Small_US"
 			(pin_numbers
 				(hide yes)
@@ -3031,6 +3154,16 @@
 		)
 		(uuid "682e6e90-752d-4f42-9698-47df6b0b5abf")
 	)
+	(text "POWER INPUT: 12 VDC regulated, 4 A recommended"
+		(exclude_from_sim no)
+		(at 37.846 33.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7fc68e29-b586-480f-bdd4-eb07b8240d75")
+	)
 	(text "Revese \nPolarity \nProtection"
 		(exclude_from_sim no)
 		(at 83.058 32.258 0)
@@ -3142,6 +3275,12 @@
 		(uuid "058c9064-126b-40ad-8452-e1a83ab0795d")
 	)
 	(junction
+		(at 177.8 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "070b4dba-fcf6-451a-8108-8b04ec4775ed")
+	)
+	(junction
 		(at 133.35 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3184,10 +3323,22 @@
 		(uuid "1cdc0373-9c69-48b0-a9c5-7b054d0e43e0")
 	)
 	(junction
+		(at 39.37 165.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d2eb7f0-f790-4621-b500-ade6aec04f20")
+	)
+	(junction
 		(at 116.84 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "286338b2-b77c-42f2-8f03-1a18f5578d7c")
+	)
+	(junction
+		(at 251.46 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c2bfaa6-36ed-4938-8c4c-e7af860335e7")
 	)
 	(junction
 		(at 53.34 165.1)
@@ -3230,18 +3381,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d47f972-ea9a-4938-b4de-72ba48e07740")
-	)
-	(junction
-		(at 81.28 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "634e1d51-31fe-4773-9074-c698ae16bdac")
-	)
-	(junction
-		(at 81.28 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d5d6833-4eb6-4c68-8cd5-64098b970eab")
 	)
 	(junction
 		(at 152.4 83.82)
@@ -3344,6 +3483,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb54f265-9047-400f-b884-0fc5e7a9c786")
+	)
+	(junction
+		(at 54.61 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc71e4a7-cf8e-4942-bb7c-ed2e15a5a206")
 	)
 	(junction
 		(at 133.35 154.94)
@@ -3501,16 +3646,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 40.64) (xy 81.28 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e20fdb7-ed77-4a4e-8587-acbcb02360cb")
-	)
-	(wire
-		(pts
 			(xy 120.65 162.56) (xy 120.65 152.4)
 		)
 		(stroke
@@ -3528,16 +3663,6 @@
 			(type default)
 		)
 		(uuid "13182a72-9bab-4ee5-bd67-8ab3dc0d0c5b")
-	)
-	(wire
-		(pts
-			(xy 81.28 73.66) (xy 90.17 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "146411ed-b749-4eab-9300-eba35992fef1")
 	)
 	(wire
 		(pts
@@ -3591,7 +3716,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 25.4) (xy 184.15 27.94)
+			(xy 187.96 25.4) (xy 187.96 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3601,13 +3726,13 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 40.64) (xy 81.28 40.64)
+			(xy 54.61 73.66) (xy 73.66 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24ba242e-1f7f-415f-84ba-0d4e7db7d447")
+		(uuid "238d81a0-5b77-48e1-8817-71c118943b9b")
 	)
 	(wire
 		(pts
@@ -3741,7 +3866,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 73.66) (xy 73.66 73.66)
+			(xy 45.72 73.66) (xy 54.61 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3841,7 +3966,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 40.64) (xy 82.55 40.64)
+			(xy 73.66 40.64) (xy 82.55 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3951,7 +4076,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 73.66) (xy 81.28 73.66)
+			(xy 73.66 73.66) (xy 90.17 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4141,7 +4266,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 27.94) (xy 184.15 27.94)
+			(xy 172.72 27.94) (xy 177.8 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4271,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 165.1) (xy 43.18 165.1)
+			(xy 33.02 165.1) (xy 39.37 165.1)
 		)
 		(stroke
 			(width 0)
@@ -4328,6 +4453,16 @@
 			(type default)
 		)
 		(uuid "9c3a8e62-997a-4734-8afc-46a6fe40a254")
+	)
+	(wire
+		(pts
+			(xy 177.8 27.94) (xy 184.15 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c8a420d-61fe-4b2d-ab88-19bb84fa4aba")
 	)
 	(wire
 		(pts
@@ -4441,6 +4576,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 27.94) (xy 184.15 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b181a985-c24b-4a50-88f3-1d7bf4dfa8cd")
+	)
+	(wire
+		(pts
 			(xy 133.35 171.45) (xy 133.35 172.72)
 		)
 		(stroke
@@ -4541,16 +4686,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 58.42) (xy 81.28 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c633c0a9-ddde-407c-8021-871135be3bde")
-	)
-	(wire
-		(pts
 			(xy 133.35 166.37) (xy 133.35 167.64)
 		)
 		(stroke
@@ -4578,6 +4713,16 @@
 			(type default)
 		)
 		(uuid "ca6d1a53-d6d9-4dbe-b1bc-ce393160f9cb")
+	)
+	(wire
+		(pts
+			(xy 39.37 165.1) (xy 43.18 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7a4284-bca1-4661-90f1-91e1fe38873d")
 	)
 	(wire
 		(pts
@@ -4771,7 +4916,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 40.64) (xy 115.57 40.64)
+			(xy 96.52 40.64) (xy 116.84 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5007,7 +5152,7 @@
 	)
 	(symbol
 		(lib_id "power:+10V")
-		(at 184.15 25.4 0)
+		(at 187.96 25.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5018,7 +5163,7 @@
 		(fields_autoplaced yes)
 		(uuid "054e1a1f-3fb9-404c-9d61-3dcb2048fdda")
 		(property "Reference" "#PWR078"
-			(at 184.15 29.21 0)
+			(at 187.96 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5029,7 +5174,7 @@
 			)
 		)
 		(property "Value" "+10V"
-			(at 184.15 20.32 0)
+			(at 187.96 20.32 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5039,7 +5184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 25.4 0)
+			(at 187.96 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5050,7 +5195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 25.4 0)
+			(at 187.96 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5061,7 +5206,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+10V\""
-			(at 184.15 25.4 0)
+			(at 187.96 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5525,7 +5670,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 73.66 55.88 0)
 		(unit 1)
 		(body_style 1)
@@ -5533,32 +5678,30 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
-		(uuid "1e5b2cd6-db0c-4c7f-b670-3c4f1c6bf6fb")
-		(property "Reference" "C4"
-			(at 70.358 54.102 0)
+		(dnp yes)
+		(uuid "1e2cefe4-e8b5-4390-a318-bfc5be70fb19")
+		(property "Reference" "C2"
+			(at 68.072 54.864 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 68.58 57.912 0)
+		(property "Value" "100uF"
+			(at 68.834 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 74.6252 59.69 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5590,7 +5733,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "GRM21BR61H106KE43L"
+		(property "Manufacturer part" "NHG"
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5601,7 +5744,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C440198"
+		(property "Manufacturer" "Panasonic"
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5612,7 +5755,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Murata"
+		(property "Notes" "Input damping capacitor. Fit manually before power-up."
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -5623,16 +5766,27 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "790a7397-30b3-4b45-adc9-0d92ad7a8169")
+		(property "JLCPCB part" ""
+			(at 73.66 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "1de87076-07ac-4b29-97fa-2a8473d90aba")
+			(uuid "d09023db-906d-4069-b7c3-76015477a3b1")
+		)
+		(pin "1"
+			(uuid "8651019e-5195-4645-8855-4845966d588f")
 		)
 		(instances
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C4")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -7538,6 +7692,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 177.8 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "71ebf4f1-d398-4566-aa70-f764b3f27031")
+		(property "Reference" "TP2"
+			(at 176.53 20.828 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10V"
+			(at 176.53 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 182.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 177.8 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc9fe2ae-cd89-4a5f-8be9-e18772013739")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 147.32 35.56 0)
 		(unit 1)
@@ -7673,7 +7905,7 @@
 				)
 			)
 		)
-		(property "Value" "PTC 4A 15V"
+		(property "Value" "PTC 4A 30V"
 			(at 66.04 38.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7717,7 +7949,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "2920L400/15MR"
+		(property "Manufacturer part" "2920L400/30GR"
 			(at 66.04 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -7728,7 +7960,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C720182"
+		(property "JLCPCB part" "C19078761"
 			(at 66.04 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -7739,7 +7971,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Littelfuse"
+		(property "Manufacturer" "LUTE"
 			(at 66.04 40.64 90)
 			(hide yes)
 			(show_name no)
@@ -7760,6 +7992,84 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 251.46 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "93f9d7e7-9eb1-433e-b541-693df00ab625")
+		(property "Reference" "TP3"
+			(at 250.19 75.438 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CODEC_3V3"
+			(at 247.142 77.216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 256.54 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 251.46 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b0a316f-68df-4bb8-aa05-1f291730fffa")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -8621,6 +8931,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "c76e7d1d-a836-4d5d-b2fc-2e1f7638855c")
+		(property "Reference" "TP1"
+			(at 115.57 33.528 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VIN"
+			(at 115.316 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 121.92 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44a1e7f4-8458-4130-9d1a-e7ae65fdf65d")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 48.26 172.72 90)
 		(unit 1)
@@ -8823,18 +9211,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 81.28 55.88 0)
+		(lib_id "Connector:TestPoint")
+		(at 39.37 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
-		(uuid "d0b3ba21-e806-4efd-afa9-78f9e590feae")
-		(property "Reference" "C2"
-			(at 77.978 54.102 0)
+		(uuid "cd563cda-e651-4beb-bee9-c2c65cb6bf2c")
+		(property "Reference" "TP6"
+			(at 38.1 157.988 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8844,8 +9232,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
-			(at 76.2 57.912 0)
+		(property "Value" "5V"
+			(at 37.846 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8855,8 +9243,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 82.2452 59.69 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 44.45 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8867,7 +9255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 55.88 0)
+			(at 44.45 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8877,41 +9265,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 81.28 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer part" "GRM21BR61H106KE43L"
-			(at 81.28 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C440198"
-			(at 81.28 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Murata"
-			(at 81.28 55.88 0)
+		(property "Description" "test point"
+			(at 39.37 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8922,15 +9277,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e463d55b-332f-4e73-a0ce-26b9eaceccb0")
-		)
-		(pin "2"
-			(uuid "f5e8f2b7-155f-4b80-91aa-7d5050ffe4ed")
+			(uuid "75360e93-d3f9-4528-83a1-9980117330bf")
 		)
 		(instances
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
-					(reference "C2")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -9086,6 +9438,84 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 54.61 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "e0ef8be5-cada-4442-90cf-12c3163e8be5")
+		(property "Reference" "TP5"
+			(at 53.34 66.548 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Gnd"
+			(at 53.086 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 59.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 54.61 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "99701b48-ecb1-4100-af1f-b9c874dc7ad3")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "TP5")
 					(unit 1)
 				)
 			)
