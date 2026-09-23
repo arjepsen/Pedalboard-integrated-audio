@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Restore current main PCB and move electrical footprints off-board
+      - name: Restore current main PCB and prepare clean Quilter board
         shell: bash
         run: |
           git fetch origin main --depth=1
@@ -21,8 +21,11 @@ jobs:
           from pathlib import Path
           import re
 
-          p = Path("pedalboard-hw.kicad_pcb")
-          s = p.read_text()
+          pcb = Path("pedalboard-hw.kicad_pcb")
+          s = pcb.read_text()
+
+          KEEP_HOLES = {"H1", "H3", "H14", "H15"}
+          MOVE_DX = 300.0
 
           def blocks(src, head):
               out = []
@@ -56,73 +59,161 @@ jobs:
                               pos = j + 1
                               break
                   else:
-                      raise RuntimeError("Unbalanced KiCad block")
+                      raise RuntimeError(f"Unbalanced KiCad block starting at {pos}")
               return out
 
-          fps = blocks(s, "(footprint ")
-          replacements = []
-          moved = []
-          kept = []
-          dx = 300.0
-
-          for start, end, b in fps:
-              nm = re.search(r'^\(footprint "([^"]+)"', b)
-              rf = re.search(r'\(property "Reference" "([^"]+)"', b)
-              name = nm.group(1) if nm else ""
-              ref = rf.group(1) if rf else ""
-
-              mechanical = (
-                  name.startswith("MountingHole:")
-                  or name.startswith("Fiducial:")
-                  or name.startswith("Symbol:")
-              )
-              if mechanical:
-                  kept.append(ref)
-                  continue
-
+          def root_at(block):
               m = re.search(
                   r'\(at ([+-]?(?:\d+(?:\.\d*)?|\.\d+)) '
                   r'([+-]?(?:\d+(?:\.\d*)?|\.\d+))'
                   r'(?: ([+-]?(?:\d+(?:\.\d*)?|\.\d+)))?\)',
-                  b
+                  block
               )
+              return m
+
+          # 1) Remove ALL board-level labels, dimensions, graphics and groups
+          # except the actual Edge.Cuts geometry.
+          remove = []
+
+          for head in ("(gr_poly", "(gr_line", "(gr_rect", "(gr_arc", "(gr_text"):
+              for start, end, b in blocks(s, head):
+                  if '(layer "Edge.Cuts")' not in b:
+                      remove.append((start, end))
+
+          for head in ("(dimension", "(group"):
+              for start, end, _ in blocks(s, head):
+                  remove.append((start, end))
+
+          for start, end in sorted(remove, reverse=True):
+              s = s[:start] + s[end:]
+
+          # 2) Footprints:
+          #    - keep ONLY the four general board mounting holes in place
+          #    - delete every other mounting hole / fiducial / logo
+          #    - move every electrical/mechanical component footprint off-board
+          #      by +300 mm X, preserving relative placement.
+          fps = blocks(s, "(footprint ")
+          replace = []
+          delete = []
+          moved = []
+          kept = []
+          removed_special = []
+
+          for start, end, b in fps:
+              name_m = re.search(r'^\(footprint "([^"]+)"', b)
+              ref_m = re.search(r'\(property "Reference" "([^"]+)"', b)
+              name = name_m.group(1) if name_m else ""
+              ref = ref_m.group(1) if ref_m else ""
+
+              is_hole = name.startswith("MountingHole:")
+              is_fid = name.startswith("Fiducial:")
+              is_logo = name.startswith("Symbol:")
+
+              if is_hole and ref in KEEP_HOLES:
+                  # Keep the actual NPTH mounting-hole pad, but make the footprint
+                  # visually clean: remove footprint circles/text and hide ref/value.
+                  nb = b
+
+                  # Remove fp_circle and fp_text sub-blocks.
+                  local_removals = []
+                  for head in ("(fp_circle", "(fp_text"):
+                      for ls, le, _ in blocks(nb, head):
+                          local_removals.append((ls, le))
+                  for ls, le in sorted(local_removals, reverse=True):
+                      nb = nb[:ls] + nb[le:]
+
+                  # Hide Reference and Value properties if not already hidden.
+                  for prop in ("Reference", "Value"):
+                      pm = re.search(
+                          rf'(\(property "{prop}" "[^"]+"[\s\S]*?\(layer "[^"]+"\))',
+                          nb
+                      )
+                      if pm and "(hide yes)" not in pm.group(1):
+                          insert_at = pm.end()
+                          nb = nb[:insert_at] + "\n\t\t\t(hide yes)" + nb[insert_at:]
+
+                  replace.append((start, end, nb))
+                  kept.append(ref)
+                  continue
+
+              if is_hole or is_fid or is_logo:
+                  delete.append((start, end))
+                  removed_special.append(ref or name)
+                  continue
+
+              m = root_at(b)
               if not m:
-                  raise RuntimeError(f"No root placement for {ref}")
+                  raise RuntimeError(f"No root placement for footprint {ref or name}")
 
               old_x = float(m.group(1))
-              new_x = old_x + dx
+              old_y = float(m.group(2))
+              new_x = old_x + MOVE_DX
               rotation = f" {m.group(3)}" if m.group(3) is not None else ""
               nx = f"{new_x:.6f}".rstrip("0").rstrip(".")
               new_at = f"(at {nx} {m.group(2)}{rotation})"
               nb = b[:m.start()] + new_at + b[m.end():]
-              replacements.append((start, end, nb))
-              moved.append((ref, old_x, new_x, float(m.group(2))))
+              replace.append((start, end, nb))
+              moved.append((ref, old_x, old_y, new_x))
 
-          for start, end, nb in reversed(replacements):
-              s = s[:start] + nb + s[end:]
+          # Apply all footprint edits against the same source offsets.
+          edits = [(a,b,"") for a,b in delete] + replace
+          for start, end, text in sorted(edits, key=lambda x:x[0], reverse=True):
+              s = s[:start] + text + s[end:]
 
+          # 3) Validation.
+          if set(kept) != KEEP_HOLES:
+              raise RuntimeError(f"Kept holes mismatch: {kept}")
           if len(moved) != 112:
-              raise RuntimeError(f"Expected 112 electrical footprints, moved {len(moved)}")
-          if len(kept) != 14:
-              raise RuntimeError(f"Expected 14 mechanical/cosmetic footprints, kept {len(kept)}")
-          if min(x[2] for x in moved) < 300:
-              raise RuntimeError("A moved electrical footprint is too close to the board")
+              raise RuntimeError(f"Expected 112 moved component footprints, got {len(moved)}")
 
-          p.write_text(s)
-          print(f"Moved {len(moved)} electrical footprints +{dx:.0f} mm in X")
-          print("Kept mechanical/fiducial/logo footprints:", ", ".join(kept))
+          # Every moved footprint must be well outside the board's original X range.
+          if min(x[3] for x in moved) < 300:
+              raise RuntimeError("A moved component is not safely outside the board")
+
+          # Final footprint set should be exactly 112 moved + 4 kept mounting holes.
+          final_fps = blocks(s, "(footprint ")
+          if len(final_fps) != 116:
+              raise RuntimeError(f"Expected 116 final footprints, got {len(final_fps)}")
+
+          final_refs = []
+          for _, _, b in final_fps:
+              rm = re.search(r'\(property "Reference" "([^"]+)"', b)
+              if rm:
+                  final_refs.append(rm.group(1))
+
+          for bad in {"H4","H5","H6","H7","H16","FID1","FID2","FID3","FID4","SYM1"}:
+              if bad in final_refs:
+                  raise RuntimeError(f"Unwanted fixed item still present: {bad}")
+
+          # Ensure there are no remaining non-Edge.Cuts board graphics.
+          for head in ("(gr_poly", "(gr_line", "(gr_rect", "(gr_arc", "(gr_text"):
+              for _, _, b in blocks(s, head):
+                  if '(layer "Edge.Cuts")' not in b:
+                      raise RuntimeError(f"Non-Edge.Cuts graphic remains: {head}")
+
+          if blocks(s, "(dimension"):
+              raise RuntimeError("Dimension graphics remain")
+          if blocks(s, "(group"):
+              raise RuntimeError("Group graphics remain")
+
+          pcb.write_text(s)
+
+          print(f"Moved {len(moved)} component footprints off-board by +{MOVE_DX:.0f} mm X")
+          print("Kept fixed board mounting holes:", ", ".join(sorted(kept)))
+          print("Removed old/internal holes, fiducials and logo:", ", ".join(removed_special))
+          print("Removed all board-level labels/graphics except Edge.Cuts")
           PY
 
       - name: Make clean Quilter ZIP
         shell: bash
         run: |
           rm -rf .git .github
-          zip -r Pedalboard-integrated-audio-quilter.zip . \
+          zip -r Pedalboard-integrated-audio-quilter-clean.zip . \
             -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak" \
-               "Pedalboard-integrated-audio-quilter.zip"
+               "Pedalboard-integrated-audio-quilter-clean.zip"
 
       - name: Upload ZIP
         uses: actions/upload-artifact@v4
         with:
-          name: Pedalboard-integrated-audio-quilter
-          path: Pedalboard-integrated-audio-quilter.zip
+          name: Pedalboard-integrated-audio-quilter-clean
+          path: Pedalboard-integrated-audio-quilter-clean.zip
