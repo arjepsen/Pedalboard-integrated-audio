@@ -13,9 +13,9 @@ jobs:
       - name: Remove git metadata and make ZIP
         run: |
           rm -rf .git .github
-          zip -r ../Pedalboard-integrated-audio-quilter.zip . -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak"
+          zip -r Pedalboard-integrated-audio-quilter.zip . -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak" "Pedalboard-integrated-audio-quilter.zip"
       - name: Upload ZIP
         uses: actions/upload-artifact@v4
         with:
           name: Pedalboard-integrated-audio-quilter
-          path: ../Pedalboard-integrated-audio-quilter.zip
+          path: Pedalboard-integrated-audio-quilter.zip
