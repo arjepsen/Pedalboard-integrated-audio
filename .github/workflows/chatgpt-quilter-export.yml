@@ -1,0 +1,137 @@
+name: ChatGPT Quilter Export
+on:
+  push:
+    branches:
+      - chatgpt-pcb-layout
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current main-based export
+        uses: actions/checkout@v4
+
+      - name: Move all PCB footprints outside the board
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("pedalboard-hw.kicad_pcb")
+          src = path.read_text(encoding="utf-8")
+          DX = 250.0
+
+          # Parenthesis depth helper that ignores quoted strings.
+          def delta_depth(text):
+              d = 0
+              ins = False
+              esc = False
+              for c in text:
+                  if ins:
+                      if esc:
+                          esc = False
+                      elif c == "\\":
+                          esc = True
+                      elif c == '"':
+                          ins = False
+                  else:
+                      if c == '"':
+                          ins = True
+                      elif c == '(':
+                          d += 1
+                      elif c == ')':
+                          d -= 1
+              return d
+
+          lines = src.splitlines(keepends=True)
+          out = []
+          in_fp = False
+          fp_depth = 0
+          moved_origin = False
+          moved = 0
+          old_xs = []
+          new_xs = []
+
+          at_re = re.compile(r'^(\t\t\(at\s+)(-?\d+(?:\.\d+)?)(\s+-?\d+(?:\.\d+)?(?:\s+-?\d+(?:\.\d+)?)?\)\s*)$')
+
+          for line in lines:
+              if not in_fp and line.startswith("\t(footprint "):
+                  in_fp = True
+                  fp_depth = 0
+                  moved_origin = False
+
+              if in_fp and not moved_origin:
+                  eol = "\n" if line.endswith("\n") else ""
+                  body = line[:-1] if eol else line
+                  m = at_re.match(body)
+                  if m:
+                      oldx = float(m.group(2))
+                      newx = oldx + DX
+                      num = f"{newx:.6f}".rstrip("0").rstrip(".")
+                      line = m.group(1) + num + m.group(3) + eol
+                      moved += 1
+                      moved_origin = True
+                      old_xs.append(oldx)
+                      new_xs.append(newx)
+
+              if in_fp:
+                  fp_depth += delta_depth(line)
+                  if fp_depth == 0:
+                      if not moved_origin:
+                          raise RuntimeError("Found footprint without an origin (at ...)")
+                      in_fp = False
+
+              out.append(line)
+
+          result = "".join(out)
+          fp_count = result.count("\n\t(footprint ")
+          if moved != fp_count:
+              raise RuntimeError(f"Moved {moved} footprints but file contains {fp_count}")
+
+          # The current board is already unrouted; verify we did not add or remove routing.
+          segs = result.count("\n\t(segment ")
+          vias = result.count("\n\t(via ")
+          zones = result.count("\n\t(zone ")
+
+          path.write_text(result, encoding="utf-8")
+
+          info = Path("QUILTER_EXPORT_INFO.txt")
+          info.write_text(
+              "Quilter export prepared by ChatGPT\n"
+              "Source branch: main\n"
+              "Source commit: 6af47d4e062eeba240f8c8b7d210afa0bd049294\n"
+              f"Footprints moved: {moved}\n"
+              f"Translation: +{DX:g} mm X, 0 mm Y\n"
+              f"Footprint origin X before: {min(old_xs):.3f} .. {max(old_xs):.3f} mm\n"
+              f"Footprint origin X after: {min(new_xs):.3f} .. {max(new_xs):.3f} mm\n"
+              f"Existing routing retained: {segs} segments, {vias} vias, {zones} zones\n",
+              encoding="utf-8"
+          )
+          print(info.read_text())
+          PY
+
+      - name: Upload Quilter-ready KiCad project
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pedalboard-integrated-audio-Quilter
+          if-no-files-found: error
+          retention-days: 1
+          path: |
+            pedalboard-hw.kicad_pcb
+            pedalboard-hw.kicad_pro
+            pedalboard-hw.kicad_sch
+            audio.kicad_sch
+            connect.kicad_sch
+            leds.kicad_sch
+            pico.kicad_sch
+            psu.kicad_sch
+            *.kicad_sym
+            sym-lib-table
+            fp-lib-table
+            CM5IO.pretty/**
+            Library.pretty/**
+            QUILTER_EXPORT_INFO.txt
