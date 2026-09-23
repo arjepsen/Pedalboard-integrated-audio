@@ -6007,7 +6007,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 131.572 163.83 90)
 			(hide yes)
 			(show_name no)
@@ -6040,7 +6040,7 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 10k 1% 125mW"
+		(property "Notes" "Resistor 10k 1% 62.5mW"
 			(at 133.35 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6051,7 +6051,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "0805W8F1002T5E"
+		(property "Manufacturer part" "0402WGF1002TCE"
 			(at 133.35 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6062,7 +6062,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C17414"
+		(property "JLCPCB part" "C25744"
 			(at 133.35 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6645,7 +6645,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 131.572 157.48 90)
 			(hide yes)
 			(show_name no)
@@ -6678,7 +6678,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "0805W8F6202T5E"
+		(property "Manufacturer part" "0402WGF6202TCE"
 			(at 133.35 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -6700,7 +6700,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C17783"
+		(property "JLCPCB part" "C37825"
 			(at 133.35 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -7157,7 +7157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 59.3852 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -7190,7 +7190,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "CL21C220JBANNNC"
+		(property "Manufacturer part" "0402CG220J500NT"
 			(at 58.42 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7201,7 +7201,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C1804"
+		(property "JLCPCB part" "C1555"
 			(at 58.42 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7349,7 +7349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 51.562 168.91 90)
 			(hide yes)
 			(show_name no)
@@ -7382,7 +7382,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C17678"
+		(property "JLCPCB part" "C25893"
 			(at 53.34 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7393,7 +7393,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "0805W8F4022T5E"
+		(property "Manufacturer part" "0402WGF4022TCE"
 			(at 53.34 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7404,7 +7404,7 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 40.2k 1% 125mW"
+		(property "Notes" "Resistor 40.2k 1% 62.5mW - \"Promotional extended\""
 			(at 53.34 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -7599,7 +7599,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 118.872 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -7632,7 +7632,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "0805W8F1302T5E"
+		(property "Manufacturer part" "0402WGF1302TCE"
 			(at 120.65 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -7643,7 +7643,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C17455"
+		(property "JLCPCB part" "C25754"
 			(at 120.65 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -7655,17 +7655,6 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 120.65 167.64 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "Resistor 13k 1% 125mW"
 			(at 120.65 167.64 90)
 			(hide yes)
 			(show_name no)
@@ -9041,7 +9030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 48.26 174.498 90)
 			(hide yes)
 			(show_name no)
@@ -9074,7 +9063,7 @@
 				)
 			)
 		)
-		(property "Notes" "Resistor 10k 1% 125mW"
+		(property "Notes" "Resistor 10k 1% 62.5mW"
 			(at 48.26 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -9085,7 +9074,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "0805W8F1002T5E"
+		(property "Manufacturer part" "0402WGF1002TCE"
 			(at 48.26 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -9096,7 +9085,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C17414"
+		(property "JLCPCB part" "C25744"
 			(at 48.26 172.72 0)
 			(hide yes)
 			(show_name no)
