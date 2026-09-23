@@ -10,10 +10,117 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Remove git metadata and make ZIP
+
+      - name: Restore current main PCB and move electrical footprints off-board
+        shell: bash
+        run: |
+          git fetch origin main --depth=1
+          git show FETCH_HEAD:pedalboard-hw.kicad_pcb > pedalboard-hw.kicad_pcb
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path("pedalboard-hw.kicad_pcb")
+          s = p.read_text()
+
+          def blocks(src, head):
+              out = []
+              pos = 0
+              while True:
+                  pos = src.find(head, pos)
+                  if pos < 0:
+                      break
+                  depth = 0
+                  in_str = False
+                  esc = False
+                  for j in range(pos, len(src)):
+                      c = src[j]
+                      if in_str:
+                          if esc:
+                              esc = False
+                          elif c == "\\":
+                              esc = True
+                          elif c == '"':
+                              in_str = False
+                          continue
+                      if c == '"':
+                          in_str = True
+                          continue
+                      if c == '(':
+                          depth += 1
+                      elif c == ')':
+                          depth -= 1
+                          if depth == 0:
+                              out.append((pos, j + 1, src[pos:j + 1]))
+                              pos = j + 1
+                              break
+                  else:
+                      raise RuntimeError("Unbalanced KiCad block")
+              return out
+
+          fps = blocks(s, "(footprint ")
+          replacements = []
+          moved = []
+          kept = []
+          dx = 300.0
+
+          for start, end, b in fps:
+              nm = re.search(r'^\(footprint "([^"]+)"', b)
+              rf = re.search(r'\(property "Reference" "([^"]+)"', b)
+              name = nm.group(1) if nm else ""
+              ref = rf.group(1) if rf else ""
+
+              mechanical = (
+                  name.startswith("MountingHole:")
+                  or name.startswith("Fiducial:")
+                  or name.startswith("Symbol:")
+              )
+              if mechanical:
+                  kept.append(ref)
+                  continue
+
+              m = re.search(
+                  r'\(at ([+-]?(?:\d+(?:\.\d*)?|\.\d+)) '
+                  r'([+-]?(?:\d+(?:\.\d*)?|\.\d+))'
+                  r'(?: ([+-]?(?:\d+(?:\.\d*)?|\.\d+)))?\)',
+                  b
+              )
+              if not m:
+                  raise RuntimeError(f"No root placement for {ref}")
+
+              old_x = float(m.group(1))
+              new_x = old_x + dx
+              rotation = f" {m.group(3)}" if m.group(3) is not None else ""
+              nx = f"{new_x:.6f}".rstrip("0").rstrip(".")
+              new_at = f"(at {nx} {m.group(2)}{rotation})"
+              nb = b[:m.start()] + new_at + b[m.end():]
+              replacements.append((start, end, nb))
+              moved.append((ref, old_x, new_x, float(m.group(2))))
+
+          for start, end, nb in reversed(replacements):
+              s = s[:start] + nb + s[end:]
+
+          if len(moved) != 112:
+              raise RuntimeError(f"Expected 112 electrical footprints, moved {len(moved)}")
+          if len(kept) != 14:
+              raise RuntimeError(f"Expected 14 mechanical/cosmetic footprints, kept {len(kept)}")
+          if min(x[2] for x in moved) < 300:
+              raise RuntimeError("A moved electrical footprint is too close to the board")
+
+          p.write_text(s)
+          print(f"Moved {len(moved)} electrical footprints +{dx:.0f} mm in X")
+          print("Kept mechanical/fiducial/logo footprints:", ", ".join(kept))
+          PY
+
+      - name: Make clean Quilter ZIP
+        shell: bash
         run: |
           rm -rf .git .github
-          zip -r Pedalboard-integrated-audio-quilter.zip . -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak" "Pedalboard-integrated-audio-quilter.zip"
+          zip -r Pedalboard-integrated-audio-quilter.zip . \
+            -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak" \
+               "Pedalboard-integrated-audio-quilter.zip"
+
       - name: Upload ZIP
         uses: actions/upload-artifact@v4
         with:
