@@ -1,0 +1,21 @@
+name: Build Quilter ZIP
+on:
+  push:
+    branches:
+      - quilter-upload-temp
+  workflow_dispatch:
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove git metadata and make ZIP
+        run: |
+          rm -rf .git .github
+          zip -r ../Pedalboard-integrated-audio-quilter.zip . -x "*.kicad_prl" "*.kicad_sch-bak" "*.kicad_pcb-bak"
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pedalboard-integrated-audio-quilter
+          path: ../Pedalboard-integrated-audio-quilter.zip
