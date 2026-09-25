@@ -7178,13 +7178,23 @@
 	)
 	(text "Input gain:\n1+2 ON: LOW 1.39x\n1 ON, 2 OFF (or reverse): MID 2.21x\n1+2 OFF: HIGH 3.03x"
 		(exclude_from_sim no)
-		(at 192.024 84.836 0)
+		(at 201.168 83.312 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "0fa0d3dd-1890-4fe9-b400-e872b94a0e0c")
+	)
+	(text "U14 supply"
+		(exclude_from_sim no)
+		(at 161.29 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3471b9b1-bc83-4286-9098-f663efdf56ad")
 	)
 	(text_box "Inputs"
 		(exclude_from_sim no)
@@ -7225,26 +7235,6 @@
 			(justify left top)
 		)
 		(uuid "3f1e526d-6e2c-4719-a00f-8874d30eee15")
-	)
-	(text_box "OPA1656 supply"
-		(exclude_from_sim no)
-		(at 19.05 160.02 0)
-		(size 22.86 33.02)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "a2841673-956d-435e-977f-db10a0ced81d")
 	)
 	(text_box "CODEC"
 		(exclude_from_sim no)
@@ -7413,7 +7403,7 @@
 		(uuid "4e1ceaa9-0f7a-428e-b3d7-a337cdcc4d0d")
 	)
 	(junction
-		(at 29.21 185.42)
+		(at 165.1 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5334c090-809e-4941-a8ea-5504e266a98c")
@@ -7725,7 +7715,7 @@
 		(uuid "e36f2e8e-3fc7-40f1-8cb2-394b2dbb4bba")
 	)
 	(junction
-		(at 29.21 170.18)
+		(at 165.1 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3ae1126-04ca-4622-9230-767b8c4a3b04")
@@ -8556,7 +8546,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 179.07) (xy 25.4 185.42)
+			(xy 161.29 90.17) (xy 161.29 96.52)
 		)
 		(stroke
 			(width 0)
@@ -8946,7 +8936,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 168.91) (xy 29.21 170.18)
+			(xy 165.1 80.01) (xy 165.1 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9056,7 +9046,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 185.42) (xy 29.21 186.69)
+			(xy 165.1 96.52) (xy 165.1 97.79)
 		)
 		(stroke
 			(width 0)
@@ -9356,7 +9346,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 170.18) (xy 29.21 170.18)
+			(xy 161.29 81.28) (xy 165.1 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9916,7 +9906,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 185.42) (xy 29.21 185.42)
+			(xy 161.29 96.52) (xy 165.1 96.52)
 		)
 		(stroke
 			(width 0)
@@ -10386,7 +10376,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 173.99) (xy 25.4 170.18)
+			(xy 161.29 85.09) (xy 161.29 81.28)
 		)
 		(stroke
 			(width 0)
@@ -12932,7 +12922,7 @@
 	)
 	(symbol
 		(lib_id "power:+10V")
-		(at 29.21 168.91 0)
+		(at 165.1 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12942,7 +12932,7 @@
 		(dnp no)
 		(uuid "30864d89-9b75-4beb-8643-b934c1f85da7")
 		(property "Reference" "#PWR086"
-			(at 29.21 172.72 0)
+			(at 165.1 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12953,7 +12943,7 @@
 			)
 		)
 		(property "Value" "+10V"
-			(at 29.718 165.1 0)
+			(at 165.608 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12963,7 +12953,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 168.91 0)
+			(at 165.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12974,7 +12964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 168.91 0)
+			(at 165.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12985,7 +12975,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+10V\""
-			(at 29.21 168.91 0)
+			(at 165.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13690,7 +13680,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA1656ID")
-		(at 31.75 177.8 0)
+		(at 167.64 88.9 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13701,7 +13691,7 @@
 		(fields_autoplaced yes)
 		(uuid "41a494cc-0d18-4857-bdd4-c7b1b23fe88f")
 		(property "Reference" "U14"
-			(at 30.48 176.5299 0)
+			(at 166.37 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13712,7 +13702,7 @@
 			)
 		)
 		(property "Value" "OPA1656ID"
-			(at 30.48 179.0699 0)
+			(at 166.37 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13723,7 +13713,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13734,7 +13724,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa1656.pdf"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13745,7 +13735,7 @@
 			)
 		)
 		(property "Description" "Dual Ultra-Low-Noise, Low-Distortion, FET-Input, Burr-Brown Audio Operational Amplifiers, SOIC-8"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13756,7 +13746,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13767,7 +13757,7 @@
 			)
 		)
 		(property "Manufacturer part" "OPA1656ID"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13778,7 +13768,7 @@
 			)
 		)
 		(property "JLCPCB part" "C1346368"
-			(at 31.75 177.8 0)
+			(at 167.64 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14290,7 +14280,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 186.69 0)
+		(at 165.1 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14300,7 +14290,7 @@
 		(dnp no)
 		(uuid "5c82bba2-7b57-4f36-9999-3fc40313f167")
 		(property "Reference" "#PWR085"
-			(at 29.21 193.04 0)
+			(at 165.1 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14311,7 +14301,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 189.23 0)
+			(at 168.91 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14321,7 +14311,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 186.69 0)
+			(at 165.1 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14332,7 +14322,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 186.69 0)
+			(at 165.1 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14343,7 +14333,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 186.69 0)
+			(at 165.1 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19071,7 +19061,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 25.4 176.53 0)
+		(at 161.29 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19081,7 +19071,7 @@
 		(dnp no)
 		(uuid "ec64b598-1837-4df4-825c-c64dc6598eeb")
 		(property "Reference" "C61"
-			(at 19.558 175.006 0)
+			(at 155.448 86.106 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19092,7 +19082,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 19.05 178.308 0)
+			(at 154.94 89.408 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19102,8 +19092,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 26.3652 180.34 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 162.2552 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19114,7 +19104,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 176.53 0)
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19125,7 +19115,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 25.4 176.53 0)
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19136,7 +19126,7 @@
 			)
 		)
 		(property "Manufacturer" "Yageo"
-			(at 25.4 176.53 0)
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19146,8 +19136,8 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "CC0805KRX7R9BB104"
-			(at 25.4 176.53 0)
+		(property "Manufacturer part" "CC0603KRX7R9BB104"
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19157,8 +19147,8 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C49678"
-			(at 25.4 176.53 0)
+		(property "JLCPCB part" "C14663"
+			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

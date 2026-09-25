@@ -8808,7 +8808,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
+		(lib_id "Device:C_Small")
 		(at 168.91 46.99 90)
 		(unit 1)
 		(body_style 1)
@@ -8828,7 +8828,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7uF"
+		(property "Value" "10uF"
 			(at 168.91 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8838,7 +8838,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8860,7 +8860,18 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor, small US symbol"
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 179.07 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8871,7 +8882,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "KYOCERA AVX"
+		(property "Manufacturer part" "CL31A106KBHNNNE"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8882,18 +8893,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "TAJA475K025RNJ"
-			(at 168.91 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB part" "C7189"
+		(property "JLCPCB part" "C13585"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
