@@ -1,0 +1,54 @@
+name: README board render preview
+
+on:
+  push:
+    branches:
+      - readme-board-render-preview
+    paths:
+      - '.github/workflows/readme-board-render.yml'
+      - 'pedalboard-hw.kicad_pcb'
+      - 'pedalboard-hw.kicad_pro'
+      - 'pedalboard-hw.kicad_sch'
+      - '*.kicad_sch'
+      - '*.pretty/**'
+      - '*.3dshapes/**'
+      - '3d-models/**'
+      - 'pedalboard-hw.kibot.yaml'
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Render board with KiBot / Blender
+        uses: INTI-CMNB/KiBot@v2_k10
+        with:
+          config: pedalboard-hw.kibot.yaml
+          board: pedalboard-hw.kicad_pcb
+          schema: pedalboard-hw.kicad_sch
+          dir: render-output
+          targets: basic_blender_export
+          skip: all
+          install3D: YES
+          cache3D: YES
+          verbose: 2
+
+      - name: Show generated files
+        if: always()
+        run: find render-output -maxdepth 4 -type f -print || true
+
+      - name: Upload render preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: readme-board-render-preview
+          path: render-output/
+          if-no-files-found: warn
