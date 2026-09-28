@@ -6,6 +6,7 @@ on:
       - readme-board-render-preview
     paths:
       - '.github/workflows/readme-board-render.yml'
+      - 'readme-render.kibot.yaml'
       - 'pedalboard-hw.kicad_pcb'
       - 'pedalboard-hw.kicad_pro'
       - 'pedalboard-hw.kicad_sch'
@@ -13,7 +14,6 @@ on:
       - '*.pretty/**'
       - '*.3dshapes/**'
       - '3d-models/**'
-      - 'pedalboard-hw.kibot.yaml'
   workflow_dispatch:
 
 jobs:
@@ -21,21 +21,20 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      - name: Render board with KiBot / Blender
+      - name: Render KiCad 3D preview
         uses: INTI-CMNB/KiBot@v2_k10
         with:
-          config: pedalboard-hw.kibot.yaml
+          config: readme-render.kibot.yaml
           board: pedalboard-hw.kicad_pcb
           schema: pedalboard-hw.kicad_sch
           dir: render-output
-          targets: basic_blender_export
+          targets: readme_render
           skip: all
           install3D: YES
           cache3D: YES
