@@ -4,16 +4,6 @@ on:
   push:
     branches:
       - readme-board-render-preview
-    paths:
-      - '.github/workflows/readme-board-render.yml'
-      - 'readme-render.kibot.yaml'
-      - 'pedalboard-hw.kicad_pcb'
-      - 'pedalboard-hw.kicad_pro'
-      - 'pedalboard-hw.kicad_sch'
-      - '*.kicad_sch'
-      - '*.pretty/**'
-      - '*.3dshapes/**'
-      - '3d-models/**'
   workflow_dispatch:
 
 jobs:
@@ -26,6 +16,58 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
+
+      - name: Inspect C2 and J7 in PCB
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("pedalboard-hw.kicad_pcb")
+          s = p.read_text(errors="replace")
+          out = []
+          for ref in ("C2","J7"):
+              found = False
+              pos = 0
+              while True:
+                  i = s.find("(footprint", pos)
+                  if i < 0:
+                      break
+                  depth = 0
+                  in_str = False
+                  esc = False
+                  j = i
+                  while j < len(s):
+                      ch = s[j]
+                      if in_str:
+                          if esc:
+                              esc = False
+                          elif ch == "\\":
+                              esc = True
+                          elif ch == '"':
+                              in_str = False
+                      else:
+                          if ch == '"':
+                              in_str = True
+                          elif ch == "(":
+                              depth += 1
+                          elif ch == ")":
+                              depth -= 1
+                              if depth == 0:
+                                  j += 1
+                                  break
+                      j += 1
+                  block = s[i:j]
+                  if (f'(property "Reference" "{ref}"' in block or
+                      f'(fp_text reference "{ref}"' in block or
+                      f'"{ref}"' in block):
+                      out.append(f"===== {ref} =====\n{block}\n")
+                      found = True
+                      break
+                  pos = j
+              if not found:
+                  out.append(f"===== {ref} NOT FOUND =====\n")
+          Path("component-inspect.txt").write_text("\n".join(out))
+          print("\n".join(out))
+          PY
 
       - name: Render KiCad 3D preview
         uses: INTI-CMNB/KiBot@v2_k10
@@ -40,9 +82,12 @@ jobs:
           cache3D: YES
           verbose: 2
 
-      - name: Show generated files
+      - name: Upload inspection
         if: always()
-        run: find render-output -maxdepth 4 -type f -print || true
+        uses: actions/upload-artifact@v4
+        with:
+          name: component-inspect
+          path: component-inspect.txt
 
       - name: Upload render preview
         if: always()
