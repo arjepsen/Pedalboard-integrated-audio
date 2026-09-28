@@ -1,0 +1,112 @@
+name: README board render preview
+
+on:
+  push:
+    branches:
+      - readme-board-render-preview
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Populate C2 and J7 for preview only
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def find_block(text, start_token, ref, ref_token):
+              pos = 0
+              while True:
+                  i = text.find(start_token, pos)
+                  if i < 0:
+                      raise RuntimeError(f"{ref} not found")
+                  depth = 0
+                  in_str = False
+                  esc = False
+                  j = i
+                  while j < len(text):
+                      ch = text[j]
+                      if in_str:
+                          if esc:
+                              esc = False
+                          elif ch == "\\":
+                              esc = True
+                          elif ch == '"':
+                              in_str = False
+                      else:
+                          if ch == '"':
+                              in_str = True
+                          elif ch == "(":
+                              depth += 1
+                          elif ch == ")":
+                              depth -= 1
+                              if depth == 0:
+                                  j += 1
+                                  break
+                      j += 1
+                  block = text[i:j]
+                  if ref_token.format(ref=ref) in block:
+                      return i, j, block
+                  pos = j
+
+          # PCB: remove DNP attribute from both footprints.
+          pcb = Path("pedalboard-hw.kicad_pcb")
+          s = pcb.read_text()
+          for ref in ("C2", "J7"):
+              i, j, block = find_block(
+                  s, "(footprint", ref, '(property "Reference" "{ref}"'
+              )
+              original = block
+              block = block.replace("(attr through_hole dnp)", "(attr through_hole)")
+              block = block.replace("(attr smd dnp)", "(attr smd)")
+              if block == original:
+                  raise RuntimeError(f"{ref}: PCB DNP attribute not found")
+              s = s[:i] + block + s[j:]
+              print(f"{ref}: PCB DNP cleared")
+          pcb.write_text(s)
+
+          # Schematic: KiBot also uses this DNP state when deciding which 3D
+          # components to render, so clear it in the temporary checkout too.
+          sch = Path("psu.kicad_sch")
+          s = sch.read_text()
+          for ref in ("C2", "J7"):
+              i, j, block = find_block(
+                  s, "(symbol", ref, '(property "Reference" "{ref}"'
+              )
+              original = block
+              block = block.replace("(dnp yes)", "(dnp no)", 1)
+              if block == original:
+                  raise RuntimeError(f"{ref}: schematic DNP flag not found")
+              s = s[:i] + block + s[j:]
+              print(f"{ref}: schematic DNP cleared")
+          sch.write_text(s)
+          PY
+
+      - name: Render KiCad 3D preview
+        uses: INTI-CMNB/KiBot@v2_k10
+        with:
+          config: readme-render.kibot.yaml
+          board: pedalboard-hw.kicad_pcb
+          schema: pedalboard-hw.kicad_sch
+          dir: render-output
+          targets: readme_render
+          skip: all
+          install3D: YES
+          cache3D: YES
+          verbose: 2
+
+      - name: Upload render preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: readme-board-render-preview
+          path: render-output/
+          if-no-files-found: warn
