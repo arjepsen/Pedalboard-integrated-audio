@@ -17,26 +17,25 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Inspect C2 and J7 in PCB
+      - name: Populate C2 and J7 for preview only
         run: |
           python3 - <<'PY'
           from pathlib import Path
           p = Path("pedalboard-hw.kicad_pcb")
-          s = p.read_text(errors="replace")
-          out = []
-          for ref in ("C2","J7"):
-              found = False
+          s = p.read_text()
+
+          def find_footprint(text, ref):
               pos = 0
               while True:
-                  i = s.find("(footprint", pos)
+                  i = text.find("(footprint", pos)
                   if i < 0:
-                      break
+                      raise RuntimeError(f"{ref} not found")
                   depth = 0
                   in_str = False
                   esc = False
                   j = i
-                  while j < len(s):
-                      ch = s[j]
+                  while j < len(text):
+                      ch = text[j]
                       if in_str:
                           if esc:
                               esc = False
@@ -55,18 +54,22 @@ jobs:
                                   j += 1
                                   break
                       j += 1
-                  block = s[i:j]
-                  if (f'(property "Reference" "{ref}"' in block or
-                      f'(fp_text reference "{ref}"' in block or
-                      f'"{ref}"' in block):
-                      out.append(f"===== {ref} =====\n{block}\n")
-                      found = True
-                      break
+                  block = text[i:j]
+                  if f'(property "Reference" "{ref}"' in block:
+                      return i, j, block
                   pos = j
-              if not found:
-                  out.append(f"===== {ref} NOT FOUND =====\n")
-          Path("component-inspect.txt").write_text("\n".join(out))
-          print("\n".join(out))
+
+          for ref in ("C2", "J7"):
+              i, j, block = find_footprint(s, ref)
+              original = block
+              block = block.replace("(attr through_hole dnp)", "(attr through_hole)")
+              block = block.replace("(attr smd dnp)", "(attr smd)")
+              if block == original:
+                  raise RuntimeError(f"{ref}: DNP attribute not found")
+              s = s[:i] + block + s[j:]
+              print(f"{ref}: temporarily changed from DNP to populated")
+
+          p.write_text(s)
           PY
 
       - name: Render KiCad 3D preview
@@ -81,13 +84,6 @@ jobs:
           install3D: YES
           cache3D: YES
           verbose: 2
-
-      - name: Upload inspection
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: component-inspect
-          path: component-inspect.txt
 
       - name: Upload render preview
         if: always()
