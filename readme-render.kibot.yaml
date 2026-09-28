@@ -1,0 +1,20 @@
+kibot:
+  version: 1
+
+outputs:
+  - name: readme_render
+    comment: README 3D preview using KiCad render
+    type: render_3d
+    dir: README-render
+    options:
+      view: top
+      rotate_x: 3
+      rotate_z: -2
+      width: 1920
+      height: 1080
+      auto_crop: true
+      realistic: true
+      show_components: all
+      download: true
+      ray_tracing: false
+      output: mainboard-3d-preview.png
