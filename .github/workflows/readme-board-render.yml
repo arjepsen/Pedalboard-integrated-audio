@@ -21,13 +21,11 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          p = Path("pedalboard-hw.kicad_pcb")
-          s = p.read_text()
 
-          def find_footprint(text, ref):
+          def find_block(text, start_token, ref, ref_token):
               pos = 0
               while True:
-                  i = text.find("(footprint", pos)
+                  i = text.find(start_token, pos)
                   if i < 0:
                       raise RuntimeError(f"{ref} not found")
                   depth = 0
@@ -55,21 +53,41 @@ jobs:
                                   break
                       j += 1
                   block = text[i:j]
-                  if f'(property "Reference" "{ref}"' in block:
+                  if ref_token.format(ref=ref) in block:
                       return i, j, block
                   pos = j
 
+          # PCB: remove DNP attribute from both footprints.
+          pcb = Path("pedalboard-hw.kicad_pcb")
+          s = pcb.read_text()
           for ref in ("C2", "J7"):
-              i, j, block = find_footprint(s, ref)
+              i, j, block = find_block(
+                  s, "(footprint", ref, '(property "Reference" "{ref}"'
+              )
               original = block
               block = block.replace("(attr through_hole dnp)", "(attr through_hole)")
               block = block.replace("(attr smd dnp)", "(attr smd)")
               if block == original:
-                  raise RuntimeError(f"{ref}: DNP attribute not found")
+                  raise RuntimeError(f"{ref}: PCB DNP attribute not found")
               s = s[:i] + block + s[j:]
-              print(f"{ref}: temporarily changed from DNP to populated")
+              print(f"{ref}: PCB DNP cleared")
+          pcb.write_text(s)
 
-          p.write_text(s)
+          # Schematic: KiBot also uses this DNP state when deciding which 3D
+          # components to render, so clear it in the temporary checkout too.
+          sch = Path("psu.kicad_sch")
+          s = sch.read_text()
+          for ref in ("C2", "J7"):
+              i, j, block = find_block(
+                  s, "(symbol", ref, '(property "Reference" "{ref}"'
+              )
+              original = block
+              block = block.replace("(dnp yes)", "(dnp no)", 1)
+              if block == original:
+                  raise RuntimeError(f"{ref}: schematic DNP flag not found")
+              s = s[:i] + block + s[j:]
+              print(f"{ref}: schematic DNP cleared")
+          sch.write_text(s)
           PY
 
       - name: Render KiCad 3D preview
