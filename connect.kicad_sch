@@ -5604,183 +5604,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -5898,6 +5721,162 @@
 				)
 			)
 			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small_US"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "capacitor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_US_1_1"
 				(pin passive line
 					(at 0 2.54 270)
 					(length 2.032)
@@ -7023,6 +7002,12 @@
 		(uuid "0094cfad-6a94-4bc7-bf01-da66f85ac559")
 	)
 	(junction
+		(at 254 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00db9faf-1a46-4a17-8837-15b2e5026dd0")
+	)
+	(junction
 		(at 40.64 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -7141,12 +7126,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7772f888-1bf2-4ec4-bcad-8ee326d3e324")
-	)
-	(junction
-		(at 254 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81cb5d25-18b8-47e1-9267-db932875ae34")
 	)
 	(junction
 		(at 106.68 86.36)
@@ -7826,16 +7805,6 @@
 	)
 	(wire
 		(pts
-			(xy 254 82.55) (xy 269.24 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34382280-7732-430b-9c1a-ddec30676889")
-	)
-	(wire
-		(pts
 			(xy 166.37 45.72) (xy 166.37 48.26)
 		)
 		(stroke
@@ -8333,6 +8302,16 @@
 			(type default)
 		)
 		(uuid "811b61bd-702c-43b7-bb80-8716cf63184c")
+	)
+	(wire
+		(pts
+			(xy 254 82.55) (xy 269.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8469580b-042e-4e5a-93f9-b5ec15c2488f")
 	)
 	(wire
 		(pts
@@ -8836,6 +8815,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 82.55) (xy 254 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfef74aa-e1e8-4c15-b0e6-b8c78f3d7ff4")
+	)
+	(wire
+		(pts
 			(xy 208.28 86.36) (xy 208.28 85.09)
 		)
 		(stroke
@@ -8886,7 +8875,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 90.17) (xy 254 92.71)
+			(xy 254 88.9) (xy 254 92.71)
 		)
 		(stroke
 			(width 0)
@@ -12879,7 +12868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C_Small_US")
 		(at 254 86.36 0)
 		(mirror y)
 		(unit 1)
@@ -12912,18 +12901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-31_Kemet-D"
-			(at 253.0348 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ABE0000/ABE0000C49.pdf"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12934,7 +12912,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Datasheet" "https://www.nichicon.com/getmedia/36a40bf2-5311-4e83-96af-12226794ab9f/e-rr7.pdf"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12945,7 +12923,7 @@
 				)
 			)
 		)
-		(property "Notes" "6.3V aluminum-polymer, ±20%, 15mΩ ESR. Required USB bulk capacitor"
+		(property "Description" "capacitor, small US symbol"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12956,7 +12934,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Panasonic Industry"
+		(property "Notes" "100uF 16V aluminum-polymer, ±20%, 7mΩ ESR; USB VBUS bulk capacitor; hand solder"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12967,7 +12945,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "EEF-CX0J101R"
+		(property "Manufacturer" "Nichicon"
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12978,7 +12956,18 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C189619"
+		(property "Manufacturer part" "RR71C101MDN1"
+			(at 254 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" ""
 			(at 254 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -13182,7 +13171,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efaaaf0c-ea13-4073-bc1f-df4de7a0a34a")
 		(property "Reference" "J21"

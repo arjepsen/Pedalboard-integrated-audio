@@ -3251,7 +3251,7 @@
 	(text_box "+10V analog"
 		(exclude_from_sim no)
 		(at 129.54 16.51 0)
-		(size 64.77 85.09)
+		(size 76.2 85.09)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3267,6 +3267,12 @@
 			(justify left top)
 		)
 		(uuid "8d0dab7a-45e8-40a3-bc38-0d066ff6623e")
+	)
+	(junction
+		(at 147.32 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "049f2284-ce02-45a5-b0a8-4f9d8a835c63")
 	)
 	(junction
 		(at 133.35 160.02)
@@ -3383,13 +3389,19 @@
 		(uuid "5d47f972-ea9a-4938-b4de-72ba48e07740")
 	)
 	(junction
+		(at 187.96 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5dd5a5c7-233c-4c85-b743-8d0536dd971b")
+	)
+	(junction
 		(at 152.4 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fd0d255-ef99-4b74-83a9-0c6a634a9c45")
 	)
 	(junction
-		(at 140.97 27.94)
+		(at 134.62 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d97676c-7dac-4154-af2f-d797d358dc75")
@@ -3399,6 +3411,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "84eb7313-7f61-4242-a89d-213fc774e00b")
+	)
+	(junction
+		(at 140.97 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "980904a3-1b6b-4742-bb82-4b265a171e9a")
 	)
 	(junction
 		(at 64.77 144.78)
@@ -4026,6 +4044,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 46.99) (xy 147.32 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55a035a5-71f2-4acc-bfa5-8d36d4da9bf1")
+	)
+	(wire
+		(pts
 			(xy 133.35 167.64) (xy 133.35 171.45)
 		)
 		(stroke
@@ -4086,6 +4114,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 38.1) (xy 140.97 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6471e2a8-c35c-468a-a3df-8f78c700876e")
+	)
+	(wire
+		(pts
 			(xy 171.45 43.18) (xy 172.72 43.18)
 		)
 		(stroke
@@ -4136,6 +4174,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 35.56) (xy 187.96 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "709803af-4fbb-4d46-83f6-96e83f4c3f27")
+	)
+	(wire
+		(pts
 			(xy 39.37 49.53) (xy 45.72 49.53)
 		)
 		(stroke
@@ -4166,7 +4214,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 27.94) (xy 147.32 27.94)
+			(xy 187.96 27.94) (xy 187.96 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77bb659b-f79c-42aa-b874-d1048f98962f")
+	)
+	(wire
+		(pts
+			(xy 132.08 27.94) (xy 140.97 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4196,7 +4254,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 53.34) (xy 140.97 27.94)
+			(xy 134.62 53.34) (xy 134.62 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4223,6 +4281,16 @@
 			(type default)
 		)
 		(uuid "853b0d48-700d-4e41-bcc8-f3db589f63e8")
+	)
+	(wire
+		(pts
+			(xy 140.97 27.94) (xy 140.97 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85767710-5727-4dad-818e-adb9830aaf49")
 	)
 	(wire
 		(pts
@@ -4566,7 +4634,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 53.34) (xy 140.97 53.34)
+			(xy 134.62 53.34) (xy 175.26 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4903,6 +4971,16 @@
 			(type default)
 		)
 		(uuid "ef4ee0bd-633b-402c-9481-0314240d69e2")
+	)
+	(wire
+		(pts
+			(xy 140.97 27.94) (xy 147.32 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f13507de-ca05-437b-9912-ec94de5414f7")
 	)
 	(wire
 		(pts
@@ -8514,7 +8592,7 @@
 		(dnp no)
 		(uuid "a728d3ca-d19b-4687-af35-57aa83f4348d")
 		(property "Reference" "C54"
-			(at 187.071 31.8516 0)
+			(at 178.562 32.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8525,7 +8603,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 187.071 34.163 0)
+			(at 177.546 33.528 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8611,6 +8689,120 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "C54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 140.97 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7c65ea1-358b-4fed-9f1c-ad88189d0904")
+		(property "Reference" "C80"
+			(at 136.652 33.782 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 135.382 37.592 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 141.9352 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL31A106KBHNNNE"
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C13585"
+			(at 140.97 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "30da8534-81a7-41c8-94a8-8e70f455221c")
+		)
+		(pin "2"
+			(uuid "9e5347e0-eed3-4469-a6bd-be9d1074a851")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C80")
 					(unit 1)
 				)
 			)
@@ -8828,7 +9020,7 @@
 				)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "4.7uF"
 			(at 168.91 51.562 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8838,7 +9030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8871,7 +9063,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "Rubycon"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8882,7 +9074,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "CL31A106KBHNNNE"
+		(property "Manufacturer part" "35MU475KC44532"
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8893,7 +9085,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C13585"
+		(property "JLCPCB part" ""
 			(at 168.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -9659,6 +9851,120 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 187.96 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9121d02-ea4d-4c68-8310-9501376718be")
+		(property "Reference" "C82"
+			(at 189.738 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 190.5 33.782 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 188.9252 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer part" "CL31A226KAHNNNE"
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C12891"
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe2d9641-ccce-4221-a3c9-30c4eee5bb31")
+		)
+		(pin "2"
+			(uuid "893d3e4c-81d2-41a1-ba6b-8526360ef30a")
+		)
+		(instances
+			(project "pedalboard-hw"
+				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
+					(reference "C82")
 					(unit 1)
 				)
 			)
