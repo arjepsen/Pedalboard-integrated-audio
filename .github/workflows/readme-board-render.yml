@@ -1,16 +1,22 @@
-name: README board render preview
+name: README board render
 
 on:
   push:
     branches:
-      - readme-board-render-preview
+      - main
+    paths:
+      - pedalboard-hw.kicad_pcb
   workflow_dispatch:
+
+concurrency:
+  group: readme-board-render
+  cancel-in-progress: true
 
 jobs:
   render:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -102,6 +108,30 @@ jobs:
           install3D: YES
           cache3D: YES
           verbose: 2
+
+      - name: Replace README board image
+        run: |
+          set -euo pipefail
+          rendered="$(find render-output -type f -name 'mainboard-3d-preview.png' -print -quit)"
+          if [ -z "$rendered" ]; then
+            echo "Rendered PNG not found."
+            find render-output -maxdepth 4 -type f -print || true
+            exit 1
+          fi
+          cp "$rendered" Docs/images/mainboard-3d-preview.png
+
+      - name: Commit updated README board image
+        run: |
+          if git diff --quiet -- Docs/images/mainboard-3d-preview.png; then
+            echo "README board image is unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Docs/images/mainboard-3d-preview.png
+          git commit -m "Update README board render"
+          git push origin HEAD:main
 
       - name: Upload render preview
         if: always()
