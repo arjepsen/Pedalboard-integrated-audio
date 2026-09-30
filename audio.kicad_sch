@@ -7547,12 +7547,6 @@
 		(uuid "95be00eb-b2bf-47af-892a-a1723753ba8f")
 	)
 	(junction
-		(at 180.34 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9634f0a2-0152-4500-a471-9b37bbbf86c7")
-	)
-	(junction
 		(at 91.44 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8176,16 +8170,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 39.37) (xy 180.34 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05139600-c98a-40c3-8915-77b3dd2f38f8")
-	)
-	(wire
-		(pts
 			(xy 74.93 175.26) (xy 74.93 173.99)
 		)
 		(stroke
@@ -8413,16 +8397,6 @@
 			(type default)
 		)
 		(uuid "15205722-487f-4f74-a937-4c2687d280e3")
-	)
-	(wire
-		(pts
-			(xy 177.8 39.37) (xy 180.34 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1524b75b-f4ab-461f-978b-ff9d63190ac2")
 	)
 	(wire
 		(pts
@@ -8893,16 +8867,6 @@
 			(type default)
 		)
 		(uuid "40e006de-f741-4fdb-83a3-647a7318647d")
-	)
-	(wire
-		(pts
-			(xy 172.72 39.37) (xy 171.45 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "413e0891-3b5c-420f-8ac9-aefdded96a6d")
 	)
 	(wire
 		(pts
@@ -9823,16 +9787,6 @@
 			(type default)
 		)
 		(uuid "a384e4a9-cc21-4ae0-a56c-ca17d093d8fa")
-	)
-	(wire
-		(pts
-			(xy 171.45 39.37) (xy 171.45 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5ddb3ce-d169-4ccb-aef3-8968347f2d0b")
 	)
 	(wire
 		(pts
@@ -11715,85 +11669,6 @@
 			(project "pedalboard-hw"
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "C62")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 175.26 39.37 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "0c0e7610-2158-4394-99cd-66bf3c991d0b")
-		(property "Reference" "C64"
-			(at 178.816 38.354 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 170.942 38.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 175.26 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "C0G alternative"
-			(at 175.26 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "b7cc1b69-4c25-4967-84b9-102b611faca0")
-		)
-		(pin "1"
-			(uuid "d5b4190d-d967-493c-ae93-ac9bb4d4a8fa")
-		)
-		(instances
-			(project "pedalboard-hw"
-				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
-					(reference "C64")
 					(unit 1)
 				)
 			)
@@ -15859,7 +15734,7 @@
 		(dnp no)
 		(uuid "86a05e25-409e-479a-a587-eb528b2e588c")
 		(property "Reference" "C56"
-			(at 176.784 43.942 90)
+			(at 176.53 42.418 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15869,7 +15744,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 180.594 48.768 90)
+			(at 176.784 44.196 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
