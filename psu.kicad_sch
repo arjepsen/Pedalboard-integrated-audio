@@ -5406,6 +5406,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 224.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bea25fef-3b56-44a4-93c8-3fce09849c7b")
 		)
@@ -5608,6 +5619,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 140.97 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d37963dd-1e39-4d7f-bb0e-b05833bab7f6")
 		)
@@ -5712,6 +5734,17 @@
 			)
 		)
 		(property "JLCPCB part" "C25803"
+			(at 120.65 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 120.65 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -5845,6 +5878,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 101.6 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d09023db-906d-4069-b7c3-76015477a3b1")
 		)
@@ -5856,6 +5900,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "C2")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6024,6 +6072,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 31.75 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "538a4ce4-4496-425c-bbd1-e95986c86f61")
 		)
@@ -6038,6 +6097,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "J7")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6142,6 +6205,17 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
+			(at 133.35 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 133.35 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -6266,6 +6340,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 152.4 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3798476f-d66a-42c9-ba17-f83f962999b5")
 		)
@@ -6369,6 +6454,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 87.63 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1-3"
 			(uuid "d0005ea1-5023-4ca4-b6ee-d19a0638255e")
 		)
@@ -6383,6 +6479,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "Q1")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -6487,6 +6587,17 @@
 			)
 		)
 		(property "Notes" "Extended part"
+			(at 33.02 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 33.02 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -6602,6 +6713,17 @@
 		)
 		(property "JLCPCB part" "C5219281"
 			(at 90.932 150.114 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 68.58 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6779,6 +6901,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 133.35 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6ac42cdc-d876-475d-872f-e338fcc42758")
 		)
@@ -6871,6 +7004,17 @@
 			)
 		)
 		(property "Manufacturer part" "1715022"
+			(at 30.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 30.48 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -7062,6 +7206,17 @@
 			)
 		)
 		(property "JLCPCB part" "C69847"
+			(at 162.56 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 162.56 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7291,6 +7446,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 58.42 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f456dc55-1e3a-4362-aac1-09dde45a5461")
 		)
@@ -7494,6 +7660,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 53.34 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a238ff95-113e-4cfa-b01b-a676f1752583")
 		)
@@ -7619,6 +7796,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 251.46 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5aea5ec5-8c5e-4d6b-a155-488ae97f90c8")
 		)
@@ -7733,6 +7921,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 120.65 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c7dba4a9-655a-456d-bb3a-81307a4964f0")
 		)
@@ -7804,6 +8003,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 177.8 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 177.8 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -7915,6 +8125,17 @@
 			)
 		)
 		(property "JLCPCB part" "C309062"
+			(at 147.32 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 147.32 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8039,6 +8260,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 66.04 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d3d0a97e-20be-4324-a1af-209634282dd3")
 		)
@@ -8050,6 +8282,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "F1")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -8153,6 +8389,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 184.15 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54fd93d1-37a6-4f75-9f63-314c2a2039e2")
 		)
@@ -8224,6 +8471,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 251.46 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 251.46 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8345,6 +8603,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 147.32 83.82 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a134bdea-1f2d-4012-b0ad-59bbaa816241")
 		)
@@ -8449,6 +8718,17 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
+			(at 168.91 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 168.91 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -8650,6 +8930,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 187.96 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "972c6496-eec6-4144-bd29-a02e28d18120")
 		)
@@ -8774,6 +9065,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 241.3 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "8b6653c6-b466-4650-a18e-8c254066dc77")
 		)
@@ -8887,6 +9189,17 @@
 			)
 		)
 		(property "JLCPCB part" "C309062"
+			(at 139.7 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 139.7 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -9088,6 +9401,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 166.37 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3f119b9c-9f26-4a52-9cfa-395b82dcca47")
 		)
@@ -9200,6 +9524,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 168.91 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "80abcb34-6307-4548-89a8-e6cd56238f27")
 		)
@@ -9211,6 +9546,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e"
 					(reference "C53")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -9271,6 +9610,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 121.92 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 121.92 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -9393,6 +9743,17 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
+			(at 48.26 172.72 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 48.26 172.72 90)
 			(hide yes)
 			(show_name no)
@@ -9551,6 +9912,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 39.37 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 39.37 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -9784,6 +10156,17 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 54.61 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 54.61 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -10070,6 +10453,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 64.77 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1e86112f-5bf7-4a1e-9455-684d15eb8ef8")
 		)
@@ -10195,6 +10589,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 43.18 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b0962050-f110-492a-af1d-329bbfa04b1a")
 		)
@@ -10299,6 +10704,17 @@
 			)
 		)
 		(property "Manufacturer part" "CL10A106KP8NNNC"
+			(at 157.48 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 157.48 88.9 0)
 			(hide yes)
 			(show_name no)

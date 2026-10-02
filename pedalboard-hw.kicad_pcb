@@ -127,7 +127,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(aux_axis_origin 18.005615 130.994385)
 		(grid_origin 18 20)
 		(pcbplotparams
@@ -169,6 +168,12 @@
 	)
 	(property "GIT_HASH" "unknown")
 	(property "REVISION" "dev")
+	(variants
+		(variant
+			(name "JLCPCB-SMT")
+			(description "JCLPCB machine assembly.\nRemaining parts fitted by hand.")
+		)
+	)
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "00177024-51ee-4ca5-940e-3484fcc03ffe")
@@ -220,6 +225,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cb507ee-5399-4daa-9dd3-16c69cdf9b59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -369,6 +387,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69f9b864-33e9-426a-801f-916eedf6086e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -650,6 +681,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2ece49f-af16-47e5-82db-93961f36e3a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Fiducial*")
 		(path "/83bdf2a4-2c0b-403d-95cb-ae14a25220e2")
 		(sheetname "/")
@@ -754,6 +798,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc82c6d8-0c46-420a-83b2-8236ce1daf35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -913,6 +970,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73a17b9c-12f7-4474-b213-bedec203c848")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/a27a005e-e862-4278-9852-8c4125715438")
 		(sheetname "/Power Supply/")
@@ -1060,6 +1130,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "33aaee92-d62b-43ef-abf0-90ccffe10bff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1232,6 +1315,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a948bbe-10dc-4ea2-a2eb-501222f00fd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1668,6 +1764,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0928e9ff-9ebd-4cad-b929-63f1ff95ec1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Jack*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/431a0eca-71e8-40ff-af05-42bd0f0659b7")
 		(sheetname "/Audio/")
@@ -2031,6 +2140,10 @@
 			(pintype "passive+no_connect")
 			(uuid "f4b1c1b9-59f9-425d-8ab9-0f527c071b90")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
@@ -2157,6 +2270,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d973337-86f7-448e-9054-082bfd0e6bb3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2344,6 +2470,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40d21fde-2ffb-4c1d-85be-94101e38c5a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2610,6 +2749,10 @@
 			(pintype "passive+no_connect")
 			(uuid "466ba4f7-e265-4a32-8ee1-8d630aef11e8")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/694106301002 (rev1).stp"
 			(offset
@@ -2739,6 +2882,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9813060-b59f-4a55-9a51-130aa9951821")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/06cfd0a9-5a74-40a9-9ff1-255ce445189a")
 		(sheetname "/Audio/")
@@ -2821,6 +2977,10 @@
 			(net "Net-(C62-Pad2)")
 			(pintype "passive")
 			(uuid "0cd6a6b9-d8d7-45f7-a827-417d6e78122f")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
@@ -2935,6 +3095,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc04ed4e-88e5-4916-bf6c-44dcc8907543")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3137,6 +3310,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d075ef9-5fbe-4129-bffd-e9265381d6bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/111f91a2-4754-44f4-ab0c-c5ebc2e476a8")
 		(sheetname "/Audio/")
@@ -3336,6 +3522,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdb6ec01-2b65-4290-9cfb-3776b4714213")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/18688b3d-6d69-4313-85a9-e011382096ad")
 		(sheetname "/Power Supply/")
@@ -3520,6 +3719,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b2a9cd3-7258-453e-84d7-b1507804f211")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -3943,6 +4155,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "935fc202-9823-42c2-aff2-753bd82cd321")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/4db9ba0e-f4f6-49b3-9680-c0fdd597ca21")
 		(sheetname "/Connectivity/")
@@ -4139,6 +4364,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3010220-93e5-41b8-b307-1390ba8c900c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4354,6 +4592,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ea6b181-a628-4ead-8c42-e6a0fdedd8a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/65a88032-f65d-440c-aa9d-0951f89f0660")
 		(sheetname "/Power Supply/")
@@ -4544,6 +4795,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ebcaf1bd-9e0f-4d8f-9499-4d88436185b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7855b2e9-fb0f-466a-b982-72ca6eb42591")
 			(effects
 				(font
 					(size 1 1)
@@ -4750,6 +5014,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a21ca295-b9c2-474c-92a4-76db05d7499f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/892c3945-b875-4c45-88fa-431df52b02f6")
 		(sheetname "/Audio/")
@@ -4953,6 +5230,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cdd7c852-1a33-476a-acd9-8b77b337299f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fb0889d-9c07-4b03-8a15-e64ab3d9fad1")
 			(effects
 				(font
 					(size 1 1)
@@ -6627,6 +6917,10 @@
 			(pintype "passive")
 			(uuid "8a279bc6-ed48-4b88-889e-abb5036d9aa2")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step"
 			(offset
@@ -6756,6 +7050,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37e74707-dde0-4c4c-97a6-917e74555102")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -6934,6 +7241,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55bc982f-9d25-48df-9fd3-d3be2b1d2df2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7159,6 +7479,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae9af978-1281-435c-9193-8c41b0c9ab7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/e0a8e644-9f08-456e-99ac-7bd36bbbcb1c")
 		(sheetname "/Audio/")
@@ -7355,6 +7688,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "821542e3-54a8-4a03-82a1-51e3449fb606")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9025,6 +9371,10 @@
 			(pintype "passive")
 			(uuid "b8bdbac4-9b82-49b1-8caf-3d3be762e99a")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step"
 			(offset
@@ -9115,6 +9465,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e71b216-78cf-4a77-a4b0-134cc14864b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9670,6 +10033,10 @@
 			(pintype "passive+no_connect")
 			(uuid "75f1f697-c03c-42ba-938e-4ea8e9cba715")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_CUI_SJ1-3525N_Horizontal.step"
 			(offset
@@ -9783,6 +10150,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ed8cfbc-45db-41b0-9b3f-c0f07d6e32ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11453,6 +11833,10 @@
 			(pintype "passive")
 			(uuid "dd18f12c-b0dd-4985-81b2-36577f0e8bd2")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D8.0mm_P3.50mm.step"
 			(offset
@@ -11556,6 +11940,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92ae2029-0cd7-4b8d-aab6-e489f9739e15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -11922,6 +12319,10 @@
 			(pintype "passive+no_connect")
 			(uuid "43f5454d-dfdd-40f7-8a4c-652b7214d462")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
@@ -12025,6 +12426,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f379ba8e-c0e6-4145-b957-96722e92d294")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12431,6 +12845,10 @@
 			(pintype "passive")
 			(uuid "9625ec1e-1369-4fc0-9d35-689828a78474")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/3-D NMJ6HCD2.stp"
 			(offset
@@ -12544,6 +12962,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02da9e7b-8dfc-4b10-bb9e-10a6ee770819")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12746,6 +13177,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c355928b-c1c0-4a3d-93c6-eaa029ef7131")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/4e7b599c-0fff-4ce0-b491-0685742f8a22")
 		(sheetname "/Audio/")
@@ -12945,6 +13389,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea6cd86e-6dcd-4cde-82fc-be9afe2d19ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/887e3477-4a53-4e3b-9688-429115b89fb7")
 		(sheetname "/Audio/")
@@ -13141,6 +13598,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea708f3d-e48e-4898-9238-28ed7f58d2ea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -13626,6 +14096,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "61446163-7fd3-4db1-a3a0-8766912b2ae1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/8b5e73be-218b-4131-9162-c7a589b73b0a")
 		(sheetname "/Audio/")
@@ -13836,6 +14319,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1a44d73-2908-4468-9e00-d11d6923d3ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/c9144974-34d5-4388-bb11-c258e53da464")
 		(sheetname "/Power Supply/")
@@ -14032,6 +14528,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5e41bbc2-186f-4c67-8e36-3000a88c17e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -14236,6 +14745,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c70f9745-9060-436f-bf7d-83d57c95ad40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -14667,6 +15189,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fce52cd-c8f5-40e3-9819-816ab863d8d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/e9c51338-3899-4a23-bb04-cafd026f5029")
 		(sheetname "/Audio/")
@@ -14866,6 +15401,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7945b1f-0c31-4dc8-a43b-b948aa3b98f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/b0b11e08-6bd8-4a74-8301-2a7d3c75cc76")
 		(sheetname "/Audio/")
@@ -15014,6 +15562,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "902c1707-e996-48ba-ae21-595972756907")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Fiducial*")
 		(path "/6559bc44-dc16-4d75-97d0-19c0910ec271")
 		(sheetname "/")
@@ -15120,6 +15681,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83634174-5a32-4592-84bd-bdae29ffd152")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15269,6 +15843,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7958b68f-edaf-4fe7-a8a4-f1a6e45179b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15588,6 +16175,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8d0c597-c34b-4dc9-92a7-36b196c8e0b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15918,6 +16518,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7005c0e8-e558-4c0f-9d9d-60ccf2508dd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/4489db42-63da-4dfd-bc96-0f73aa2f6e77")
 		(sheetname "/Power Supply/")
@@ -16063,6 +16676,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05497466-6314-4ea7-afb1-c0b2a7ad54b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16233,6 +16859,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "001d9e83-98f1-41e2-b006-98b73a3444bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16426,6 +17065,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ff0f1db2-e89b-4223-a1be-b8f03850e93b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fdafb69-ca9b-463e-8a80-ead57c8f7483")
 			(effects
 				(font
 					(size 1 1)
@@ -16645,6 +17297,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a99d9213-5f70-4727-a76d-8cef6a4e7165")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/9843c2df-dc18-4e0e-a0fb-8a0623d03a2b")
 		(sheetname "/Connectivity/")
@@ -16830,6 +17495,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6297c4e-4f7f-431c-9ba8-7ebee9667c56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -17299,6 +17977,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d82458b1-3739-4195-8401-66cb2ca32503")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/35e2f216-e69e-47d3-b884-8dee37f4a707")
 		(sheetname "/Power Supply/")
@@ -17495,6 +18186,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46215ea2-6e84-4ce2-ba25-dedb6b52f63a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -17697,6 +18401,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e2c92cb-f929-4de8-824d-c3f1a2189940")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/a618ae9d-82c2-4ad2-9892-f192a074510c")
 		(sheetname "/Audio/")
@@ -17894,6 +18611,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "773d03e4-f2f3-4a73-80d3-c16a3b1293ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/bedb00c8-92ef-4b00-ada8-b52183a90913")
 		(sheetname "/Power Supply/")
@@ -17976,6 +18706,10 @@
 			(net "GND")
 			(pintype "passive")
 			(uuid "ca2ba2a3-67cc-41fc-bdaf-c9609dcc0c69")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1812_4532Metric.step"
@@ -18132,6 +18866,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1f45f49-73a1-4a77-998a-462202eedbab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18488,6 +19235,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56238204-c0fc-48c6-bb2b-10f91aa536e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/cd563cda-e651-4beb-bee9-c2c65cb6bf2c")
 		(sheetname "/Power Supply/")
@@ -18593,6 +19353,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45c48451-5230-4465-b2a1-1d2f91fa9aa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18763,6 +19536,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a02d78fe-278d-4b70-8cde-709b0d30c754")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18962,6 +19748,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0d09030-ac8f-468f-b150-b5078377e712")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -19177,6 +19976,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d33063e5-e489-4e0b-98a0-c6ff103d606b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/0bdfaf47-e02a-4b10-9eb2-261b4bc55614")
 		(sheetname "/Power Supply/")
@@ -19389,6 +20201,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83c05219-2492-459a-bb32-c925df11f094")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/83eb4771-3c6e-4eff-827d-afea9db99341")
 		(sheetname "/Connectivity/")
@@ -19571,6 +20396,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3817873f-8413-4e25-b9f1-d4580c6ba435")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -19892,6 +20730,10 @@
 			(pintype "passive")
 			(uuid "c4702315-0951-42f7-8f63-3db9310f287a")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
 			(offset
@@ -20018,6 +20860,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5e1ad97-776d-4d0b-a1d4-e7385472424f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -20166,6 +21021,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f6625e5-50a7-4d25-b0e1-f1c7d28ff059")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -20472,6 +21340,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9463b510-c6ba-4acf-a1e1-4474b170295f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -21932,6 +22813,10 @@
 			(pintype "passive")
 			(uuid "721a85f3-303e-4c38-b2b5-a06e7fd1c242")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
 			(offset
@@ -22047,6 +22932,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c63f0db-e85e-4903-a03b-795bd67c9bdd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -22588,6 +23486,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2aa2c5cd-b71c-43eb-bb51-ef57c2dd16ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Jack*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/81af83f0-ec6c-48b4-9f66-c645c3893aae")
 		(sheetname "/Audio/")
@@ -22951,6 +23862,10 @@
 			(pintype "passive")
 			(uuid "336358c6-f264-45fe-99e1-76c43739768c")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
@@ -23064,6 +23979,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f5a6cba-ea30-4ad5-84e3-e3c3faf4a792")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -23240,6 +24168,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04a1d486-8e82-41ed-908d-c62deed710ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -25573,6 +26514,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "efd7910f-bb13-4193-a79f-7a8d0f3fe1a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/3b7c674c-84be-44d2-8040-73c08034f423")
 		(sheetname "/Connectivity/")
@@ -25769,6 +26723,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "815759b6-d57d-4ceb-a793-50635967da29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -25972,6 +26939,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f77b4d7d-33ce-4336-a91c-13defb5ba4a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/d9207788-0949-4cfb-b9a1-3cc22176409c")
 		(sheetname "/Audio/")
@@ -26168,6 +27148,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6dfc98d4-8a02-4547-8e9e-2977a86539d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -26370,6 +27363,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4be78c36-e1e7-4ad4-a637-f6d14596b585")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/c4792b0a-90c3-4896-95b3-db4734eae4e4")
 		(sheetname "/Audio/")
@@ -26545,6 +27551,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e976b9e0-9a7c-435a-9353-91adcebf4960")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -26768,6 +27787,10 @@
 			(pintype "passive")
 			(uuid "b1388b12-8e57-42db-8b21-2e5cf090f864")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/J_Wurth_WR-BHD_61201021621.step"
 			(offset
@@ -26881,6 +27904,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "955c364a-f1cd-42f4-9186-536cb57c61c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -27037,6 +28073,19 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9ec0cc04-8ef9-413d-83d8-24257bf32d70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17a64411-fcd9-4f45-8d5c-1ffee2d76a07")
 			(effects
 				(font
 					(size 1 1)
@@ -27210,6 +28259,10 @@
 			(pintype "passive")
 			(uuid "4b499bc5-ecc7-4f80-b66c-a0be73582189")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step"
 			(offset
@@ -27323,6 +28376,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ceeb5473-5495-4d65-b4e7-cbe943b0a193")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -27541,6 +28607,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3d1461f-324f-4b98-825e-63170e9fb4ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/40f65923-1ffd-470e-8f47-d6efe87bbfcf")
 		(sheetname "/Connectivity/")
@@ -27737,6 +28816,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6d3ca4d-05fe-4f37-844b-5deb326a4d82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -27950,6 +29042,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "061afb57-1f5c-414e-8861-6f76207057a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/639c989d-b2b1-4202-8539-3d795b2b3688")
 		(sheetname "/Power Supply/")
@@ -28146,6 +29251,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3281086-5adb-47c0-aaed-90a3869d7c47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -28348,6 +29466,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98cd5c3e-bd25-4037-8b91-cab1aa895b36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/6b6ff3f3-ef8b-48f5-9555-cff663c9893c")
 		(sheetname "/Audio/")
@@ -28538,6 +29669,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "486dc156-e825-4166-bfc1-3c8bb91e419f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac87d5a8-0c42-4981-8731-e7b96a6ae56a")
 			(effects
 				(font
 					(size 1 1)
@@ -28742,6 +29886,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f67edee5-4bf9-432f-9cf5-006e69a6084f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/7c08c928-6f2f-4da1-b642-2e0adb614570")
 		(sheetname "/Power Supply/")
@@ -28928,6 +30085,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f51a7ac-b4e2-4227-91bd-23f698c8295c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -29363,6 +30533,10 @@
 			(pintype "passive")
 			(uuid "21c94243-e4a3-4e48-870f-b719b5fdf9df")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_A_Molex_67643_Horizontal.step"
 			(offset
@@ -29433,6 +30607,19 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b014a954-8d36-47d3-bba0-28b4debc518d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2539696-0060-4aaf-8749-de0a4f9f3ea1")
 			(effects
 				(font
 					(size 1 1)
@@ -29544,6 +30731,10 @@
 			(net "Net-(U14A-+)")
 			(pintype "passive")
 			(uuid "ce805761-8223-4699-83c5-83d9224f04a1")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2.step"
@@ -29658,6 +30849,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dce1d429-0284-44e6-9a56-713b24a64553")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -29870,6 +31074,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "674d2bc6-88fc-4c0b-8d50-b667261b5b7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -30273,6 +31490,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4deb7ee2-ab9b-43e4-9760-8501ae35a59a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*polyfuse* *PTC*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/7fc062c8-6441-4bfc-b7a5-c2f88fb6cc13")
 		(sheetname "/Power Supply/")
@@ -30355,6 +31585,10 @@
 			(net "/Power Supply/fused")
 			(pintype "passive")
 			(uuid "1f2662b4-c16d-4145-bb05-a5fed1de8356")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KIPRJMOD}/3d-models/LUTE_2920L400-30GR_visual.wrl"
@@ -30485,6 +31719,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62984e91-6699-4513-8164-823097b09c21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/0dfca386-f3eb-4f0f-a31f-22dac688bf01")
 		(sheetname "/Audio/")
@@ -30567,6 +31814,10 @@
 			(net "/Audio/TAC_IN1P")
 			(pintype "passive")
 			(uuid "f5e44ed2-c534-43ac-98df-e8f2cac91e2e")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
@@ -30681,6 +31932,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bec5c43-b8b6-49e0-b4ea-fa7d207f3b17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -30997,6 +32261,10 @@
 			(pintype "power_in")
 			(uuid "d8eb28f2-68c0-4d50-9db0-02e9bc781249")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
 			(offset
@@ -31126,6 +32394,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "916188ef-e5d5-4112-b7ee-f40d0b0b674c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/04f16b57-0fc0-49c1-af3f-e41ca6bb87a9")
 		(sheetname "/Audio/")
@@ -31208,6 +32489,10 @@
 			(net "/Audio/TAC_IN1M")
 			(pintype "passive")
 			(uuid "bef9b537-86dc-4550-bf68-3aa0d31c45a5")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
@@ -31322,6 +32607,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65cb7d61-25fe-4cf0-93d0-00d578ffa987")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -31470,6 +32768,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3d0254b-b34a-430a-a57a-39052fd37673")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -31641,6 +32952,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bfeeab33-7956-4d8b-8224-ad05f6c6da91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -31843,6 +33167,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "884a8e51-3f59-4068-b347-1086e939ef38")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/b2d3e411-7e9a-4df4-9587-5ef0a56b8813")
 		(sheetname "/Audio/")
@@ -31988,6 +33325,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "60b7788f-eda1-43e3-9c14-567c34e6e0f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -32145,6 +33495,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "114a1b41-74b8-4324-891c-d3a026b889ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -32347,6 +33710,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4bf43008-5a2a-440f-88cd-c2e6453e619f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/90f70482-5992-40e7-9797-e38319dd05ca")
 		(sheetname "/Audio/")
@@ -32537,6 +33913,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "44d424c6-c6d5-47da-bded-7a98678b260b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2207d492-7dfc-4419-b386-ca3b944a75e5")
 			(effects
 				(font
 					(size 1 1)
@@ -32740,6 +34129,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0468d1de-f8b4-4684-9192-98414f5e6605")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -32955,6 +34357,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3a596ce-772d-4bdf-ad4f-60d3e425e376")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e8ab7a61-8d57-4690-876b-f6a417060d03/5ac44d98-0c85-4115-b603-e1f46fce16b7")
 		(sheetname "/Connectivity/")
@@ -33165,6 +34580,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de2f027e-f48d-45ed-ab74-15cf2179dc8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/2fd0832a-2019-4c62-ae63-d02d420a65eb")
 		(sheetname "/Power Supply/")
@@ -33313,6 +34741,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de0c9eac-e1d6-49e7-b5e6-efda3b04232e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*")
 		(path "/2079fa55-1ff6-4ace-a2fe-77251311317e")
 		(sheetname "/")
@@ -33419,7 +34860,7 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
+		(property "Sim.Pins" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33734,6 +35175,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ce1beec-3692-4abf-a244-18f41d7a8f73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/ebe7f940-f5c7-47e9-be05-a8fa596a247d")
 		(sheetname "/Audio/")
@@ -33943,6 +35397,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb48378a-7443-4b24-9663-471abbca65ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -34346,6 +35813,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "984a25e4-5a68-4af3-94c3-ad83393ea12b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/c98e906b-0348-41d9-abda-06799d50df93")
 		(sheetname "/Audio/")
@@ -34493,6 +35973,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2bc2e287-2777-4d4c-80b9-06d8430b2de4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -34652,6 +36145,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3de0258e-31bb-4226-92ad-da9f15d1bd12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -34841,6 +36347,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e2c515ed-6b9c-4d67-8087-4ec0efaa8daf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -35173,6 +36692,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a0af375-1661-417c-864f-aa1595a717c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0d7c87b0-1309-475f-a9d7-edcf3dee5e4e/9ce991bc-3ce5-4fa3-bbcd-e886cfa03caf")
 		(sheetname "/Power Supply/")
@@ -35369,6 +36901,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34ab3212-7f0b-4cdb-bd41-5a5b15d21a9e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -35737,6 +37282,10 @@
 			(pintype "passive")
 			(uuid "62112469-a43c-4476-94fe-986d0cccf696")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_DIP_SPSTx02_Slide_6.7x6.64mm_W8.61mm_P2.54mm_LowProfile.step"
 			(offset
@@ -35844,6 +37393,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2c9657ac-a0e4-4b02-b82e-8241a484157d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e41c660-a9ff-4734-b044-99d5867ed13c")
 			(effects
 				(font
 					(size 1 1)
@@ -36047,6 +37609,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6855fcb9-4db5-4d84-a75b-cfebf742c601")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -36262,6 +37837,19 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0029e76-3d3a-46b6-bf64-c110b91eb271")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91/4bd95da0-a360-4107-b37f-8cf0d184001c")
 		(sheetname "/Audio/")
@@ -36344,6 +37932,10 @@
 			(net "Net-(C63-Pad2)")
 			(pintype "passive")
 			(uuid "38b93b3c-27e3-4a1e-9f8d-c3d28013c21c")
+		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1210_3225Metric.step"
@@ -36452,6 +38044,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "88106dec-239c-4ee8-a33f-f641fcf147da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0585c51b-ebd3-49ef-8033-92f88a4a3577")
 			(effects
 				(font
 					(size 1 1)
@@ -37916,6 +39521,10 @@
 			(pintype "passive")
 			(uuid "a810f732-6bfc-46a3-8f8e-42c7588dfb5f")
 		)
+		(variant
+			(name "JLCPCB-SMT")
+			(dnp yes)
+		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D6.3mm_P2.50mm.step"
 			(offset
@@ -38029,6 +39638,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd538c3d-f362-47ca-b432-75e32e1d5249")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -38228,6 +39850,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ba41177-585f-434d-9e59-2d1e3c54cec5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -38443,6 +40078,19 @@
 				(font
 					(size 0.4 0.4)
 					(thickness 0.05)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc5d1a6d-afee-402a-a389-fe7d98da80b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)

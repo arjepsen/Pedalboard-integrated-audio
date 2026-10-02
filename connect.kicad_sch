@@ -9470,6 +9470,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 261.62 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2e0317eb-47d4-479f-9439-eec69bae5a4f")
 		)
@@ -9598,6 +9609,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 269.24 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9547033-5fd9-462d-aae6-a6fb66281b78")
 		)
@@ -9711,6 +9733,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 220.98 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6299e410-ec83-4403-be16-e497d54b47c5")
 		)
@@ -9731,6 +9764,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "J10")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -9835,6 +9872,17 @@
 			)
 		)
 		(property "JLCPCB part" "C15850"
+			(at 208.28 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 208.28 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -10034,6 +10082,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 161.29 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1e9d67a2-8beb-4072-beed-1bf9c068cdca")
 		)
@@ -10157,6 +10216,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 228.6 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "0b6f1c49-3568-4cec-a20d-545da8815776")
 		)
@@ -10260,6 +10330,17 @@
 			)
 		)
 		(property "Notes" "CM5 module supplied separately. Carrier requires 2x Amphenol 10164227-1001A1RLF connectors."
+			(at -66.04 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at -66.04 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10989,6 +11070,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 203.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "01d5b2a0-fdb2-404d-9e43-33b5a01bebb4")
 		)
@@ -11424,6 +11516,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 259.08 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b06b939a-a596-43d9-b41f-248b74da63b5")
 		)
@@ -11542,6 +11645,17 @@
 			)
 		)
 		(property "JLCPCB part" "C521240"
+			(at 185.42 72.39 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 185.42 72.39 90)
 			(hide yes)
 			(show_name no)
@@ -11910,6 +12024,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 245.11 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eb7faa94-a909-4fe1-862e-d5663c810626")
 		)
@@ -12090,6 +12215,17 @@
 			)
 		)
 		(property "JLCPCB part" "C25905"
+			(at 161.29 38.1 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 161.29 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -12378,6 +12514,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 185.42 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "256e2338-4797-43d5-be5f-5eb385d177ab")
 		)
@@ -12448,6 +12595,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 232.41 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 232.41 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -12697,6 +12855,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 198.12 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "686b7562-9f49-4484-bcca-92d5f5e21e04")
 		)
@@ -12708,6 +12877,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "J11")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -12978,6 +13151,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 254 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41ff3d63-af1b-4cef-98c7-2d58c5ee79fe")
 		)
@@ -12989,6 +13173,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "C43")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -13092,6 +13280,17 @@
 			)
 		)
 		(property "Notes" "Self-powered CM5 USB 2.0 service port for rpiboot flashing, USB Ethernet, and SSH. VBUS intentionally unconnected"
+			(at 181.61 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -13249,6 +13448,17 @@
 				)
 			)
 		)
+		(property "Sim.Pins" ""
+			(at 143.51 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "10"
 			(uuid "8216a36a-e01e-47a3-825b-e25c4c8c1e10")
 		)
@@ -13284,6 +13494,10 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "J21")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(dnp yes)
+					)
 				)
 			)
 		)
@@ -13388,6 +13602,17 @@
 			)
 		)
 		(property "JLCPCB part" "C15850"
+			(at 261.62 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 261.62 86.36 0)
 			(hide yes)
 			(show_name no)
