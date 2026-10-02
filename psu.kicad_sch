@@ -5746,7 +5746,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "1e2cefe4-e8b5-4390-a318-bfc5be70fb19")
 		(property "Reference" "C2"
 			(at 96.012 54.864 0)
