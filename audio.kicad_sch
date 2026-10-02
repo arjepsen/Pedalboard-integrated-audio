@@ -18175,7 +18175,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "e6a3123a-22da-406c-8077-452fd4f26b67")
 		(property "Reference" "D3"
 			(at 173.736 51.054 90)

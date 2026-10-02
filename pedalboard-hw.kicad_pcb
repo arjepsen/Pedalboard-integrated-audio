@@ -2032,15 +2032,15 @@
 			(uuid "f4b1c1b9-59f9-425d-8ab9-0f527c071b90")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal.step"
+		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 16.5 -8 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 0 -90)
 			)
 		)
 	)
@@ -2357,7 +2357,7 @@
 				(pins "1" "3" "2")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 4.6 13.7)
@@ -6947,7 +6947,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd dnp)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center -0.8 0)
@@ -11923,15 +11923,15 @@
 			(uuid "43f5454d-dfdd-40f7-8a4c-652b7214d462")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal.step"
+		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 16.5 -8 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 0 -90)
 			)
 		)
 	)
@@ -12432,15 +12432,15 @@
 			(uuid "9625ec1e-1369-4fc0-9d35-689828a78474")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_6.35mm_Neutrik_NMJ6HCD2_Horizontal.step"
+		(model "${KIPRJMOD}/3d-models/3-D NMJ6HCD2.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 16.5 -8 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 0 -90)
 			)
 		)
 	)
@@ -20485,7 +20485,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 4.49 -0.402)
@@ -22952,15 +22952,15 @@
 			(uuid "336358c6-f264-45fe-99e1-76c43739768c")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal.step"
+		(model "${KIPRJMOD}/3d-models/D-NMJ4HCD2.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 16.5 -8 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 0 -90)
 			)
 		)
 	)
@@ -27054,7 +27054,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole dnp)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -30357,7 +30357,7 @@
 			(uuid "1f2662b4-c16d-4145-bb05-a5fed1de8356")
 		)
 		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuse_2920_7451Metric.step"
+		(model "${KIPRJMOD}/3d-models/LUTE_2920L400-30GR_visual.wrl"
 			(offset
 				(xyz 0 0 0)
 			)

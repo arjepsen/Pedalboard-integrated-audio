@@ -12639,7 +12639,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c716f9e1-a43a-475f-bb17-862032c20081")
 		(property "Reference" "J11"

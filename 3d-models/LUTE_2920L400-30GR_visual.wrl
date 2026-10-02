@@ -1,0 +1,47 @@
+#VRML V2.0 utf8
+# Visual approximation of LUTE 2920L400/30GR, not a mechanical CAD model.
+# Overall body: 7.98 x 5.44 x 1.60 mm (JLCPCB C19078761).
+# KiCad VRML coordinates use 2.54 mm per unit.
+
+DEF BodyMaterial Appearance {
+  material Material {
+    diffuseColor 0.22 0.28 0.25
+    specularColor 0.08 0.08 0.08
+    shininess 0.12
+  }
+}
+DEF TerminalMaterial Appearance {
+  material Material {
+    diffuseColor 0.72 0.72 0.68
+    specularColor 0.25 0.25 0.25
+    shininess 0.45
+  }
+}
+
+Transform {
+  translation 0 0 0.31496
+  children [
+    Shape {
+      appearance USE BodyMaterial
+      geometry Box { size 2.19685 2.14173 0.62992 }
+    }
+  ]
+}
+Transform {
+  translation -1.33465 0 0.31496
+  children [
+    Shape {
+      appearance USE TerminalMaterial
+      geometry Box { size 0.47244 2.14173 0.62992 }
+    }
+  ]
+}
+Transform {
+  translation 1.33465 0 0.31496
+  children [
+    Shape {
+      appearance USE TerminalMaterial
+      geometry Box { size 0.47244 2.14173 0.62992 }
+    }
+  ]
+}
