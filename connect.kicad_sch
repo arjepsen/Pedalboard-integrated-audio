@@ -9382,7 +9382,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPD2E2U06DCK"
+		(property "Value" "TPD2E2U06QDCKRQ1"
 			(at 265.43 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9404,7 +9404,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf"
 			(at 256.54 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -9437,7 +9437,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "TPD2E2U06DCKR"
+		(property "Manufacturer part" "TPD2E2U06QDCKRQ1"
 			(at 261.62 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9448,7 +9448,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C1855726"
+		(property "JLCPCB part" "C915089"
 			(at 261.62 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -10956,6 +10956,11 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/e8ab7a61-8d57-4690-876b-f6a417060d03"
 					(reference "CM2")
 					(unit 2)
+					(variant
+						(name "JLCPCB-SMT")
+						(in_bom no)
+						(in_pos_files no)
+					)
 				)
 			)
 		)
@@ -11428,7 +11433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TPD2E2U06DCK"
+		(property "Value" "TPD2E2U06QDCKRQ1"
 			(at 262.89 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11450,7 +11455,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf"
 			(at 254 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11483,7 +11488,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "TPD2E2U06DCKR"
+		(property "Manufacturer part" "TPD2E2U06QDCKRQ1"
 			(at 259.08 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -11494,7 +11499,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C1855726"
+		(property "JLCPCB part" "C915089"
 			(at 259.08 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -13257,7 +13262,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "USB4105-GF-A-060"
+		(property "Manufacturer part" "USB4105-GF-A-120"
 			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -13268,7 +13273,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C3025063"
+		(property "JLCPCB part" "C5184243"
 			(at 181.61 48.26 0)
 			(hide yes)
 			(show_name no)

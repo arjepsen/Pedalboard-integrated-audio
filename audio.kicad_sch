@@ -18802,7 +18802,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD451"
+		(property "Value" "ESD401"
 			(at 172.72 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18857,7 +18857,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "ESD451DPYR"
+		(property "Manufacturer part" "ESD401DPYR"
 			(at 171.45 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -18869,6 +18869,17 @@
 			)
 		)
 		(property "Sim.Pins" ""
+			(at 171.45 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB part" "C1974752"
 			(at 171.45 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -20588,6 +20599,11 @@
 				(path "/df521c2a-9827-4355-b809-366f4b88d5d7/6bd0afd4-cd8b-4c1d-a236-891eed0b2d91"
 					(reference "CM2")
 					(unit 1)
+					(variant
+						(name "JLCPCB-SMT")
+						(in_bom no)
+						(in_pos_files no)
+					)
 				)
 			)
 		)

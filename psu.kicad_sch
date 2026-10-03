@@ -5575,7 +5575,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "UMJ325KB7106KMHT"
+		(property "Manufacturer part" "C3225X7R1H106KT000E"
 			(at 140.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5586,7 +5586,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C2168464"
+		(property "JLCPCB part" "C432929"
 			(at 140.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -5597,18 +5597,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Taiyo Yuden"
-			(at 140.97 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "Extended part"
+		(property "Manufacturer" "TDK"
 			(at 140.97 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10409,7 +10398,7 @@
 				)
 			)
 		)
-		(property "Manufacturer part" "UMJ325KB7106KMHT"
+		(property "Manufacturer part" "C3225X7R1H106KT000E"
 			(at 64.77 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -10420,7 +10409,7 @@
 				)
 			)
 		)
-		(property "JLCPCB part" "C2168464"
+		(property "JLCPCB part" "C432929"
 			(at 64.77 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -10431,18 +10420,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Taiyo Yuden"
-			(at 64.77 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Notes" "Extended part"
+		(property "Manufacturer" "TDK"
 			(at 64.77 149.86 0)
 			(hide yes)
 			(show_name no)
